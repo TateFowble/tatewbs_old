@@ -25,8 +25,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={Homepage} />
-          <Route exact path="/404" component={Error} />
-          <Route component={Error} />
+          <Route path="*" component={Error} />
         </Switch>
       </Router>
       <Footer />
