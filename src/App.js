@@ -8,11 +8,15 @@ import {
   Route
 } from 'react-router-dom'
 
-import './App.css';
+import './App.scss';
+
+// Import Components for App.js
+import Navigation from './components/navigation/Navigation';
+import Footer from './components/Footer/Footer';
 
 // Webpage imports
-import Navigation from './components/navigation/Navigation';
-import Homepage from './pages/Homepage';
+import Homepage from './pages/Homepage/Homepage';
+import Error from './pages/Error/ErrorPage';
 
 function App() {
   return (
@@ -20,9 +24,12 @@ function App() {
       <Navigation />
       <Router>
         <Switch>
-          <Homepage />
+          <Route exact path="/" component={Homepage} />
+          <Route exact path="/404" component={Error} />
+          <Route component={Error} />
         </Switch>
       </Router>
+      <Footer />
     </div>
   );
 }
