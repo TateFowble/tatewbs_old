@@ -6,6 +6,7 @@ import instagram from '../../assets/icons/instagram.svg';
 import github from '../../assets/icons/github.svg';
 import discord from '../../assets/icons/discord.svg';
 import twitch from '../../assets/icons/twitch.svg';
+import youtube from '../../assets/icons/youtube.svg';
 
 function Footer() {
     return (
@@ -28,6 +29,7 @@ function Footer() {
                 <div id="footer-social-media" className="text-white">
                     <img src={ github  } alt="..." />
                     <img src={ discord } alt="..." />
+                    <img src={ youtube } alt="..." />
                     <img src={ twitch  } alt="..." />
                     <img src={ instagram } alt="..." />
                 </div>
