@@ -1,9 +1,20 @@
 // Footer CSS positioning is on app.scss
 footer {
     div {
+        margin: 20px 0 0 0;
         div {
             #copyright-symbol {
-                font-size: small;
+                font-size: 26px;
+            }
+            #copyright-undertext {
+                font-size:16px;
+            }
+        }
+        #footer-social-media {
+            img {
+                height:auto;
+                width: 60px;
+                padding: 0 10px 10px 10px;
             }
         }
     }
