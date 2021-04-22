@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './Footer.scss';
 
@@ -27,11 +28,11 @@ function Footer() {
                     logo
                 </div>
                 <div id="footer-social-media" className="text-white">
-                    <img src={ github  } alt="..." />
-                    <img src={ discord } alt="..." />
-                    <img src={ youtube } alt="..." />
-                    <img src={ twitch  } alt="..." />
-                    <img src={ instagram } alt="..." />
+                    <a href="https://github.com/TateFowble" target="_blank"><img src={ github  } alt="..." /></a>
+                    <a href="" target="_blank"><img src={discord} alt="..." /></a>
+                    <a href="https://www.youtube.com/channel/UCdO6661qtdVWSjAj4NcjbRw" target="_blank"><img src={ youtube } alt="..." /></a>
+                    <a href="" target="_blank"><img src={ twitch  } alt="..." /></a>
+                    <a href="https://www.instagram.com/tatefywb" target="_blank"><img src={ instagram } alt="..." /></a>
                 </div>
             </div>
         </footer>
