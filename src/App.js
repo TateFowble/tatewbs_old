@@ -11,7 +11,7 @@ import {
 import './App.scss';
 
 // Import Components for App.js
-import Navigation from './components/navigation/Navigation';
+import Navigation from './components/Navigation/Navigation';
 import Footer from './components/Footer/Footer';
 
 // Webpage imports
@@ -20,16 +20,16 @@ import Error from './pages/Error/ErrorPage';
 
 function App() {
   return (
+      <Router>
     <div id="tatewbs">
       <Navigation />
-      <Router>
         <Switch>
           <Route exact path="/" component={Homepage} />
           <Route path="*" component={Error} />
         </Switch>
-      </Router>
       <Footer />
     </div>
+      </Router>
   );
 }
 
