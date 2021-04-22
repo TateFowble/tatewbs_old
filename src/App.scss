@@ -2,7 +2,9 @@ $bodycolor: #2a2a2e;
 
 #tatewbs {
   background: white;
-
+  .text {
+    font-size: calc(1.5rem + 3vw);
+  }
   nav {
     background: $bodycolor;
   }

@@ -1,6 +1,12 @@
 #homepage {
+
     #homepage-section1 {
         min-height: 95vh;
-        background: #2c3e50;
+        // background: #2c3e50;
+        // background:#e0dedc;
+        img {
+            height:calc( 100vw  / 5);
+            max-width: auto;
+        }
     }
 }

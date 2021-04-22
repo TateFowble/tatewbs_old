@@ -18,10 +18,10 @@ function Navigation () {
                             <Link class="nav-link" to="/about">About</Link>
                         </li>
                         <li class="nav-item">
-                            <Link class="nav-link" to="prices">Prices</Link>
+                            <Link class="nav-link" to="/services">Services</Link>
                         </li>
                         <li class="nav-item">
-                            <Link class="nav-link" to="/examples">Examples</Link>
+                            <Link class="nav-link" to="/contact">Contact</Link>
                         </li>
                     </ul>
                 </div>

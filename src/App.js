@@ -1,6 +1,4 @@
-import React, {
-  Component
-} from 'react';
+import React from 'react';
 import {
   BrowserRouter as Router,
   // BrowserRouter as Router,
@@ -20,16 +18,16 @@ import Error from './pages/Error/ErrorPage';
 
 function App() {
   return (
-      <Router>
-    <div id="tatewbs">
-      <Navigation />
+    <Router>
+      <div id="tatewbs">
+        <Navigation />
         <Switch>
           <Route exact path="/" component={Homepage} />
-          <Route path="*" component={Error} />
+          <Route component={Error} />
         </Switch>
-      <Footer />
-    </div>
-      </Router>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
