@@ -5,6 +5,9 @@ $bodycolor: #2a2a2e;
   .text {
     font-size: calc(1.5rem + 3vw);
   }
+  .image {
+    height:calc( 100vw  / 6);
+  }
   nav {
     background: $bodycolor;
   }
