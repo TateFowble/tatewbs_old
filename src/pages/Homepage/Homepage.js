@@ -12,6 +12,7 @@ import angularjs from '../../assets/images/angularjs.png';
 import nodejs from '../../assets/images/nodejs.png';
 import mysql from '../../assets/images/mysql.png';
 import mongodb from '../../assets/images/mongodb.png';
+import python from '../../assets/images/python.png';
 
 // components
 import Box from '../../components/Box/box';
@@ -35,6 +36,9 @@ function Homepage() {
     return (
         <div id="homepage" className="fluid-container">
             <div id="homepage-section1" className="fluid-container">
+
+            </div>
+            <div id="homepage-section2" className="d-flex">
                 <div className="container">
                     <h1 className="text">Oh hey there</h1>
                     <p className="text">(◕ᴥ◕ʋ)</p>
@@ -45,15 +49,11 @@ function Homepage() {
                         <img src={angularjs} alt="AngularJS" className="image" />
                         <img src={nodejs} alt="NodeJS" className="image" />
                     </div>
-                    <div>
+                    {/* <div>
                         <img src={mysql} alt="MySQL" className="image" />
                         <img src={mongodb} alt="MongoDB" className="image" />
-                    </div>
-                </div>
-            </div>
-            <div id="homepage-section2" className="d-flex">
-                <div>
-                    <Box />
+                        <img src={python} alt="Python" className="image" />
+                    </div> */}
                 </div>
             </div>
         </div>
