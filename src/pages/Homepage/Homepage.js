@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Homepage.scss';
 
 // Libraries
@@ -17,23 +17,35 @@ import Box from '../../components/Box/box';
 
 
 function Homepage() {
+    useEffect(() => {
+                anime({
+                    targets: '.homepage-section-one-images',
+                    translateY: 15,
+                    direction: 'alternate',
+                    loop: true,
+                    easing: 'easeInElastic(1,1) easeOutElastic(1,1)',
+                    duration: 1000,
+                    autoplay: true
+                });
+
+    })
     return (
         <div id="homepage" className="fluid-container">
             <div id="homepage-section1" className="fluid-container">
                 <div className="d-flex justify-content-around">
-                    <p className="text-white">Have a beautiful site!</p>
+                    <p className="text-white text mt-5">Have a beautiful site!</p>
                 </div>
             </div>
             <div id="homepage-section2" className="d-flex">
                 <div className="container">
-                    <h1 className="text">Oh hey there</h1>
-                    <p className="text">(◕ᴥ◕ʋ)</p>
-                </div>
-                <div className="d-flex justify-content-around flex-column">
+                    {/* <h1 className="text">Oh hey there</h1>
+                    <p className="text">(◕ᴥ◕ʋ)</p> */}
+                <div className="d-flex justify-content-around flex-row">
                     <div>
-                        <img src={reactjs} alt="ReactJS" className="image" />
-                        <img src={angularjs} alt="AngularJS" className="image" />
-                        <img src={nodejs} alt="NodeJS" className="image" />
+                        <img src={reactjs} alt="ReactJS" className="image homepage-section-one-images" />
+                            <img src={nodejs} alt="NodeJS" className="image homepage-section-one-images" />
+                            <img src={angularjs} alt="AngularJS" className="image homepage-section-one-images" />
+                </div>
                     </div>
                     {/* <div>
                         <img src={mysql} alt="MySQL" className="image" />
