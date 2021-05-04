@@ -2,7 +2,28 @@
     #homepage-section1 {
         min-height: 48vh;
         background: #111;
+        background: linear-gradient(0deg, #383838, #111111);
+        background-size: 400% 400%;
+        -webkit-animation: section1-text 17s ease infinite;
+        -moz-animation: section1-text 17s ease infinite;
+        animation: section1-text 17s ease infinite;
     }
+
+@-webkit-keyframes section1-text {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+@-moz-keyframes section1-text {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+@keyframes section1-text {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
     #homepage-section2 {
         min-height:48vh;
         background: #fff;

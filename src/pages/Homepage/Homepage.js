@@ -31,7 +31,7 @@ function Homepage() {
     })
     return (
         <div id="homepage" className="fluid-container">
-            <div id="homepage-section1" className="fluid-container d-flex align-items-center justify-content-center">
+            <div id="homepage-section1" className="fluid-container d-flex align-items-center justify-content-center shadow">
                 <div>
                     <p className="text-white text">Have a beautiful site!</p>
                 </div>
