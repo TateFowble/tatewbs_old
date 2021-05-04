@@ -2,16 +2,21 @@ $bodycolor: #2a2a2e;
 
 #tatewbs {
   background: white;
+
   .text {
     font-size: calc(1.5rem + 3vw);
   }
+
   .image {
     height:calc( 100vw  / 6);
   }
+
   nav {
     background: $bodycolor;
   }
-
+  .touchable-link:hover {
+    opacity: 0.9;
+  }
   .error {
     margin: 6em 0 26em 0;
   }
