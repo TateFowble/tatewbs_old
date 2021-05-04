@@ -1,10 +1,13 @@
-import React from 'react';
+// Library Import
+import React, { useEffect } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from 'react-router-dom'
+import anime from 'animejs';
 
+// SCSS imports
 import './App.scss';
 
 // Import Components for App.js
@@ -16,6 +19,17 @@ import Homepage from './pages/Homepage/Homepage';
 import Error from './pages/Error/ErrorPage';
 
 function App() {
+  useEffect(()=> {
+    anime({
+      targets: '.load-in',
+      translateY: 50,
+      direction: 'alternate',
+      loop: false,
+      easing: 'easeOutElastic(1, .8)',
+      duration: 350,
+      autoplay: true
+    });
+  });
   return (
     <Router>
       <div id="tatewbs">

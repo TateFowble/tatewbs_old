@@ -31,34 +31,35 @@ function Homepage() {
     })
     return (
         <div id="homepage" className="fluid-container">
-            <div id="homepage-section1" className="fluid-container">
-                <div className="d-flex justify-content-around">
-                    <p className="text-white text mt-5">Have a beautiful site!</p>
+            <div id="homepage-section1" className="fluid-container d-flex align-items-center justify-content-center">
+                <div>
+                    <p className="text-white text">Have a beautiful site!</p>
                 </div>
             </div>
-            <div id="homepage-section2" className="d-flex">
-                <div className="container">
-                    <div className="d-flex justify-content-around flex-row">
-                        <div>
-                            <a href="https://reactjs.org" target="_blank">
-                                <img src={reactjs} alt="ReactJS" className="image homepage-section-one-images touchable-link" />
-                            </a>
-                            <a href="https://nodejs.org" target="_blank">
-                                <img src={nodejs} alt="NodeJS" className="image homepage-section-one-images touchable-link" />
-                        </a>
-                            <a href="https://angularjs.org" target="_blank">
-                                <img src={angularjs} alt="AngularJS" className="image homepage-section-one-images touchable-link" />
-                        </a>
+
+            <div id="homepage-section2 container">
+
+                        <div className="mt-3 d-flex align-items-center justify-content-center flex-row">
+                    <h2 className="text-center">I use a variety of frameworks and libraries to accomplish your goal!</h2>
+                        </div>
+
+                        <div className="mt-5 d-flex align-items-center justify-content-center flex-row">
+                            <div>
+                                <a href="https://reactjs.org" target="_blank">
+                                    <img src={reactjs} alt="ReactJS" className="image homepage-section-one-images touchable-link" />
+                                </a>
+                                <a href="https://nodejs.org" target="_blank">
+                                    <img src={nodejs} alt="NodeJS" className="image homepage-section-one-images touchable-link" />
+                                </a>
+                                <a href="https://angularjs.org" target="_blank">
+                                    <img src={angularjs} alt="AngularJS" className="image homepage-section-one-images touchable-link" />
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
-                </div>
-                {/* <div>
-                        <img src={mysql} alt="MySQL" className="image" />
-                        <img src={mongodb} alt="MongoDB" className="image" />
-                        <img src={python} alt="Python" className="image" />
-                    </div> */}
-            </div>
+
         </div>
-        </div >
     )
 }
 
