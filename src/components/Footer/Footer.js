@@ -31,7 +31,7 @@ function Footer() {
                 </div>
                 <div id="footer-social-media" className="text-white">
                     <a href="https://github.com/TateFowble" target="_blank"><img src={github} alt="..." className="touchable-link" /></a>
-                    <a href="" target="_blank"><img src={discord} alt="..." className="touchable-link" /></a>
+                    <a href="https://discord.gg/XXV7xm8xwF" target="_blank"><img src={discord} alt="..." className="touchable-link" /></a>
                     <a href="https://www.youtube.com/channel/UCdO6661qtdVWSjAj4NcjbRw" target="_blank"><img src={youtube} alt="..." className="touchable-link" /></a>
                     <a href="" target="_blank"><img src={twitch} alt="..." className="touchable-link" /></a>
                     <a href="https://www.instagram.com/tatefywb" target="_blank"><img src={instagram} alt="..." className="touchable-link" /></a>
