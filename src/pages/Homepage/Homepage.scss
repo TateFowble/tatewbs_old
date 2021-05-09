@@ -1,12 +1,27 @@
 #homepage {
+    .homepage-section-dark {
+        height: 40em;
+        background:#2a2a2e;
+        color: #fff
+    }
+    .homepage-section-light {
+        height: 40em;
+        background:#fff;
+        color: #2a2a2a;
+    }
+
     #homepage-section1 {
-        min-height: 48vh;
+        min-height: 95vh;
         background: #111;
         background: linear-gradient(0deg, #383838, #111111);
         background-size: 400% 400%;
         -webkit-animation: section1-text 17s ease infinite;
         -moz-animation: section1-text 17s ease infinite;
         animation: section1-text 17s ease infinite;
+        div {
+            width:100%;
+            background:white;
+        }
     }
 
 @-webkit-keyframes section1-text {
@@ -25,7 +40,6 @@
     100%{background-position:50% 0%}
 }
     #homepage-section2 {
-        min-height:48vh;
-        background: #fff;
+        color: inherit;
     }
 }

@@ -12,53 +12,37 @@ import mysql from '../../assets/images/mysql.png';
 import mongodb from '../../assets/images/mongodb.png';
 import python from '../../assets/images/python.png';
 
-// components
-import Box from '../../components/Box/box';
 
+// components
+import AnimeText from '../../components/AnimeText/AnimeText';
 
 function Homepage() {
     useEffect(() => {
-        anime({
-            targets: '.homepage-section-one-images',
-            translateY: 15,
-            direction: 'alternate',
-            loop: true,
-            easing: 'easeInElastic(1,1) easeOutElastic(1,1)',
-            duration: 1000,
-            autoplay: true
-        });
+
 
     })
     return (
-        <div id="homepage" className="fluid-container">
+        <div id="homepage">
             <div id="homepage-section1" className="fluid-container d-flex align-items-center justify-content-center shadow">
-                <div>
-                    <p className="text-white text">Have a beautiful site!</p>
+                <p id="homepage-section1-text" className="text-white text">
+                    <AnimeText text={"Hello! Welcome to my site!"} className={"text-center"} />
+                </p>
+            </div>
+            <div id="homepage-section2" className="mt-5 fluid-container">
+                <div className="container homepage-section-light">
+                    <h2>
+                       Who am I? 
+                    </h2>
+                    <hr className="mt-4 mb-5" />
+                    <p className="text-left text-wrap fs-4 text-indent">
+                        My name is Tate Fowble, and I am 20 years old with a certificate in <span className="text-success">Full Stack Software Developer</span>!
+                        I started programming and learning different things about computers in 2014!
+                        With the following year aka 2015, I learned <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank">HTML5</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS3</a> as my starting choices of something <strong>techy</strong> to learn.
+                        following that I then started with the fundementals of programming in 2016 with languages like <a href="https://developer.mozilla.org/en-US/docs/Web/javascript" target="_blank">Javascript</a> and <a href="https://www.python.org/" target="_blank">Python</a>.
+                        Then later started using libraries with both languages to make different programs for people and businesses alike.
+                    </p>
                 </div>
             </div>
-
-            <div id="homepage-section2 container">
-
-                        <div className="mt-3 d-flex align-items-center justify-content-center flex-row">
-                    <h2 className="text-center">I use a variety of frameworks and libraries to accomplish your goal!</h2>
-                        </div>
-
-                        <div className="mt-5 d-flex align-items-center justify-content-center flex-row">
-                            <div>
-                                <a href="https://reactjs.org" target="_blank">
-                                    <img src={reactjs} alt="ReactJS" className="image homepage-section-one-images touchable-link" />
-                                </a>
-                                <a href="https://nodejs.org" target="_blank">
-                                    <img src={nodejs} alt="NodeJS" className="image homepage-section-one-images touchable-link" />
-                                </a>
-                                <a href="https://angularjs.org" target="_blank">
-                                    <img src={angularjs} alt="AngularJS" className="image homepage-section-one-images touchable-link" />
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-
         </div>
     )
 }
