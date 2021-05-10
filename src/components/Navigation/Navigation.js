@@ -8,7 +8,7 @@ function Navigation () {
     return (
         <div>
             <nav class="navbar navbar-expand-md navbar-dark">
-                <Link class="navbar-brand" to="/">Home</Link>
+                <Link class="navbar-brand" to="/">TateWBS</Link>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>

@@ -8,7 +8,8 @@ import github from '../../assets/icons/github.svg';
 import discord from '../../assets/icons/discord.svg';
 import twitch from '../../assets/icons/twitch.svg';
 import youtube from '../../assets/icons/youtube.svg';
-import logo from '../../assets/images/logo.svg';
+// import logo from '../../assets/images/logo.svg';
+import logo from '../../assets/images/tatewbs-logo.png';
 
 
 function Footer() {
