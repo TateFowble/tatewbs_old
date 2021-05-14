@@ -17,6 +17,7 @@ import Footer from './components/Footer/Footer';
 // Webpage imports
 import Homepage from './pages/Homepage/Homepage';
 import Error from './pages/Error/ErrorPage';
+import About from './pages/About/About';
 
 function App() {
   useEffect(()=> {
@@ -36,6 +37,7 @@ function App() {
         <Navigation />
         <Switch>
           <Route exact path="/" component={Homepage} />
+          <Route path="/about" component={About} />
           <Route component={Error} />
         </Switch>
         <Footer />
@@ -45,3 +47,10 @@ function App() {
 }
 
 export default App;
+
+
+/*
+Contact info on homepage
+
+
+*/

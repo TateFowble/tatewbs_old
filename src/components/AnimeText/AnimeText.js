@@ -14,7 +14,7 @@ useEffect(()=> {
         translateY: 30,
         direction: 'alternate',
         loop: true,
-        easing: 'easeInOutElastic(1,1)',
+        easing: 'easeInOutElastic(0.7,0.7)',
         duration: 1000,
         autoplay: true
     });
