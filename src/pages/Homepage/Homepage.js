@@ -19,6 +19,7 @@ import InfoBox from '../../components/InfoBox/InfoBox';
 
 
 function Homepage() {
+
     useEffect(() => {
 
 
@@ -31,23 +32,27 @@ function Homepage() {
                 </p>
             </div>
             <hr className="mt-5" />
-            <div id="homepage-section2" className="mt-5 mb-5 container-md bg-dark">
-                <div class="d-flex">
-
-                </div>
+            <div id="homepage-section2" className="mt-5 mb-5 container-md">
+                {/* <div className="d-flex justify-content-center"> */}
+                    <div class="d-flex justify-content-around flex-md-row flex-column">
+                        <img src={reactjs} alt="..." height="300" width="300" />
+                        <img src={nodejs} alt="..." height="300" width="300" />
+                        <img src={angularjs} alt="..." height="300" width="300" />
+                    </div>
+                {/* </div> */}
             </div>
             <div id="homepage-section3">
                 <InfoBox
-                header={
-                    "hello"
+                    header={
+                        "I do things"
                     }
-                text={
-                    "dsdasd"
+                    text={
+                        "Yup I do do things"
                     }
-                borderColor={
-                    "purple"
-                }
-                 />
+                    borderColor={
+                        "purple"
+                    }
+                />
             </div>
             <div id="homepage-section4">
 
@@ -60,3 +65,11 @@ function Homepage() {
 }
 
 export default Homepage;
+
+
+/*
+
+Contact info on homepage
+
+
+*/
