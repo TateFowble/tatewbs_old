@@ -22,8 +22,11 @@ function Navigation() {
                         <li className="nav-item">
                             <Link className="nav-link" to="/services">Services</Link>
                         </li>
+                        <li>
+                            <a className="nav-link" href="/projects">Projects</a>
+                        </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/discord">Discord</Link>
+                            <a className="nav-link" href="http://discord.tatewbs.com">Discord</a>
                         </li>
                         <li className="nav-item">
                             <Dropdown>
@@ -31,9 +34,9 @@ function Navigation() {
                                     Social
                             </Dropdown.Toggle>
                                 <Dropdown.Menu>
-                                   <Dropdown.Item><a href="http://twitch.tatewbs.com" className="text-decoration-none text-dark">Twitch</a></Dropdown.Item>
-                                    <Dropdown.Item href="/youtube" target="_blank" className="text-decoration-none text-dark">YouTube</Dropdown.Item>
-                                    <Dropdown.Item as={Link} href="/instagram" className="text-decoration-none text-dark">Instagram</Dropdown.Item>
+                                    <Dropdown.Item href="http://twitch.tatewbs.com" >Twitch</Dropdown.Item>
+                                    <Dropdown.Item href="http://youtube.tatewbs.com">YouTube</Dropdown.Item>
+                                    <Dropdown.Item href="http://instagram.tatewbs.com">Instagram</Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>
                         </li>
