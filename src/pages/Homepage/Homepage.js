@@ -18,12 +18,14 @@ import AnimeText from '../../components/AnimeText/AnimeText';
 import InfoBox from '../../components/InfoBox/InfoBox';
 
 
+// bootstrap
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+
 function Homepage() {
 
-    useEffect(() => {
+    useEffect(() => {});
 
-
-    });
     return (
         <div id="homepage">
             <div id="homepage-section1" className="fluid-container d-flex align-items-center justify-content-center shadow">
@@ -33,15 +35,16 @@ function Homepage() {
             </div>
             <hr className="mt-5" />
             <div id="homepage-section2" className="mt-5 mb-5 container-md">
-                {/* <div className="d-flex justify-content-center"> */}
+                <div className="d-flex justify-content-center">
                     <div class="d-flex justify-content-around flex-md-row flex-column">
-                        <img src={reactjs} alt="..." height="300" width="300" />
-                        <img src={nodejs} alt="..." height="300" width="300" />
-                        <img src={angularjs} alt="..." height="300" width="300" />
+                        <img src={ reactjs  }  alt="..." height="300" width="300" />
+                        <img src={ nodejs }    alt="..." height="300" width="300" />
+                        <img src={ angularjs } alt="..." height="300" width="300" />
                     </div>
-                {/* </div> */}
+                </div>
             </div>
             <div id="homepage-section3">
+
                 <InfoBox
                     header={
                         "I do things"

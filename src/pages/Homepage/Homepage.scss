@@ -11,8 +11,12 @@
     }
 
     #homepage-section1 {
-        min-height: 35vh;
+        min-height: 95vh;
         background: #111;
+        background-image: url('../../assets/images/background.jpg');
+        // background-repeat: round;
+        background-position: center;
+        background-size: cover;
         div {
             width:100%;
             background:white;
