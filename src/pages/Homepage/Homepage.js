@@ -33,7 +33,6 @@ function Homepage() {
                     <AnimeText text={"All you need for a successful website"} className={''} />
                 </p>
             </div>
-            <hr className="mt-5" />
             <div className="vertical-spacing"></div>
             <div id="homepage-section2" className="fluid-container">
                 <InfoBox
@@ -50,7 +49,7 @@ function Homepage() {
                         "Learn More"
                     }
                     buttonLink={
-                        '/about'
+                        '/services'
                     }
                 />
             </div>
@@ -73,19 +72,13 @@ function Homepage() {
             <div id="homepage-section4">
                 <InfoBox
                     header={
-                        "Needed a website? Join the discord and send a DM"
+                        "Needing a website? Join the discord and send a DM"
                     }
                     text={
                         "Join the Discord by clicking on the connect button below on the discord widget"
                     }
                     borderColor={
                         "#7fb3e4"
-                    }
-                    buttonText={
-                        "Learn More"
-                    }
-                    buttonLink={
-                        'http://discord.tatewbs.com'
                     }
                 />
             </div>

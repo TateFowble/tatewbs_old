@@ -23,7 +23,7 @@ function Navigation() {
                             <Link className="nav-link" to="/services">Services</Link>
                         </li>
                         <li>
-                            <a className="nav-link" href="/projects">Projects</a>
+                            <Link className="nav-link" to="/projects">Projects</Link>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="http://discord.tatewbs.com">Discord</a>

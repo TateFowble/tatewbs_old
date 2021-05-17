@@ -11,19 +11,21 @@ let theClass = props.className;
 useEffect(()=> {
     Anime({
         targets: '.animated-text',
-        translateY: 30,
+        translateY: 50,
         direction: 'alternate',
         loop: true,
         easing: 'easeInOutElastic(0.7,0.7)',
-        duration: 1000,
+        duration: 2000,
         autoplay: true
     });
 });
 
     return (
-            <p className={`animated-text ${theClass}`}>
-                {text}
-            </p>
+            <strong>
+                <p className={`animated-text ${theClass}`}>
+                    {text}
+                </p>
+            </strong>
     )
 }
 

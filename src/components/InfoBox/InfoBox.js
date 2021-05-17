@@ -16,15 +16,24 @@ const InfoBox = (props) => {
         borderBottom: `0.1em solid ${borderColor}`
     }
 
-
+    let buttonStuff = (buttonText) => {
+        if(buttonText) {
+            return (
+            <div className="d-flex justify-content-center pt-3">
+                <Link to={buttonLink}><button className="btn btn-light text-center">{buttonText}</button></Link>
+            </div>
+            )
+        }
+        else {
+            return;
+        }
+    }
     return (
         <div className="fluid-container mt-5 mb-5 p-5 InfoBox" style={InfoBoxClass}>
             <div className="container">
                 <h2 className="mb-4" style={InfoBoxClassHeader} className="text-center">{header}</h2>
                 <p className="text-center mt-5">{text}</p>
-                <div className="d-flex justify-content-center pt-3">
-                    <Link to={buttonLink}><button className="btn btn-light text-center">{buttonText}</button></Link>
-                </div>
+                {buttonStuff(buttonText)}
             </div>
         </div>
     )
