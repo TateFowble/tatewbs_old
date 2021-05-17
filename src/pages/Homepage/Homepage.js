@@ -24,7 +24,7 @@ import Button from 'react-bootstrap/Button';
 
 function Homepage() {
 
-    useEffect(() => {});
+    useEffect(() => { });
 
     return (
         <div id="homepage">
@@ -34,18 +34,8 @@ function Homepage() {
                 </p>
             </div>
             <hr className="mt-5" />
-            <div id="homepage-section2" className="mt-5 mb-5 container-md">
-                <div className="d-flex justify-content-center">
-                    <div class="d-flex justify-content-around flex-md-row flex-column">
-                        <a href="https://reactjs.org/" target="_blank"><img src={ reactjs  }  alt="..." height="300" width="300" className="touchable-link" /></a>
-                        <a href="https://nodejs.org/en/" target="_blank"><img src={nodejs} alt="..." height="300" width="300" className="touchable-link" /></a>
-                        <a href="https://angularjs.org/" target="_blank"><img src={angularjs} alt="..." height="300" width="300" className="touchable-link" /></a>
-                    </div>
-                </div>
-            </div>
             <div className="vertical-spacing"></div>
-            <div id="homepage-section3">
-
+            <div id="homepage-section2" className="fluid-container">
                 <InfoBox
                     header={
                         "What I work with"
@@ -54,16 +44,65 @@ function Homepage() {
                         "I work with most NodeJS applications, but I primarily work with ReactJS and AngularJS for web development"
                     }
                     borderColor={
-                        "purple"
+                        "#3f9634"
+                    }
+                    buttonText={
+                        "Learn More"
+                    }
+                    buttonLink={
+                        '/about'
                     }
                 />
             </div>
+
+            <div className="vertical-spacing"></div>
+
+            <div id="homepage-section3" className="container-md">
+                <h3 id="frameworksIuse" className="text-center no-wrap pb-3">Framesworks I use</h3>
+                <div className="d-flex justify-content-center">
+                    <div class="d-flex justify-content-around flex-md-row flex-column">
+                        <a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img src={reactjs} alt="..." height="300" width="300" className="touchable-link" /></a>
+                        <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer"><img src={nodejs} alt="..." height="300" width="300" className="touchable-link" /></a>
+                        <a href="https://angularjs.org/" target="_blank" rel="noreferrer"><img src={angularjs} alt="..." height="300" width="300" className="touchable-link" /></a>
+                    </div>
+                </div>
+            </div>
+
+            <div className="vertical-spacing"></div>
+            
             <div id="homepage-section4">
-
+                <InfoBox
+                    header={
+                        "Needed a website? Join the discord and send a DM"
+                    }
+                    text={
+                        "Join the Discord by clicking on the connect button below on the discord widget"
+                    }
+                    borderColor={
+                        "#7fb3e4"
+                    }
+                    buttonText={
+                        "Learn More"
+                    }
+                    buttonLink={
+                        'http://discord.tatewbs.com'
+                    }
+                />
             </div>
-            <div id="homepage-section5">
-
+            <div id="homepage-section5" className="fluid-container">
+                <div className="d-flex justify-content-around">
+                    <iframe
+                    src="https://discord.com/widget?id=839274694511427655&theme=dark" 
+                    width="350" 
+                    height="500" 
+                    allowtransparency="true" 
+                    frameborder="0" 
+                    sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+                    title="discord"
+                    ></iframe>
+                </div>
             </div>
+            <div className="vertical-spacing"></div>
         </div>
     )
 }
