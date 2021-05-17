@@ -30,11 +30,11 @@ function Navigation() {
                         </li>
                         <li className="nav-item">
                             <Dropdown>
-                                <Dropdown.Toggle variant="dark" id="dropdown-basic">
+                                <Dropdown.Toggle variant="dark" id="dropdown">
                                     Social
                             </Dropdown.Toggle>
                                 <Dropdown.Menu>
-                                    <Dropdown.Item href="http://twitch.tatewbs.com" >Twitch</Dropdown.Item>
+                                    <Dropdown.Item href="http://twitch.tatewbs.com">Twitch</Dropdown.Item>
                                     <Dropdown.Item href="http://youtube.tatewbs.com">YouTube</Dropdown.Item>
                                     <Dropdown.Item href="http://instagram.tatewbs.com">Instagram</Dropdown.Item>
                                 </Dropdown.Menu>

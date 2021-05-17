@@ -31,10 +31,10 @@ function Footer() {
                     <img id="footer-logo" className="image" src={logo} alt="...logo..."/>                </div>
                 <div id="footer-social-media" className="text-white">
                     <a href="https://github.com/TateFowble" target="_blank"><img src={github} alt="..." className="touchable-link" /></a>
-                    <a href="http://discord.tatewbs.com" target="_blank"><img src={discord} alt="..." className="touchable-link" /></a>
-                    <a href="http://youtube.tatewbs.com" target="_blank"><img src={youtube} alt="..." className="touchable-link" /></a>
-                    <a href="http://twitch.tatewbs.com" target="_blank"><img src={twitch} alt="..." className="touchable-link" /></a>
-                    <a href="http://instagram.tatewbs.com" target="_blank"><img src={instagram} alt="..." className="touchable-link" /></a>
+                    <a href="http://discord.tatewbs.com"    target="_blank"><img src={discord} alt="..." className="touchable-link" /></a>
+                    <a href="http://youtube.tatewbs.com"    target="_blank"><img src={youtube} alt="..." className="touchable-link" /></a>
+                    <a href="http://twitch.tatewbs.com"     target="_blank"><img src={twitch} alt="..." className="touchable-link" /></a>
+                    <a href="http://instagram.tatewbs.com"  target="_blank"><img src={instagram} alt="..." className="touchable-link" /></a>
                 </div>
             </div>
         </footer>

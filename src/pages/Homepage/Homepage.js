@@ -30,27 +30,28 @@ function Homepage() {
         <div id="homepage">
             <div id="homepage-section1" className="fluid-container d-flex align-items-center justify-content-center shadow">
                 <p id="homepage-section1-text" className="text-center text-white text">
-                    {/* <AnimeText text={"Follow the social"} className={''} /> */}
+                    <AnimeText text={"All you need for a successful website"} className={''} />
                 </p>
             </div>
             <hr className="mt-5" />
             <div id="homepage-section2" className="mt-5 mb-5 container-md">
                 <div className="d-flex justify-content-center">
                     <div class="d-flex justify-content-around flex-md-row flex-column">
-                        <img src={ reactjs  }  alt="..." height="300" width="300" />
-                        <img src={ nodejs }    alt="..." height="300" width="300" />
-                        <img src={ angularjs } alt="..." height="300" width="300" />
+                        <a href="https://reactjs.org/" target="_blank"><img src={ reactjs  }  alt="..." height="300" width="300" className="touchable-link" /></a>
+                        <a href="https://nodejs.org/en/" target="_blank"><img src={nodejs} alt="..." height="300" width="300" className="touchable-link" /></a>
+                        <a href="https://angularjs.org/" target="_blank"><img src={angularjs} alt="..." height="300" width="300" className="touchable-link" /></a>
                     </div>
                 </div>
             </div>
+            <div className="vertical-spacing"></div>
             <div id="homepage-section3">
 
                 <InfoBox
                     header={
-                        "I do things"
+                        "What I work with"
                     }
                     text={
-                        "Yup I do do things"
+                        "I work with most NodeJS applications, but I primarily work with ReactJS and AngularJS for web development"
                     }
                     borderColor={
                         "purple"
