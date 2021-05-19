@@ -34,7 +34,27 @@ function Homepage() {
                 </p>
             </div>
             <div className="vertical-spacing"></div>
-            <div id="homepage-section2" className="fluid-container">
+
+            <div className="homepage-section2">
+                <InfoBox
+                    header={
+                        "Why go with my websites?"
+                    }
+                    text={
+                        "Because SEO is a big part of websites, not just design! With some web builders like weebly or wix that purposely put your business on the second page of google."
+                    }
+                    borderColor={
+                        "#2b833f"
+                    }
+                />
+            </div>
+            <div className="homepage-section3">
+
+            </div>
+
+            <div className="vertical-spacing"></div>
+
+            <div id="homepage-section4" className="fluid-container">
                 <InfoBox
                     header={
                         "What I work with"
@@ -43,7 +63,7 @@ function Homepage() {
                         "I work with most NodeJS applications, but I primarily work with ReactJS and AngularJS for web development"
                     }
                     borderColor={
-                        "#3f9634"
+                        "#61dafb"
                     }
                     buttonText={
                         "Learn More"
@@ -54,22 +74,19 @@ function Homepage() {
                 />
             </div>
 
-            <div className="vertical-spacing"></div>
-
-            <div id="homepage-section3" className="container-md">
+            <div id="homepage-section5" className="container-md">
                 <h3 id="frameworksIuse" className="text-center no-wrap pb-3">Framesworks I use</h3>
                 <div className="d-flex justify-content-center">
                     <div class="d-flex justify-content-around flex-md-row flex-column">
                         <a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img src={reactjs} alt="..." height="300" width="300" className="touchable-link" /></a>
-                        <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer"><img src={nodejs} alt="..." height="300" width="300" className="touchable-link" /></a>
+                        <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer"><img src={nodejs} alt="..." height="300" width="350" className="touchable-link" /></a>
                         <a href="https://angularjs.org/" target="_blank" rel="noreferrer"><img src={angularjs} alt="..." height="300" width="300" className="touchable-link" /></a>
                     </div>
                 </div>
             </div>
-
             <div className="vertical-spacing"></div>
             
-            <div id="homepage-section4">
+            <div id="homepage-section6">
                 <InfoBox
                     header={
                         "Needing a website? Join the discord and send a DM"
@@ -82,7 +99,7 @@ function Homepage() {
                     }
                 />
             </div>
-            <div id="homepage-section5" className="fluid-container">
+            <div id="homepage-section7" className="fluid-container">
                 <div className="d-flex justify-content-around">
                     <iframe
                     src="https://discord.com/widget?id=839274694511427655&theme=dark" 
@@ -106,6 +123,6 @@ export default Homepage;
 /*
 
 Contact info on homepage
-
+for services use reds and yellows
 
 */

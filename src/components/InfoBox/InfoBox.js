@@ -32,7 +32,7 @@ const InfoBox = (props) => {
         <div className="fluid-container mt-5 mb-5 p-5 InfoBox" style={InfoBoxClass}>
             <div className="container">
                 <h2 className="mb-4" style={InfoBoxClassHeader} className="text-center">{header}</h2>
-                <p className="text-center mt-5">{text}</p>
+                <p className="text-center mt-5 fs-4">{text}</p>
                 {buttonStuff(buttonText)}
             </div>
         </div>
