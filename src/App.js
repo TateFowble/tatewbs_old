@@ -18,6 +18,9 @@ import Footer from './components/Footer/Footer';
 import Homepage from './pages/Homepage/Homepage';
 import Error from './pages/Error/ErrorPage';
 import About from './pages/About/About';
+import ServicesPage from './pages/Services/ServicesPage';
+import ProjectsPage from './pages/Projects/ProjectsPage';
+
 
 function App() {
   useEffect(()=> {
@@ -38,8 +41,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={Homepage} />
           <Route path="/about" component={About} />
-          <Route path="/services" component={Homepage} />
-          <Route path="/projects" component={Homepage} />
+          <Route path="/services" component={ServicesPage} />
+          <Route path="/projects" component={ProjectsPage} />
           <Route component={Error} />
         </Switch>
         <Footer />
