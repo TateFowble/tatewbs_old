@@ -1,7 +1,20 @@
 #homepage {
-    #frameworksIuse {
-        border-bottom: 4px dashed #333;
-    }
+    .react-rotating-text-cursor {
+  animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+}
+
+@keyframes blinking-cursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
     .homepage-section-dark {
         height: 40em;
         background:#2a2a2e;
@@ -14,9 +27,9 @@
     }
 
     #homepage-section1 {
-        min-height: 95vh;
+        min-height: 50vh;
         background: #111;
-        background-image: url('../../assets/images/background.jpg');
+        background-image: url('../../assets/images/background2.jpg');
         // background-repeat: round;
         background-position: center;
         background-size: cover;

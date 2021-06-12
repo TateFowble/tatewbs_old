@@ -11,7 +11,10 @@ let theClass = props.className;
 useEffect(()=> {
     Anime({
         targets: '.animated-text',
-        translateY: 50,
+        keyframes: [
+            {translateY: -70},
+            {translateY: 50}
+        ],
         direction: 'alternate',
         loop: true,
         easing: 'easeInOutElastic(0.7,0.7)',

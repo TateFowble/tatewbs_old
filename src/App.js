@@ -20,7 +20,7 @@ import Error from './pages/Error/ErrorPage';
 import About from './pages/About/About';
 import ServicesPage from './pages/Services/ServicesPage';
 import ProjectsPage from './pages/Projects/ProjectsPage';
-
+import PortfolioPage from './pages/Portfolio/PortfolioPage';
 
 function App() {
   useEffect(()=> {
@@ -43,6 +43,7 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/services" component={ServicesPage} />
           <Route path="/projects" component={ProjectsPage} />
+          <Route path="/portfolio" component={PortfolioPage} />
           <Route component={Error} />
         </Switch>
         <Footer />
@@ -52,4 +53,3 @@ function App() {
 }
 
 export default App;
-
