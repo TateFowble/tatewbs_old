@@ -32,7 +32,7 @@ function Homepage() {
     return (
         <div id="homepage">
             <div id="homepage-section1" className="fluid-container d-flex align-items-center justify-content-center shadow">
-                <p className="text-white fs-1">Have <ReactRotatingText items={['an amazing site', 'a memoriable app', 'a functioning site']} /></p>
+                <p className="text-white fs-1">Have <ReactRotatingText items={['an amazing site', 'an app customers will love', 'a site made for you']} /></p>
             </div>
             <div>
                 
