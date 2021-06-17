@@ -3,13 +3,13 @@ import './Navigation.scss';
 
 import { Link } from 'react-router-dom';
 
+// import logo from '../../assets/images/logo21.png';
 
 import Dropdown from 'react-bootstrap/Dropdown';
 
 function Navigation() {
     return (
-        <div>
-            <nav className="navbar navbar-expand-md navbar-dark text-center">
+            <nav className="navbar navbar-expand-md navbar-dark text-center" sticky="top">
                 <Link className="navbar-brand" to="/">TateWBS</Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span className="navbar-toggler-icon"></span>
@@ -43,7 +43,6 @@ function Navigation() {
                     </ul>
                 </div>
             </nav>
-        </div>
     )
 }
 

@@ -3,7 +3,11 @@ import './Homepage.scss';
 
 // Libraries
 import anime from 'animejs';
+    // https://animejs.com/documentation/
 import ReactRotatingText from 'react-rotating-text';
+    // https://www.npmjs.com/package/react-rotating-text
+import { Parallax } from 'react-parallax';
+    // https://www.npmjs.com/package/react-parallax
 
 // images
 import reactjs from '../../assets/images/reactjs.png';
@@ -13,7 +17,7 @@ import mysql from '../../assets/images/mysql.png';
 import mongodb from '../../assets/images/mongodb.png';
 import python from '../../assets/images/python.png';
 
-
+import image from '../../assets/images/background2.jpg';
 // components
 // import AnimeText from '../../components/AnimeText/AnimeText';
 import InfoBox from '../../components/InfoBox/InfoBox';
@@ -31,25 +35,31 @@ function Homepage() {
 
     return (
         <div id="homepage">
-            <div id="homepage-section1" className="fluid-container d-flex align-items-center justify-content-center shadow">
-                <p className="text-white fs-1">Have <ReactRotatingText items={['an amazing site!', 'an app customers will love...', 'a site made for you :)']} /></p>
-            </div>
-            <div>
-                
-            </div>
+            <Parallax
+                className="fluid-container d-flex align-items-center justify-content-center"
+                style={{ minHeight: '50vh' }}
+                // blur={1}
+                bgImage={image}
+                bgImageAlt="the cat"
+                strength={600}
+            >
+                <p className="text-white text-center fs-1">Have <ReactRotatingText items={['an amazing site!', 'an app customers will love...', 'a site made for you :)']} /></p>
+            </Parallax>
+
             <div>
                 <InfoBox
                     header={
-                        "Need support or have something to offer? Join the discord and join the growing community!"
+                        "Need support or have something to offer? Join the growing community on discord"
                     }
                     text={
-                        "Join the Discord by clicking on the connect button below on the discord widget"
+                        "Click on the connect button below on the discord widget!"
                     }
                     borderColor={
                         "#7fb3e4"
                     }
                 />
             </div>
+
             <div id="homepage-section7" className="fluid-container">
                 <div className="d-flex justify-content-around">
                     <iframe
@@ -75,5 +85,12 @@ export default Homepage;
 
 Contact info on homepage
 for services use reds and yellows
+
+*/
+
+
+/*
+Customer stars and reviews
+More info on item, aka tv thing & menu thing
 
 */

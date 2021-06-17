@@ -9,8 +9,8 @@ import discord from '../../assets/icons/discord.svg';
 import twitch from '../../assets/icons/twitch.svg';
 import youtube from '../../assets/icons/youtube.svg';
 // import logo1 from '../../assets/images/logo.svg';
-import logo from '../../assets/images/tatewbs-logo.png';
-
+// import logo from '../../assets/images/tatewbs-logo.png';
+import logo from '../../assets/images/logo21.png';
 
 function Footer() {
     return (
@@ -23,13 +23,17 @@ function Footer() {
                 flex-md-row
                  justify-content-md-around
                  ">
-                <div className="text-white">
-                        <p id="copyright-symbol">&#169; TateWBS</p>
-                        <p id="copyright-undertext">A tech company</p>
+                <div id="footer-social-media" className="text-white bg-light">
+                    <a href="https://github.com/TateFowble" target="_blank"><img src={github} alt="..." className="touchable-link" /></a>
+                    <a href="http://discord.tatewbs.com" target="_blank"><img src={discord} alt="..." className="touchable-link" /></a>
+                    <a href="http://youtube.tatewbs.com" target="_blank"><img src={youtube} alt="..." className="touchable-link" /></a>
+                    <a href="http://twitch.tatewbs.com" target="_blank"><img src={twitch} alt="..." className="touchable-link" /></a>
+                    <a href="http://instagram.tatewbs.com" target="_blank"><img src={instagram} alt="..." className="touchable-link" /></a>
                 </div>
                 <div className="text-white">
-                    <img id="footer-logo" className="image" src={logo} alt="...logo..."/>                </div>
-                <div id="footer-social-media" className="text-white">
+                    <img id="footer-logo" className="image" src={logo} alt="...logo..."/>
+                </div>
+                <div id="footer-social-media" className="text-white bg-light">
                     <a href="https://github.com/TateFowble" target="_blank"><img src={github} alt="..." className="touchable-link" /></a>
                     <a href="http://discord.tatewbs.com"    target="_blank"><img src={discord} alt="..." className="touchable-link" /></a>
                     <a href="http://youtube.tatewbs.com"    target="_blank"><img src={youtube} alt="..." className="touchable-link" /></a>
