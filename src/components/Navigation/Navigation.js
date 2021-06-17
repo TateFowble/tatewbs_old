@@ -9,7 +9,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 
 function Navigation() {
     return (
-            <nav className="navbar navbar-expand-md navbar-dark text-center" sticky="top">
+            <nav className="navbar navbar-expand-md navbar-dark text-center">
                 <Link className="navbar-brand" to="/">TateWBS</Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span className="navbar-toggler-icon"></span>

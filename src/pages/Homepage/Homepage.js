@@ -37,11 +37,11 @@ function Homepage() {
         <div id="homepage">
             <Parallax
                 className="fluid-container d-flex align-items-center justify-content-center"
-                style={{ minHeight: '50vh' }}
+                style={{ minHeight: '60vh' }}
                 // blur={1}
                 bgImage={image}
                 bgImageAlt="the cat"
-                strength={600}
+                strength={500}
             >
                 <p className="text-white text-center fs-1">Have <ReactRotatingText items={['an amazing site!', 'an app customers will love...', 'a site made for you :)']} /></p>
             </Parallax>

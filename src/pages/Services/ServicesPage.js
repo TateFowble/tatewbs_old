@@ -71,3 +71,14 @@ const ServicesPage = () => {
 }
 
 export default ServicesPage;
+
+/*
+Web building
+Be on a team
+No looking for a website
+
+
+
+Individual Businesses
+Larger Companies
+*/
