@@ -41,7 +41,7 @@ function Homepage() {
             <div>
             <Parallax
                 className="fluid-container d-flex align-items-center justify-content-center"
-                style={{ minHeight: '60vh' }}
+                style={{ minHeight: '65vh' }}
                 // blur={1}
                 bgImage={image1}
                 bgImageAlt="..."
