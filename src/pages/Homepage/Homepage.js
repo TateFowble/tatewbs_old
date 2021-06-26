@@ -101,7 +101,7 @@ function Homepage() {
                         "SEO or Search Engine optimization helps your website get seen by your potential clients!"
                     }
                     borderColor={
-                        "#7fb3e4"
+                        "#eedbcc"
                     }
                 />
                 <Parallax
