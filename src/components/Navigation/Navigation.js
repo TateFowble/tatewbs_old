@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 // import logo from '../../assets/images/logo21.png';
 
-import Dropdown from 'react-bootstrap/Dropdown';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function Navigation() {
     return (
@@ -29,16 +29,12 @@ function Navigation() {
                             <a className="nav-link" href="http://discord.tatewbs.com">Discord</a>
                         </li>
                         <li className="nav-item">
-                            <Dropdown>
-                                <Dropdown.Toggle variant="dark" id="dropdown">
-                                    Social
-                            </Dropdown.Toggle>
-                                <Dropdown.Menu>
-                                    <Dropdown.Item href="http://twitch.tatewbs.com">Twitch</Dropdown.Item>
-                                    <Dropdown.Item href="http://youtube.tatewbs.com">YouTube</Dropdown.Item>
-                                    <Dropdown.Item href="http://instagram.tatewbs.com">Instagram</Dropdown.Item>
-                                </Dropdown.Menu>
-                            </Dropdown>
+                        <NavDropdown title="Links" id="navbarScrollingDropdown">
+                            <NavDropdown.Item href="http://youtube.tatewbs.com" target="_blank">YouTube</NavDropdown.Item>
+                            <NavDropdown.Item href="http://instagram.tatewbs.com" target="_blank">Instagram</NavDropdown.Item>
+                            <NavDropdown.Item href="http://twitch.tatewbs.com" target="_blank">Twitch</NavDropdown.Item>
+                            {/* <NavDropdown.Divider /> */}
+                        </NavDropdown>
                         </li>
                     </ul>
                 </div>

@@ -10,7 +10,7 @@ import twitch from '../../assets/icons/twitch.svg';
 import youtube from '../../assets/icons/youtube.svg';
 // import logo1 from '../../assets/images/logo.svg';
 // import logo from '../../assets/images/tatewbs-logo.png';
-import logo from '../../assets/images/logo21.png';
+import logo from '../../assets/images/footer/logo.png';
 
 function Footer() {
     return (

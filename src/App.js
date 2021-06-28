@@ -42,6 +42,7 @@ function App() {
           <Route exact path="/" component={Homepage} />
           <Route path="/about" component={About} />
           <Route path="/services" component={ServicesPage} />
+          {/* <Route path="/services1" component={ServicesPage} /> */}
           <Route path="/projects" component={ProjectsPage} />
           <Route path="/portfolio" component={PortfolioPage} />
           <Route component={Error} />
