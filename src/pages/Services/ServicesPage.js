@@ -29,7 +29,7 @@ const ServicesPage = () => {
             <h1 className="text-center m-5">Services</h1>
             <div>
                 <Parallax
-                    className="fluid-container d-flex align-items-center justify-content-left"
+                    className="fluid-container d-flex align-items-center justify-content-start"
                     style={{ minHeight: parallaxHeight }}
                     blur={{ min: -10, max: 15 }}
                     bgImage={menu}
@@ -45,9 +45,9 @@ const ServicesPage = () => {
                                         <Card.Title className="color-success text-center">$80/month Hosting</Card.Title>
                                         <Button className="btn btn-lg btn-block btn-outline-primary mt-3 mb-3" variant="button">More Info</Button>
                                         <ListGroup>
+                                            <ListGroup.Item>Free TateWBS.com subdomain &amp; domain</ListGroup.Item>
                                             <ListGroup.Item>1 online menu</ListGroup.Item>
                                             <ListGroup.Item>United States Hosting</ListGroup.Item>
-                                            <ListGroup.Item>Free TateWBS.com subdomain &amp; domain</ListGroup.Item>
                                             <ListGroup.Item>DDOS Protected</ListGroup.Item>
                                             <ListGroup.Item>Ecrypted Data</ListGroup.Item>
                                             <ListGroup.Item>1 Free TateWBS endorsement</ListGroup.Item>
@@ -78,10 +78,13 @@ const ServicesPage = () => {
                                 <Card className="m-5 p-2">
                                     <Card.Header className="fs-3 text-center">Web Development</Card.Header>
                                     <Card.Body>
-                                        <Card.Title className="color-success text-center">Each job is different</Card.Title>
+                                        <Card.Title className="color-success text-center">Looking for a price? Each job is different
+                                        </Card.Title>
                                         <Button className="btn btn-lg btn-block btn-outline-primary mt-3 mb-3" variant="button">More Info</Button>
                                         <ListGroup>
-                                            <ListGroup.Item>1 Free TateWBS endorsement</ListGroup.Item>
+                                            <ListGroup.Item>United States Hosting</ListGroup.Item>
+                                            <ListGroup.Item>DDOS Protected</ListGroup.Item>
+                                            <ListGroup.Item>Encrypted Data</ListGroup.Item>
                                             {/* <ListGroup.Item></ListGroup.Item> */}
                                         </ListGroup>
                                     </Card.Body>
@@ -96,7 +99,7 @@ const ServicesPage = () => {
 
             <div>
                 <Parallax
-                    className="fluid-container d-flex align-items-center justify-content-right"
+                    className="fluid-container d-flex align-items-center justify-content-end"
                     style={{ minHeight: parallaxHeight }}
                     blur={{ min: 15, max: -10 }}
                     bgImage={tv}
@@ -109,10 +112,13 @@ const ServicesPage = () => {
                                 <Card className="m-5 p-2">
                                     <Card.Header className="fs-3 text-center">Local Content Hosting</Card.Header>
                                     <Card.Body>
-                                        <Card.Title className="color-success text-center">$</Card.Title>
+                                        <div className="mt-2">
+                                            <p>This allows your business to run local ads and/or local content</p>
+                                        </div>
+                                        <Card.Title className="color-success text-center">$35/month</Card.Title>
                                         <Button className="btn btn-lg btn-block btn-outline-primary mt-3 mb-3" variant="button">More Info</Button>
                                         <ListGroup>
-                                            <ListGroup.Item>1 Free TateWBS endorsement</ListGroup.Item>
+                                            <ListGroup.Item>1 Computer for 1 TV/Monitor</ListGroup.Item>
                                             {/* <ListGroup.Item></ListGroup.Item> */}
                                         </ListGroup>
                                     </Card.Body>
