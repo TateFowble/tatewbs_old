@@ -18,9 +18,14 @@ import Footer from './components/Footer/Footer';
 import Homepage from './pages/Homepage/Homepage';
 import Error from './pages/Error/ErrorPage';
 import About from './pages/About/About';
-import ServicesPage from './pages/Services/ServicesPage';
 import ProjectsPage from './pages/Projects/ProjectsPage';
 import PortfolioPage from './pages/Portfolio/PortfolioPage';
+  // Service page 
+import ServicesPage from './pages/Services/ServicesPage';
+  import MenuPage from './pages/Services/MenuPage/MenuPage';
+  import WebDevelopmentPage from './pages/Services/WebDevelopmentPage/WebDevelopmentPage';
+  import LocalContentHostingPage from './pages/Services/LocalContentHostingPage/LocalContentHostingPage';
+
 
 function App() {
   useEffect(()=> {
@@ -40,9 +45,11 @@ function App() {
         <Navigation />
         <Switch>
           <Route exact path="/" component={Homepage} />
-          <Route path="/about" component={About} />
-          <Route path="/services" component={ServicesPage} />
-          {/* <Route path="/services1" component={ServicesPage} /> */}
+          <Route exact path="/about" component={About} />
+          <Route exact path="/services" component={ServicesPage} />
+          <Route exact path="/services/menu-hosting" component={MenuPage} />
+          <Route exact path="/services/web-development" component={WebDevelopmentPage} />
+          <Route exact path="/services/local-content-hosting" component={LocalContentHostingPage} />
           <Route path="/projects" component={ProjectsPage} />
           <Route path="/portfolio" component={PortfolioPage} />
           <Route component={Error} />
