@@ -1,4 +1,5 @@
 import { React } from 'react';
+import { Container } from 'react-bootstrap';
 
 
 
@@ -8,7 +9,14 @@ import { React } from 'react';
 const MenuPage = () => {
     return (
         <div>
-            Menu Page
+            <div className="vertical-spacing" />
+            <Container>
+                <div className="text-center">
+                    <h2>What is <u>Menu Hosting</u>?</h2>
+                    <hr />
+                </div>
+            </Container>
+            <div className="vertical-spacing" />
         </div>
     )
 }

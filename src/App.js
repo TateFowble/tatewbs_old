@@ -43,6 +43,7 @@ function App() {
     <Router>
       <div id="tatewbs">
         <Navigation />
+        <div style={{marginBottom: `3.5em`}} />
         <Switch>
           <Route exact path="/" component={Homepage} />
           <Route exact path="/about" component={About} />
@@ -54,6 +55,7 @@ function App() {
           <Route path="/portfolio" component={PortfolioPage} />
           <Route component={Error} />
         </Switch>
+        <div style={{ marginBottom: `-1.22em` }} />
         <Footer />
       </div>
     </Router>

@@ -31,7 +31,7 @@ function Footer() {
                     <a href="http://instagram.tatewbs.com" target="_blank"><img src={instagram} alt="..." className="touchable-link" /></a>
                 </div> */}
                 <div className="text-white">
-                    <img id="footer-logo" className="image-fluid" src={logo} alt="...logo..."/>
+                    <Link to="/"><img id="footer-logo" className="image-fluid" src={logo} alt="...logo..."/></Link>
                 </div>
                 <div id="footer-social-media" className="text-white">
                     <a href="https://github.com/TateFowble" target="_blank"><img src={github} alt="..." className="touchable-link" /></a>
