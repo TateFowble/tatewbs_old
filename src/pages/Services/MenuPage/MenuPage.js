@@ -66,16 +66,17 @@ const MenuPage = () => {
                     <div className="mt-5 mb-5">
                         <p className="fs-2 font-weight-bold m-0">How do I get an online menu?!</p>
                         <p className="font-italic mb-5">
-                         Email or fill in the form below!
+                            Email
+                         {/* Email or fill in the form below! */}
                          </p>
                          <p className="fs-3">info@tatewbs.com</p>
-                         <p>or</p>
+                         {/* <p>or</p>
                         <Form>
                             <Form.Group>
                                 <Form.Label>
                                 </Form.Label>
                             </Form.Group>
-                        </Form>
+                        </Form> */}
                     </div>
 
                 </div>

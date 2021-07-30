@@ -21,13 +21,14 @@ function Navigation() {
                     <Nav className="me-auto">
                         <Nav.Link as={Link} to="/" className="text-white">Home</Nav.Link>
                         <Nav.Link as={Link} to="/services" className="text-white">Services</Nav.Link>
-                        <Nav.Link as={Link} to="/projects" className="text-white">Projects</Nav.Link>
+                        <Nav.Link as={Link} to="/projects" className="text-white" disabled>Projects</Nav.Link>
                         <Nav.Link href="http://discord.tatewbs.com" target="_blank" rel="noreferrer" className="text-white">Discord</Nav.Link>
                         <NavDropdown title="Links" id="navbarScrollingDropdown">
                             <NavDropdown.Item href="http://youtube.tatewbs.com" target="_blank">YouTube</NavDropdown.Item>
                             <NavDropdown.Item href="http://instagram.tatewbs.com" target="_blank">Instagram</NavDropdown.Item>
                             <NavDropdown.Item href="http://twitch.tatewbs.com" target="_blank">Twitch</NavDropdown.Item>
-                            {/* <NavDropdown.Divider /> */}
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="https://www.starworksmc.us" target="_blank">StarWorksMC</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
