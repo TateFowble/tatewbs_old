@@ -11,13 +11,14 @@ const WebDevelopmentPage = () => {
             <div className="vertical-spacing" />
             <Container>
                 <div className="text-center">
-                    <h1><u>What TateWBS does</u></h1>
-                    <hr />
+                    <h1>What all is included?</h1>
                     <p className="m-0 font-italic">
-                        TateWBS works on any type of website, usually custom made works for us!
+                        TateWBS works on many types of websites!
                     </p>
-                    <div>
-                        <ul>
+                    <hr />
+                    <h3 className="mb-2">What TateWBS does</h3>
+                    <div className="d-flex justify-content-center">
+                        <ul className="text-left">
                             <li>
                                 Customizable
                             </li>
@@ -28,7 +29,7 @@ const WebDevelopmentPage = () => {
                                 Works with existing Databases
                             </li>
                             <li>
-                                Will also make a database
+                                Will make a database for you if needed
                             </li>
                             <li>
                                 Frontend Development
@@ -54,7 +55,11 @@ const WebDevelopmentPage = () => {
                         </ul>
                     </div>
                     <div>
-                        
+                        <div className="vertical-spacing" />
+
+                        <h3>Why choose TateWBS</h3>
+
+                        <h3>Where do I get started?</h3>
                     </div>
                 </div>
             </Container>
