@@ -11,55 +11,63 @@ const WebDevelopmentPage = () => {
             <div className="vertical-spacing" />
             <Container>
                 <div className="text-center">
-                    <h1>What all is included?</h1>
-                    <p className="m-0 font-italic">
-                        TateWBS works on many types of websites!
-                    </p>
-                    <hr />
-                    <h3 className="mb-2">What TateWBS does</h3>
-                    <div className="d-flex justify-content-center">
-                        <ul className="text-left">
-                            <li>
-                                Customizable
-                            </li>
-                            <li>
-                                Mobile Friendly
-                            </li>
-                            <li>
-                                Works with existing Databases
-                            </li>
-                            <li>
-                                Will make a database for you if needed
-                            </li>
-                            <li>
-                                Frontend Development
-                            </li>
-                            <li>
-                                Backend Development
-                            </li>
-                            <li>
-                                DDOS Protected
-                            </li>
-                            <li>
-                                Will stay up to date on realtime progress
-                            </li>
-                            <li>
-                                TateWBS will build your website from scratch
-                            </li>
-                            <li>
-                                Have your own domain
-                            </li>
-                            <li>
-                                Free SEO
-                            </li>
-                        </ul>
+                        <h1>What all is included?</h1>
+                        <p className="m-0 font-italic">
+                            TateWBS works on many types of websites!
+                        </p>
+                        <hr />
+                    <div className="mb-5 mt-5">
+                        <p className="fs-5">We can make a whole new website or redesign an existing one for you</p>
                     </div>
                     <div>
-                        <div className="vertical-spacing" />
+                        <h3 className="mb-2">What TateWBS does</h3>
+                        <div className="d-flex justify-content-center">
+                            <ul className="text-left fs-5">
+                                <li>
+                                    Customizable
+                                </li>
+                                <li>
+                                    Mobile Friendly
+                                </li>
+                                <li>
+                                    Works with existing Databases
+                                </li>
+                                <li>
+                                    Will make a database for you if needed
+                                </li>
+                                <li>
+                                    Frontend Development
+                                </li>
+                                <li>
+                                    Backend Development
+                                </li>
+                                <li>
+                                    DDOS Protected
+                                </li>
+                                <li>
+                                    Will stay up to date on realtime progress
+                                </li>
+                                <li>
+                                    TateWBS will build your website from scratch
+                                </li>
+                                <li>
+                                    Have your own domain
+                                </li>
+                                <li>
+                                    Free SEO
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="vertical-spacing" />
 
-                        <h3>Why choose TateWBS</h3>
-
-                        <h3>Where do I get started?</h3>
+                    <div className="mt-5 mb-5">
+                        <h3 className="fs-2 font-weight-bold m-0">Where do I get started?</h3>
+                        <p className="font-italic mb-5">
+                            {/* Email or fill in the form below! */}
+                        </p>
+                        <p className="fs-5 font-weight-bold">If you're interested in a custom made website or updating an existing website, email your name, number, a short description and any questions you have of what you are wanting done and we will get back with within 24 hours</p>
+                        <p className="fs-3 font-weight-bold">info@tatewbs.com</p>
                     </div>
                 </div>
             </Container>

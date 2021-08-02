@@ -88,7 +88,7 @@ const ServicesPage = () => {
                                     <Card.Body>
                                         <Card.Title className="color-success text-center">Looking for a price? Each job is different
                                         </Card.Title>
-                                        {/* <Link to="/services/web-development" className="text-decoration-none"><Button className="btn btn-lg btn-block btn-outline-primary mt-3 mb-3" variant="button">More Info</Button></Link> */}
+                                        <Link to="/services/web-development" className="text-decoration-none"><Button className="btn btn-lg btn-block btn-outline-primary mt-3 mb-3" variant="button">More Info</Button></Link>
                                         <ListGroup>
                                             <ListGroup.Item>United States Hosting</ListGroup.Item>
                                             <ListGroup.Item>DDOS Protected</ListGroup.Item>
