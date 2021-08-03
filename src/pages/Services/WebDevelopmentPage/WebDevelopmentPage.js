@@ -2,7 +2,7 @@ import { React } from 'react';
 
 
 import Container from 'react-bootstrap/Container';
-
+import Card from 'react-bootstrap/Card';
 
 
 const WebDevelopmentPage = () => {
@@ -16,6 +16,16 @@ const WebDevelopmentPage = () => {
                             TateWBS works on many types of websites!
                         </p>
                         <hr />
+                    <div>
+                        <Card className="m-5 p-2">
+                            <Card.Header className="fs-3 text-center">Web Development</Card.Header>
+                            <Card.Body>
+                                <Card.Title className="color-success text-center">Looking for a price? Each job is different
+                                </Card.Title>
+                            </Card.Body>
+                        </Card>
+ 
+                    </div>
                     <div className="mb-5 mt-5">
                         <p className="fs-5">We can make a whole new website or redesign an existing one for you</p>
                     </div>
