@@ -1,9 +1,10 @@
 import { React } from 'react';
 
+import ContactForm from '../../../components/ContactForm/ContactForm';
 
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
-
+import ListGroup from 'react-bootstrap/ListGroup';
 
 const WebDevelopmentPage = () => {
     return (
@@ -16,9 +17,28 @@ const WebDevelopmentPage = () => {
                             TateWBS works on many types of websites!
                         </p>
                         <hr />
-                    <div>
+                    <div className="d-flex justify-content-even flex-column flex-md-row">
                         <Card className="m-5 p-2">
                             <Card.Header className="fs-3 text-center">Web Development</Card.Header>
+                            <Card.Body>
+                                <Card.Title className="color-success text-center">
+                                    Starting at $1,000
+                                </Card.Title>
+                                <p className="fs-6">$100 / month</p>
+                                <div className="text-center">
+                                    <ListGroup>
+                                        <ListGroup.Item>1 to 3 pages</ListGroup.Item>
+                                        <ListGroup.Item></ListGroup.Item>
+                                        <ListGroup.Item></ListGroup.Item>
+                                        <ListGroup.Item></ListGroup.Item>
+                                        <ListGroup.Item>Will help you grow as business</ListGroup.Item>
+                                    </ListGroup>
+                                </div>
+                            </Card.Body>
+                        </Card>
+
+                        <Card className="m-5 p-2">
+                            <Card.Header className="fs-3 text-center">Website Resdesign</Card.Header>
                             <Card.Body>
                                 <Card.Title className="color-success text-center">Looking for a price? Each job is different
                                 </Card.Title>
@@ -64,7 +84,7 @@ const WebDevelopmentPage = () => {
                                     Have your own domain
                                 </li>
                                 <li>
-                                    Free SEO
+                                    SEO will be done for you
                                 </li>
                             </ul>
                         </div>
@@ -78,6 +98,7 @@ const WebDevelopmentPage = () => {
                         </p>
                         <p className="fs-5 font-weight-bold">If you're interested in a custom made website or updating an existing website, email your name, number, a short description and any questions you have of what you are wanting done and we will get back with within 24 hours</p>
                         <p className="fs-3 font-weight-bold">info@tatewbs.com</p>
+                        <ContactForm />
                     </div>
                 </div>
             </Container>
