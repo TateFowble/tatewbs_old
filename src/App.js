@@ -22,10 +22,12 @@ import ProjectsPage from './pages/Projects/ProjectsPage';
 import PortfolioPage from './pages/Portfolio/PortfolioPage';
   // Service page 
 import ServicesPage from './pages/Services/ServicesPage';
-  import MenuPage from './pages/Services/MenuPage/MenuPage';
-  import WebDevelopmentPage from './pages/Services/WebDevelopmentPage/WebDevelopmentPage';
-  import LocalContentHostingPage from './pages/Services/LocalContentHostingPage/LocalContentHostingPage';
+import MenuPage from './pages/Services/MenuPage/MenuPage';
+import WebDevelopmentPage from './pages/Services/WebDevelopmentPage/WebDevelopmentPage';
+import LocalContentHostingPage from './pages/Services/LocalContentHostingPage/LocalContentHostingPage';
 
+
+import ContactForm from './components/ContactForm/ContactForm';
 
 function App() {
   useEffect(()=> {
@@ -53,9 +55,11 @@ function App() {
           <Route exact path="/services/local-content-hosting" component={LocalContentHostingPage} />
           <Route path="/projects" component={ProjectsPage} />
           <Route path="/portfolio" component={PortfolioPage} />
+          <Route path="/c" component={ContactForm} />
           <Route component={Error} />
+
         </Switch>
-        <div style={{ marginBottom: `-1.22em` }} />
+        <div style={{ marginTop: `0em` }} />
         <Footer />
       </div>
     </Router>

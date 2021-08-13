@@ -1,17 +1,18 @@
 import { React } from 'react';
-import { Container } from 'react-bootstrap';
 
+import ContactForm from '../../../components/ContactForm/ContactForm';
 
 import menuimage from '../../../assets/images/services/menu.jpg';
 import menuimage1 from '../../../assets/images/services/menu-hosting/menuimage.png';
 import menuimage2 from '../../../assets/images/services/menu-hosting/menuimage2.png';
 
 
+import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
+import ListGroup from 'react-bootstrap/ListGroup';
 
 
 
@@ -51,41 +52,25 @@ const MenuPage = () => {
                             <p>By going with our online menu's not only do you get style, but also better functionality as a restaurant</p>
 
                             <p className="mt-4">Here are some key points:</p>
-                            <ul className="text-left">
-                                <li>Ease of access &amp; use for your customers</li>
-                                <li>Potential growth for your restaurant</li>
-                                <li>Better look for your online presence</li>
-                                <li>It draws more attention to your business</li>
-                                <li>You can have seperate sections for different reasons, aka sorted allergies, food types, sections...</li>
-                                <li>Images for every menu item for customer convience</li>
-                            </ul>
-
+                            <ListGroup className="text-center">
+                                <ListGroup.Item>Ease of access &amp; use for your customers</ListGroup.Item>
+                                <ListGroup.Item>Potential growth for your restaurant</ListGroup.Item>
+                                <ListGroup.Item>Better look for your online presence</ListGroup.Item>
+                                <ListGroup.Item>It draws more attention to your business</ListGroup.Item>
+                                <ListGroup.Item>You can have seperate sections for different reasons, aka sorted allergies, food types, sections...</ListGroup.Item>
+                                <ListGroup.Item>Images for every menu item for customer convience</ListGroup.Item>
+                            </ListGroup>
                         </div>
+                        </div>
+                        <hr />
+                        <ContactForm page="How do I get an online menu?!" />
                     </div>
-                    <hr />
-                    <div className="mt-5 mb-5">
-                        <p className="fs-2 font-weight-bold m-0">How do I get an online menu?!</p>
-                        <p className="font-italic mb-5">
-                            Email
-                         {/* Email or fill in the form below! */}
-                         </p>
-                         <p className="fs-3">info@tatewbs.com</p>
-                         {/* <p>or</p>
-                        <Form>
-                            <Form.Group>
-                                <Form.Label>
-                                </Form.Label>
-                            </Form.Group>
-                        </Form> */}
-                    </div>
-
-                </div>
             </Container>
-            <div className="vertical-spacing" />
+                <div className="vertical-spacing" />
         </div>
-    )
+            )
 }
-{/* input and image1
+            {/* input and image1
 
 also describe
 How its benefits your business, adding convience and allowing it to be put on the internet for more potential customers to see
@@ -94,4 +79,4 @@ You can have seperate sections for different reasons, aka sorted allergies, food
 adds to your business's internet look
 Images for every menu item for Customers convience */}
 
-export default MenuPage;
+            export default MenuPage;
