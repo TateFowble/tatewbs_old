@@ -31,7 +31,7 @@ const data = {
 
         // console.log(data)
 
-        db.collection("application")
+        db.collection("contactForm")
             .add({
                 data
             })
