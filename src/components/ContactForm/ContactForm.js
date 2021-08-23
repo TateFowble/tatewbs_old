@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import db  from '../../firebase';
+import {db} from '../../firebase';
 
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
@@ -12,8 +12,17 @@ import Col from 'react-bootstrap/Col';
 const ContactForm = (props) => {
     let page = props.page;
 
-const data = {
+    const [email, setEmail] = useState("");
+    const [name, setName] = useState("");
+    const [businessName, setBusinessName] = useState("");
+    const [notes, setNotes] = useState("");
 
+
+const data = {
+    email: email,
+    name: name,
+    businessName: businessName,
+    notes: notes
 };
 
     const handleSubmit = event => {
@@ -45,28 +54,36 @@ const data = {
             </p>
             <p className="fs-3"><u>info@tatewbs.com</u></p>
             <hr className="mb-5 mt-4" />
-            <Form>
+            <Form onSubmit={handleSubmit}>
                 <Form.Group>
                     <Row>
                         <Col>
-                            <Form.Control type="text" placeholder="Name" />
+                            <Form.Control
+                            type="text"
+                            placeholder="Name"
+                            onChange={((event) => setName(event.target.value))} />
                         </Col>
                         <Col>
-                            <Form.Control type="text" placeholder="Email" />
-                        </Col>
-                    </Row>
-                </Form.Group>
-                <Form.Group>
-                    <Row>
-                        <Col>
-                            <Form.Control type="text" placeholder="Business Name" />
+                            <Form.Control type="text" placeholder="Email" 
+                            onChange={((event) => setEmail(event.target.value))} />
                         </Col>
                     </Row>
                 </Form.Group>
                 <Form.Group>
                     <Row>
                         <Col>
-                            <Form.Control as="textarea" rows={4} placeholder="Notes" />
+                            <Form.Control
+                            type="text"
+                            placeholder="Business Name" 
+                            onChange={((event) => setBusinessName(event.target.value))} />
+                        </Col>
+                    </Row>
+                </Form.Group>
+                <Form.Group>
+                    <Row>
+                        <Col>
+                            <Form.Control as="textarea" rows={4} placeholder="Notes"
+                            onChange={((event) => setNotes(event.target.value))} />
                         </Col>
                     </Row>
                 </Form.Group>
