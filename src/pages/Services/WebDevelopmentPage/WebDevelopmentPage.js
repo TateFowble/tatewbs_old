@@ -12,11 +12,11 @@ const WebDevelopmentPage = () => {
             <div className="vertical-spacing" />
             <Container>
                 <div className="text-center">
-                        <h1>What all is included?</h1>
-                        <p className="m-0 font-italic">
-                            TateWBS works on many types of websites!
-                        </p>
-                        <hr />
+                    <h1>What all is included?</h1>
+                    <p className="m-0 font-italic">
+                        TateWBS works on many types of websites!
+                    </p>
+                    <hr />
                     <div className="d-flex justify-content-even flex-column flex-md-row">
                         <Card className="m-5 p-2">
                             <Card.Header className="fs-3 text-center">Web Development</Card.Header>
@@ -44,7 +44,7 @@ const WebDevelopmentPage = () => {
                                 </Card.Title>
                             </Card.Body>
                         </Card>
- 
+
                     </div>
                     <div className="mb-5 mt-5">
                         <p className="fs-5">We can make a whole new website or redesign an existing one for you</p>
@@ -52,54 +52,58 @@ const WebDevelopmentPage = () => {
                     <div>
                         <h3 className="mb-2">What TateWBS does</h3>
                         <div className="d-flex justify-content-center">
-                            <ul className="text-left fs-5">
-                                <li>
+                                <ListGroup className="text-center">
+
+                                <ListGroup.Item>
                                     Customizable
-                                </li>
-                                <li>
+                                </ListGroup.Item>
+
+                                <ListGroup.Item>
                                     Mobile Friendly
-                                </li>
-                                <li>
+                                </ListGroup.Item>
+
+                                <ListGroup.Item>
                                     Works with existing Databases
-                                </li>
-                                <li>
+                                </ListGroup.Item>
+
+                                <ListGroup.Item>
                                     Will make a database for you if needed
-                                </li>
-                                <li>
+                                </ListGroup.Item>
+
+                                <ListGroup.Item>
                                     Frontend Development
-                                </li>
-                                <li>
+                                </ListGroup.Item>
+
+                                <ListGroup.Item>
                                     Backend Development
-                                </li>
-                                <li>
+                                </ListGroup.Item>
+
+                                <ListGroup.Item>
                                     DDOS Protected
-                                </li>
-                                <li>
+                                </ListGroup.Item>
+
+                                <ListGroup.Item>
                                     Will stay up to date on realtime progress
-                                </li>
-                                <li>
+                                </ListGroup.Item>
+
+                                <ListGroup.Item>
                                     TateWBS will build your website from scratch
-                                </li>
-                                <li>
+                                </ListGroup.Item>
+
+                                <ListGroup.Item>
                                     Have your own domain
-                                </li>
-                                <li>
+                                </ListGroup.Item>
+                                
+                                <ListGroup.Item>
                                     SEO will be done for you
-                                </li>
-                            </ul>
+                                </ListGroup.Item>
+
+                                </ListGroup>
                         </div>
                     </div>
-                    <div className="vertical-spacing" />
 
-                    <div className="mt-5 mb-5">
-                        <h3 className="fs-2 font-weight-bold m-0">Where do I get started?</h3>
-                        <p className="font-italic mb-5">
-                            {/* Email or fill in the form below! */}
-                        </p>
-                        <p className="fs-5 font-weight-bold">If you're interested in a custom made website or updating an existing website, email your name, number, a short description and any questions you have of what you are wanting done and we will get back with within 24 hours</p>
-                        <p className="fs-3 font-weight-bold">info@tatewbs.com</p>
-                        <ContactForm />
-                    </div>
+                    <ContactForm page="Where do I get started?" />
+
                 </div>
             </Container>
             <div className="vertical-spacing" />
