@@ -93,7 +93,7 @@ const WebDevelopmentPage = () => {
                                 <ListGroup.Item>
                                     Have your own domain
                                 </ListGroup.Item>
-                                
+
                                 <ListGroup.Item>
                                     SEO will be done for you
                                 </ListGroup.Item>
@@ -112,3 +112,6 @@ const WebDevelopmentPage = () => {
 }
 
 export default WebDevelopmentPage;
+
+
+// If you're interested in a custom made website or updating an existing website, email your name, number, a short description and any questions you have of what you are wanting done and we will get back with within 24 hours
