@@ -18,7 +18,7 @@ const WebDevelopmentPage = () => {
                     </p>
                     <hr />
                     <div className="d-flex justify-content-even flex-column flex-md-row">
-                        <Card className="m-5 p-2">
+                        {/* <Card className="m-5 p-2">
                             <Card.Header className="fs-3 text-center">Web Development</Card.Header>
                             <Card.Body>
                                 <Card.Title className="color-success text-center">
@@ -43,7 +43,7 @@ const WebDevelopmentPage = () => {
                                 <Card.Title className="color-success text-center">Looking for a price? Each job is different
                                 </Card.Title>
                             </Card.Body>
-                        </Card>
+                        </Card> */}
 
                     </div>
                     <div className="mb-5 mt-5">
