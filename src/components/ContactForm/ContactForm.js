@@ -17,23 +17,18 @@ const ContactForm = (props) => {
     const [businessName, setBusinessName] = useState("");
     const [notes, setNotes] = useState("");
 
-
-const data = {
-    email: email,
-    name: name,
-    businessName: businessName,
-    notes: notes
-};
-
     const handleSubmit = event => {
 
         event.preventDefault();
 
         // console.log(data)
 
-        db.collection("contactForm")
-            .add({
-                data
+        db.collection("contact").doc(businessName)
+            .set({
+                email: email,
+                name: name,
+                businessName: businessName,
+                notes: notes
             })
             .then(() => {
                 alert('Form has been submitted!');
@@ -55,7 +50,7 @@ const data = {
             <p className="fs-3"><u>info@tatewbs.com</u></p>
             <hr className="mb-5 mt-4" />
             <Form onSubmit={handleSubmit}>
-                <Form.Group>
+                <Form.Group className="mb-4">
                     <Row>
                         <Col>
                             <Form.Control
@@ -69,7 +64,7 @@ const data = {
                         </Col>
                     </Row>
                 </Form.Group>
-                <Form.Group>
+                <Form.Group className="mb-4">
                     <Row>
                         <Col>
                             <Form.Control
@@ -79,7 +74,7 @@ const data = {
                         </Col>
                     </Row>
                 </Form.Group>
-                <Form.Group>
+                <Form.Group className="mb-4">
                     <Row>
                         <Col>
                             <Form.Control as="textarea" rows={4} placeholder="Notes"

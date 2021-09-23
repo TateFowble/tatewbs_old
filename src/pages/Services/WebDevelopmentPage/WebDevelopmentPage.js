@@ -7,6 +7,9 @@ import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 
 const WebDevelopmentPage = () => {
+
+
+
     return (
         <div>
             <div className="vertical-spacing" />
@@ -17,33 +20,84 @@ const WebDevelopmentPage = () => {
                         TateWBS works on many types of websites!
                     </p>
                     <hr />
-                    <div className="d-flex justify-content-even flex-column flex-md-row">
-                        {/* <Card className="m-5 p-2">
-                            <Card.Header className="fs-3 text-center">Web Development</Card.Header>
+                    <div className="d-flex justify-content-even flex-column flex-lg-row">
+                        <Card className="m-5">
                             <Card.Body>
-                                <Card.Title className="color-success text-center">
-                                    Starting at $1,000
-                                </Card.Title>
-                                <p className="fs-6">$100 / month</p>
-                                <div className="text-center">
+                                <Card.Header as="h3">
+                                    Starter Site
+                                </Card.Header>
+                                <hr />
+                                <Card.Text>
                                     <ListGroup>
-                                        <ListGroup.Item>1 to 3 pages</ListGroup.Item>
-                                        <ListGroup.Item></ListGroup.Item>
-                                        <ListGroup.Item></ListGroup.Item>
-                                        <ListGroup.Item></ListGroup.Item>
-                                        <ListGroup.Item>Will help you grow as business</ListGroup.Item>
+                                        <ListGroup.Item>Up to 3 web pages</ListGroup.Item>
+                                        <ListGroup.Item>1 Database</ListGroup.Item>
+                                        <ListGroup.Item>Hosted on our servers</ListGroup.Item>
                                     </ListGroup>
-                                </div>
+                                    <p className="fs-5 m-2">
+                                        Good for small companies
+                                    </p>
+                                </Card.Text>
+                                <hr />
+                                <Card.Text className="fs-4">
+                                    $1,000
+                                </Card.Text>
+                                <Card.Text className="fs-5">
+                                    $100 / mo
+                                </Card.Text>
                             </Card.Body>
                         </Card>
 
-                        <Card className="m-5 p-2">
-                            <Card.Header className="fs-3 text-center">Website Resdesign</Card.Header>
+                        <Card className="m-5">
                             <Card.Body>
-                                <Card.Title className="color-success text-center">Looking for a price? Each job is different
-                                </Card.Title>
+                                <Card.Header as="h3">
+                                    Medium Site
+                                </Card.Header>
+                                <hr />
+                                <Card.Text>
+                                    <ListGroup>
+                                        <ListGroup.Item>Up to 6 web pages</ListGroup.Item>
+                                        <ListGroup.Item>Up to 2 Databases</ListGroup.Item>
+                                        <ListGroup.Item>Hosted on our servers</ListGroup.Item>
+                                    </ListGroup>
+                                    <p className="fs-5 m-2">
+                                        Good for small companies
+                                    </p>
+                                </Card.Text>
+                                <hr />
+                                <Card.Text className="fs-4">
+                                    $4,000
+                                </Card.Text>
+                                <Card.Text className="fs-5">
+                                    $250 / mo
+                                </Card.Text>
                             </Card.Body>
-                        </Card> */}
+                        </Card>
+
+                        <Card className="m-5">
+                            <Card.Body>
+                                <Card.Header as="h3">
+                                    Large Site
+                                </Card.Header>
+                                <hr />
+                                <Card.Text>
+                                    <ListGroup>
+                                        <ListGroup.Item>Up to 12 web pages</ListGroup.Item>
+                                        <ListGroup.Item>Up to 5 Databases</ListGroup.Item>
+                                        <ListGroup.Item>Hosted on our servers</ListGroup.Item>
+                                    </ListGroup>
+                                    <p className="fs-5 m-2">
+                                        Good for small companies
+                                    </p>
+                                </Card.Text>
+                                <hr />
+                                <Card.Text className="fs-4">
+                                    $10,000
+                                </Card.Text>
+                                <Card.Text className="fs-5">
+                                    $600 / mo
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
 
                     </div>
                     <div className="mb-5 mt-5">

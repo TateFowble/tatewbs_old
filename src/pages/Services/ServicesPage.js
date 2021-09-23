@@ -1,5 +1,5 @@
 // react
-import { React, useState  } from 'react';
+import { React, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 // libraries
@@ -25,14 +25,6 @@ import tv from '../../assets/images/services/tv.jpg';
 const parallaxHeight = '75vh';
 
 const ServicesPage = () => {
-
-    const [handle1, setHandle1] = useState(false);
-
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-    
     return (
         <div>
             <div>
@@ -50,9 +42,11 @@ const ServicesPage = () => {
                                 <Card className="m-5 p-2">
                                     <Card.Header className="fs-3 text-center">Online Restraunt Menu</Card.Header>
                                     <Card.Body>
-                                        <Card.Title className="color-success text-center">$80/month Hosting</Card.Title>
-                                        <Link to="/services/menu-hosting" className="text-decoration-none"><Button className="btn btn-lg btn-block btn-outline-primary mt-3 mb-3" variant="button">More Info</Button></Link>
-                                        <ListGroup>
+                                        {/* <Card.Title className="color-success text-center">$80/month Hosting</Card.Title> */}
+                                        <div className="d-flex justify-content-center">
+                                            <Link to="/services/menu-hosting" className="text-decoration-none"><Button className="btn mt-3 mb-3" size="lg" variant="outline-primary">More Info</Button></Link>
+                                        </div>
+                                        <ListGroup className="text-center">
                                             <ListGroup.Item>Free TateWBS.com subdomain</ListGroup.Item>
                                             <ListGroup.Item>United States Hosting</ListGroup.Item>
                                             <ListGroup.Item>DDOS Protected</ListGroup.Item>
@@ -88,8 +82,10 @@ const ServicesPage = () => {
                                     <Card.Body>
                                         <Card.Title className="color-success text-center">Looking for a price? Each job is different
                                         </Card.Title>
-                                        <Link to="/services/web-development" className="text-decoration-none"><Button className="btn btn-lg btn-block btn-outline-primary mt-3 mb-3" variant="button">More Info</Button></Link>
-                                        <ListGroup>
+                                        <div className="d-flex justify-content-center">
+                                            <Link to="/services/web-development" className="text-decoration-none"><Button className="btn btn-lg btn-block mt-3 mb-3" variant="outline-primary">More Info</Button></Link>
+                                        </div>
+                                        <ListGroup className="text-center">
                                             <ListGroup.Item>Free TateWBS.com subdomain</ListGroup.Item>
                                             <ListGroup.Item>United States Hosting</ListGroup.Item>
                                             <ListGroup.Item>DDOS Protected</ListGroup.Item>
@@ -108,7 +104,7 @@ const ServicesPage = () => {
             </div>
 
             <div className="vertical-spacing" />
-
+{/*
             <div>
                 <Parallax
                     className="fluid-container d-flex align-items-center justify-content-end"
@@ -128,10 +124,12 @@ const ServicesPage = () => {
                                             <p>This allows your business to run local ads and/or local content</p>
                                         </div>
                                         <Card.Title className="color-success text-center">$35/month</Card.Title>
-                                        {/* <Link to="/services/local-content-hosting" className="text-decoration-none"><Button className="btn btn-lg btn-block btn-outline-primary mt-3 mb-3" variant="button">More Info</Button></Link> */}
-                                        <ListGroup>
+                                        <div className="d-flex justify-content-center">
+                                            <Link to="/services/local-content-hosting" className="text-decoration-none"><Button className="btn btn-lg btn-block btn-outline-primary mt-3 mb-3" variant="button">More Info</Button></Link>s
+                                        </div>
+                                        <ListGroup className="text-center">
                                             <ListGroup.Item>1 Computer for 1 TV/Monitor</ListGroup.Item>
-                                            {/* <ListGroup.Item></ListGroup.Item> */}
+                                            <ListGroup.Item></ListGroup.Item>
                                         </ListGroup>
                                     </Card.Body>
                                 </Card>
@@ -140,36 +138,9 @@ const ServicesPage = () => {
                     </Container>
                 </Parallax>
             </div>
-
-            <div className="vertical-spacing"></div>
-            
-            <Modal show={show} onHide={handleClose}>
-                <Modal.Header closeButton>
-                    <Modal.Title>Modal heading</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-                <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
-                        Close
-                    </Button>
-                    <Button variant="primary" onClick={handleClose}>
-                        Save Changes
-                    </Button>
-                </Modal.Footer>
-            </Modal>
+*/}
         </div>
     )
 }
 
 export default ServicesPage;
-
-/*
-Web building
-Be on a team
-No looking for a website
-
-
-
-Individual Businesses
-Larger Companies
-*/
