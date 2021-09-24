@@ -13,7 +13,7 @@ const WebDevelopmentPage = () => {
     return (
         <div>
             <div className="vertical-spacing" />
-            <Container>
+            <Container fluid={false}>
                 <div className="text-center">
                     <h1>What all is included?</h1>
                     <p className="m-0 font-italic">
@@ -24,7 +24,7 @@ const WebDevelopmentPage = () => {
                         <Card className="m-5">
                             <Card.Body>
                                 <Card.Header as="h3">
-                                    Starter Site
+                                    Starter Package
                                 </Card.Header>
                                 <hr />
                                 <Card.Text>
@@ -34,7 +34,7 @@ const WebDevelopmentPage = () => {
                                         <ListGroup.Item>Hosted on our servers</ListGroup.Item>
                                     </ListGroup>
                                     <p className="fs-5 m-2">
-                                        Good for small companies
+                                        Good for start ups
                                     </p>
                                 </Card.Text>
                                 <hr />
@@ -50,7 +50,7 @@ const WebDevelopmentPage = () => {
                         <Card className="m-5">
                             <Card.Body>
                                 <Card.Header as="h3">
-                                    Medium Site
+                                    Medium Package
                                 </Card.Header>
                                 <hr />
                                 <Card.Text>
@@ -60,7 +60,7 @@ const WebDevelopmentPage = () => {
                                         <ListGroup.Item>Hosted on our servers</ListGroup.Item>
                                     </ListGroup>
                                     <p className="fs-5 m-2">
-                                        Good for small companies
+                                        Good for small businesses
                                     </p>
                                 </Card.Text>
                                 <hr />
@@ -76,7 +76,7 @@ const WebDevelopmentPage = () => {
                         <Card className="m-5">
                             <Card.Body>
                                 <Card.Header as="h3">
-                                    Large Site
+                                    Large Package
                                 </Card.Header>
                                 <hr />
                                 <Card.Text>
@@ -86,7 +86,7 @@ const WebDevelopmentPage = () => {
                                         <ListGroup.Item>Hosted on our servers</ListGroup.Item>
                                     </ListGroup>
                                     <p className="fs-5 m-2">
-                                        Good for small companies
+                                        Good for growing businesses
                                     </p>
                                 </Card.Text>
                                 <hr />
