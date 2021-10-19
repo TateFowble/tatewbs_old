@@ -86,7 +86,7 @@ const WebDevelopmentPage = () => {
 
                         <Card className="card-animation m-5 shadow" style={ls2}>
                             <Card.Body>
-                            <p>Popular!</p>
+                                <p style={{ color:'#ff003e'}}><strong>Popular!</strong></p>
                                 <Card.Header as="h3">
                                     Medium Package
                                 </Card.Header>

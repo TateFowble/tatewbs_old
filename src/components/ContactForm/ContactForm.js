@@ -15,6 +15,7 @@ const ContactForm = (props) => {
 
     const [email, setEmail] = useState("");
     const [name, setName] = useState("");
+    const [phone, setPhone] = useState("");
     const [businessName, setBusinessName] = useState("");
     const [notes, setNotes] = useState("");
 
@@ -68,6 +69,7 @@ const ContactForm = (props) => {
             .set({
                 name: name,
                 email: email,
+                phone: phone,
                 businessName: businessName,
                 notes: notes,
                 date: dateToString
@@ -128,6 +130,15 @@ const ContactForm = (props) => {
                                 onChange={((event) => setBusinessName(event.target.value))} 
                                 required
                                 />
+                        </Col>
+                        <Col>
+                            <Form.Control
+                                type="text"
+                                placeholder="Phone"
+                                value={phone}
+                                onChange={((event) => setPhone(event.target.value))}
+                                required
+                            />
                         </Col>
                     </Row>
                 </Form.Group>
