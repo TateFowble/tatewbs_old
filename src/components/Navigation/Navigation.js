@@ -14,7 +14,7 @@ import Container from 'react-bootstrap/Container';
 function Navigation() {
     return (
         <Navbar collapseOnSelect expand="md" fixed="top" variant="dark">
-            <Navbar.Brand as={Link} to="/" className="text-white">TateWBS</Navbar.Brand>
+            <Navbar.Brand as={Link} to="/" className="p-2 text-white">TateWBS</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">
