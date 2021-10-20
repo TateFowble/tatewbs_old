@@ -77,6 +77,7 @@ const ContactForm = (props) => {
             .then(() => {
                 setEmail("");
                 setName("");
+                setPhone("");
                 setBusinessName("");
                 setNotes("");
                 return setFormWorked(true);
