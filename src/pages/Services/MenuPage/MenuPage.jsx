@@ -8,10 +8,6 @@ import menuimage2 from '../../../assets/images/services/menu-hosting/menuimage2.
 
 
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
 
 
@@ -42,7 +38,7 @@ const MenuPage = () => {
                     <img src={menuimage1} alt="Loading" className="img-fluid" />
                     <img src={menuimage2} alt="Loading" className="img-fluid mb-5" />
 
-                    <p class="fs-2">You can check out a <a href="https://menu.tatewbs.com" target="_blank" rel="noreferer">Live Demo Here</a></p>
+                    <p class="fs-2">You can check out a <a href="https://menu.tatewbs.com" target="_blank" rel="noreferrer">Live Demo Here</a></p>
 
                     <hr />
                     <div className="mt-5 mb-5">
@@ -70,13 +66,13 @@ const MenuPage = () => {
         </div>
             )
 }
-            {/* input and image1
+            /* input and image1
 
 also describe
 How its benefits your business, adding convience and allowing it to be put on the internet for more potential customers to see
 It draws more attention to your business
 You can have seperate sections for different reasons, aka sorted allergies, food types, sections...
 adds to your business's internet look
-Images for every menu item for Customers convience */}
+Images for every menu item for Customers convience */
 
             export default MenuPage;

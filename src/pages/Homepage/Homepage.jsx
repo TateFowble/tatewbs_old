@@ -2,10 +2,11 @@ import React, { useEffect } from 'react';
 import './Homepage.scss';
 
 // Libraries
-import anime from 'animejs';
 // https://animejs.com/documentation/
+
 import ReactRotatingText from 'react-rotating-text';
 // https://www.npmjs.com/package/react-rotating-text
+
 import { Parallax } from 'react-parallax';
 // https://www.npmjs.com/package/react-parallax
 
@@ -27,8 +28,6 @@ import discord from '../../assets/images/homepage/discord.jpg';
 import InfoBox from '../../components/InfoBox/InfoBox';
 
 // bootstrap
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 
 function Homepage() {
 

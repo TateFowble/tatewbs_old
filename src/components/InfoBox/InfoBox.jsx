@@ -31,7 +31,10 @@ const InfoBox = (props) => {
     return (
         <div className="fluid-container p-5 InfoBox" style={InfoBoxClass}>
             <div className="container">
-                <h2 className="mb-4" style={InfoBoxClassHeader} className="text-center">{header}</h2>
+                <h2 className="mb-4" 
+                style={InfoBoxClassHeader}
+                 className="text-center">
+                     {header}</h2>
                 <p className="text-center mt-5 fs-4">{text}</p>
                 {buttonStuff(buttonText)}
             </div>

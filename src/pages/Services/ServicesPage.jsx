@@ -1,5 +1,5 @@
 // react
-import { React, useState } from 'react';
+import { React } from 'react';
 import { Link } from 'react-router-dom';
 
 // libraries
@@ -12,12 +12,11 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
 
 // images
 import menu from '../../assets/images/services/menu.jpg';
 import webdev from '../../assets/images/services/webdev.jpg';
-import tv from '../../assets/images/services/tv.jpg';
+// import tv from '../../assets/images/services/tv.jpg';
 
 
 
