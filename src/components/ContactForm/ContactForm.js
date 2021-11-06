@@ -48,14 +48,12 @@ const ContactForm = (props) => {
                         Your form went through, we will email you soon!
                     </Alert>
                 );
-                break;
             case false:
                 return (
                     <Alert variant="danger">
                         Your form ran into an issue. Please notify {offcialEmail}
                     </Alert>
                 );
-                break;
             default:
                 return ('');
         }
