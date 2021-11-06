@@ -19,19 +19,19 @@ const ProjectPage = () => {
         {
             siteName: "StarWorksMC",
             siteURL: "https://www.starworksmc.us",
-            siteDescription: "dsadas",
+            siteDescription: "A Minecraft Network Website that includes multiple servers and api's integrated into it",
             siteImage: ''
         },
         {
             siteName: "ActuallyArcher",
             siteURL: "https://www.actuallyarcher.com",
-            siteDescription: "dasdsa",
+            siteDescription: "An eCommerce site",
             siteImage: ''
         },
         {
             siteName: "El Maya",
             siteURL: "https://www.elmayamx.com",
-            siteDescription: "dasdsa",
+            siteDescription: "A mexican restaurant menu",
             siteImage: ''
         }
     ]
