@@ -38,9 +38,9 @@ function Footer() {
     ];
 
 
-    const iconFunction = (image, url) => {
+    const iconFunction = (image, url, i) => {
         return (
-            <a href={url} target="_blank" rel="noreferrer">
+            <a href={url} target="_blank" rel="noreferrer" key={i}>
                 <img src={image} alt="..." className="touchable-link" />
             </a >
         )
@@ -69,10 +69,10 @@ function Footer() {
                 </div>
                 <div id="footer-social-media" className="text-white">
                     {
-                        icons.map(i => {
+                        icons.map((obj, i) => {
                             let image = i.image;
                             let url = i.url;
-                            return iconFunction(image, url);
+                            return iconFunction(image, url, i);
                         })
                     }
                 </div>

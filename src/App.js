@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes as Switch,
   Route
 } from 'react-router-dom';
 import anime from 'animejs';
@@ -44,14 +44,14 @@ function App() {
         <Navigation />
         <div style={{marginBottom: `3.5em`}} />
         <Switch>
-          <Route exact path="/" component={Homepage} />
+          <Route path="/" element={<Homepage />} />
           {/* <Route exact path="/about" component={About} /> */}
-          <Route exact path="/services" component={ServicesPage} />
-          <Route exact path="/services/menu-hosting" component={MenuPage} />
-          <Route exact path="/services/web-development" component={WebDevelopmentPage} />
-          <Route exact path="/services/local-content-hosting" component={LocalContentHostingPage} />
-          <Route path="/projects" component={ProjectsPage} />
-          <Route component={Error} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/services/menu-hosting" element={<MenuPage />} />
+          <Route path="/services/web-development" element={<WebDevelopmentPage />} />
+          <Route path="/services/local-content-hosting" element={<LocalContentHostingPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="*" element={<Error />} />
 
         </Switch>
         <div style={{ marginTop: `0em` }} />
