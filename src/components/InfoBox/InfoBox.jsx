@@ -1,5 +1,5 @@
 import { React } from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './InfoBox.scss';
 
 const InfoBox = (props) => {
@@ -17,11 +17,11 @@ const InfoBox = (props) => {
     }
 
     let buttonStuff = (buttonText) => {
-        if(buttonText) {
+        if (buttonText) {
             return (
-            <div className="d-flex justify-content-center pt-3">
-                <Link to={buttonLink}><button className="btn btn-light text-center">{buttonText}</button></Link>
-            </div>
+                <div className="d-flex justify-content-center pt-3">
+                    <Link to={buttonLink}><button className="btn btn-light text-center">{buttonText}</button></Link>
+                </div>
             )
         }
         else {
@@ -31,10 +31,10 @@ const InfoBox = (props) => {
     return (
         <div className="fluid-container p-5 InfoBox" style={InfoBoxClass}>
             <div className="container">
-                <h2 className="mb-4" 
-                style={InfoBoxClassHeader}
-                 className="text-center">
-                     {header}</h2>
+                <h2 className="mb-4"
+                    style={InfoBoxClassHeader}
+                    className="text-center">
+                    {header}</h2>
                 <p className="text-center mt-5 fs-4">{text}</p>
                 {buttonStuff(buttonText)}
             </div>

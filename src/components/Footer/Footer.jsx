@@ -70,8 +70,8 @@ function Footer() {
                 <div id="footer-social-media" className="text-white">
                     {
                         icons.map((obj, i) => {
-                            let image = i.image;
-                            let url = i.url;
+                            let image = obj.image;
+                            let url = obj.url;
                             return iconFunction(image, url, i);
                         })
                     }

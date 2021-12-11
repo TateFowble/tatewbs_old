@@ -62,7 +62,7 @@ const ServicesPage = () => {
                 </Parallax>
             </div>
 
-            <div class="vertical-spacing" />
+            <div className="vertical-spacing" />
 
             <div>
                 <Parallax
