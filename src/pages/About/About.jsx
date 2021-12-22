@@ -2,6 +2,7 @@ import { React } from 'react';
 
 
 const About = () => {
+    document.title = `TateWBS | About`;
     return (
         <div className="container homepage-section-light">
             <div className="vertical-spacing"></div>

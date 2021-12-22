@@ -42,7 +42,7 @@ const WebDevelopmentPage = () => {
 
     let tatewbsdoes = ["Customizable", " Mobile Friendly", "Works with existing Databases", "Will make a database for you if needed", "Frontend Development", "Backend Development", "DDOS Protected", "Will stay up to date on realtime progress", "TateWBS will build your website from scratch", "Have your own domain", "SEO will be done for you"];
     
-    
+    document.title = `TateWBS | Web Development`;
     useEffect(() => {
         animationFunc();
     });
@@ -52,9 +52,9 @@ const WebDevelopmentPage = () => {
             <Container fluid={false}>
                 <div className="text-center">
                     <h1>What all is included?</h1>
-                    <p className="m-0 font-italic">
+                    {/* <p className="m-0 font-italic">
                         TateWBS works on many types of websites!
-                    </p>
+                    </p> */}
                     <hr />
                     <div className="d-flex justify-content-around flex-column flex-lg-row">
                         <Card className="m-5 shadow" style={ls}>
@@ -65,9 +65,10 @@ const WebDevelopmentPage = () => {
                                 <hr />
                                 <Card.Text>
                                     <ListGroup>
-                                        <ListGroup.Item>Up to 3 web pages</ListGroup.Item>
+                                        <ListGroup.Item>HTTPS</ListGroup.Item>
                                         <ListGroup.Item>1 Database</ListGroup.Item>
                                         <ListGroup.Item>Hosted on our servers</ListGroup.Item>
+                                        <ListGroup.Item>Optional: TateWBS.com subdomain</ListGroup.Item>
                                     </ListGroup>
                                     <p className="fs-5 m-2">
                                         Good for start ups
@@ -93,9 +94,9 @@ const WebDevelopmentPage = () => {
                                 <hr />
                                 <Card.Text>
                                     <ListGroup>
-                                        <ListGroup.Item>Up to 6 web pages</ListGroup.Item>
                                         <ListGroup.Item>Up to 2 Databases</ListGroup.Item>
                                         <ListGroup.Item>Hosted on our servers</ListGroup.Item>
+                                        <ListGroup.Item>Optional: TateWBS subdomain</ListGroup.Item>
                                     </ListGroup>
                                     <p className="fs-5 m-2">
                                         Good for small businesses
@@ -120,7 +121,6 @@ const WebDevelopmentPage = () => {
                                 <hr />
                                 <Card.Text>
                                     <ListGroup>
-                                        <ListGroup.Item>Up to 12 web pages</ListGroup.Item>
                                         <ListGroup.Item>Up to 5 Databases</ListGroup.Item>
                                         <ListGroup.Item>Hosted on our servers</ListGroup.Item>
                                     </ListGroup>

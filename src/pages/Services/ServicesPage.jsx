@@ -1,6 +1,10 @@
 // react
-import { React } from 'react';
+import { React, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+
+
+import './ServicesPage.scss';
+
 
 // libraries
 import { Parallax } from 'react-parallax';
@@ -22,8 +26,16 @@ import webdev from '../../assets/images/services/webdev.jpg';
 
 // Variables
 const parallaxHeight = '75vh';
+const menuHostingColorList = {
+    backgroundColor: '#f6e4e4'
+}
+const webDev = {
+    backgroundColor: '#c9c893'
+}
+
 
 const ServicesPage = () => {
+    document.title = `TateWBS | Services`;
     return (
         <div>
             <div>
@@ -38,21 +50,19 @@ const ServicesPage = () => {
                     <Container>
                         <Row>
                             <Col>
-                                <Card className="m-5 p-2">
+                                <Card style={{ backgroundColor: '#f3d3d2', opacity: '0.8' }} className="m-5 p-2">
                                     <Card.Header className="fs-3 text-center">Online Restraunt Menu</Card.Header>
                                     <Card.Body>
                                         {/* <Card.Title className="color-success text-center">$80/month Hosting</Card.Title> */}
                                         <div className="d-flex justify-content-center">
-                                            <Link to="/services/menu-hosting" className="text-decoration-none"><Button className="btn mt-3 mb-3" size="lg" variant="outline-primary">More Info</Button></Link>
+                                            <Link to="/services/menu-hosting" className="text-decoration-none"><Button style={{ color: '#66ccff'}} className="btn mt-3 mb-3" size="lg" variant="outline-info">More Info</Button></Link>
                                         </div>
                                         <ListGroup className="text-center">
-                                            <ListGroup.Item>Free TateWBS.com subdomain</ListGroup.Item>
-                                            <ListGroup.Item>United States Hosting</ListGroup.Item>
-                                            <ListGroup.Item>DDOS Protected</ListGroup.Item>
-                                            <ListGroup.Item>Ecrypted Data</ListGroup.Item>
-                                            <ListGroup.Item>1 Free TateWBS endorsement</ListGroup.Item>
-                                            <ListGroup.Item>Will show up on the projects page</ListGroup.Item>
-                                            {/* <ListGroup.Item></ListGroup.Item> */}
+                                            <ListGroup.Item style={menuHostingColorList}>Free TateWBS.com subdomain</ListGroup.Item>
+                                            <ListGroup.Item style={menuHostingColorList}>United States Hosting</ListGroup.Item>
+                                            <ListGroup.Item style={menuHostingColorList}>DDOS Protected</ListGroup.Item>
+                                            <ListGroup.Item style={menuHostingColorList}>Ecrypted Data</ListGroup.Item>
+                                            <ListGroup.Item style={menuHostingColorList}>Will show up on the <Link to="/projects" style={{ color: '#66ccff' }}>projects page</Link></ListGroup.Item>
                                         </ListGroup>
                                     </Card.Body>
                                 </Card>
@@ -76,22 +86,22 @@ const ServicesPage = () => {
                     <Container>
                         <Row>
                             <Col>
-                                <Card className="m-5 p-2">
+                                <Card style={{ backgroundColor: '#c2bd62', opacity: '0.8' }} className="m-5 p-2">
                                     <Card.Header className="fs-3 text-center">Web Development</Card.Header>
                                     <Card.Body>
                                         <Card.Title className="color-success text-center">Looking for a price? Each job is different
                                         </Card.Title>
                                         <div className="d-flex justify-content-center">
-                                            <Link to="/services/web-development" className="text-decoration-none"><Button className="btn btn-lg btn-block mt-3 mb-3" variant="outline-primary">More Info</Button></Link>
+                                            <Link to="/services/web-development" className="text-decoration-none"><Button style={{ color: '#66ccff' }} className="btn btn-lg btn-block mt-3 mb-3" variant="outline-info">More Info</Button></Link>
                                         </div>
                                         <ListGroup className="text-center">
-                                            <ListGroup.Item>Free TateWBS.com subdomain</ListGroup.Item>
-                                            <ListGroup.Item>United States Hosting</ListGroup.Item>
-                                            <ListGroup.Item>DDOS Protected</ListGroup.Item>
-                                            <ListGroup.Item>Encrypted Data</ListGroup.Item>
-                                            <ListGroup.Item>Databases</ListGroup.Item>
-                                            <ListGroup.Item>1 Free TateWBS endorsement</ListGroup.Item>
-                                            <ListGroup.Item>Will show up on the projects page</ListGroup.Item>
+                                            <ListGroup.Item style={webDev}>Free TateWBS.com subdomain</ListGroup.Item>
+                                            <ListGroup.Item style={webDev}>United States Hosting</ListGroup.Item>
+                                            <ListGroup.Item style={webDev}>DDOS Protected</ListGroup.Item>
+                                            <ListGroup.Item style={webDev}>Encrypted Data</ListGroup.Item>
+                                            <ListGroup.Item style={webDev}>Databases</ListGroup.Item>
+                                            <ListGroup.Item style={webDev}>1 Free TateWBS endorsement</ListGroup.Item>
+                                            <ListGroup.Item style={webDev}>Will show up on the <Link style={{ color: '#66ccff' }} to="/projects">projects page</Link></ListGroup.Item>
                                             {/* <ListGroup.Item></ListGroup.Item> */}
                                         </ListGroup>
                                     </Card.Body>
@@ -103,7 +113,7 @@ const ServicesPage = () => {
             </div>
 
             <div className="vertical-spacing" />
-{/*
+            {/*
             <div>
                 <Parallax
                     className="fluid-container d-flex align-items-center justify-content-end"

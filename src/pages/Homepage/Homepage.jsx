@@ -30,7 +30,7 @@ import InfoBox from '../../components/InfoBox/InfoBox';
 // bootstrap
 
 function Homepage() {
-
+    document.title = `TateWBS | Home`;
     useEffect(() => {
     
     }, []);

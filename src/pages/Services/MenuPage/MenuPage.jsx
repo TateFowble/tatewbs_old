@@ -14,8 +14,8 @@ import ListGroup from 'react-bootstrap/ListGroup';
 
 
 
-
 const MenuPage = () => {
+    document.title = `TateWBS | Menu Hosting`;
     return (
         <div>
             <div className="vertical-spacing" />
@@ -56,17 +56,18 @@ const MenuPage = () => {
                                 <ListGroup.Item>You can have seperate sections for different reasons, aka sorted allergies, food types, sections...</ListGroup.Item>
                                 <ListGroup.Item>Images for every menu item for customer convience</ListGroup.Item>
                             </ListGroup>
+                            <h4 className="mt-4">Everything is custom coded, if you need something different then we got you!</h4>
                         </div>
-                        </div>
-                        <hr />
-                        <ContactForm page="How do I get an online menu?!" />
                     </div>
+                    <hr />
+                    <ContactForm page="How do I get an online menu?!" />
+                </div>
             </Container>
-                <div className="vertical-spacing" />
+            <div className="vertical-spacing" />
         </div>
-            )
+    )
 }
-            /* input and image1
+/* input and image1
 
 also describe
 How its benefits your business, adding convience and allowing it to be put on the internet for more potential customers to see
@@ -75,4 +76,4 @@ You can have seperate sections for different reasons, aka sorted allergies, food
 adds to your business's internet look
 Images for every menu item for Customers convience */
 
-            export default MenuPage;
+export default MenuPage;

@@ -20,28 +20,28 @@ const ProjectPage = () => {
             siteName: "StarWorksMC",
             siteURL: "https://www.starworksmc.us",
             siteDescription: "A Minecraft Network Website that includes multiple servers and api's integrated into it",
-            siteImage: ''
+            siteImage: 'https://www.starworksmc.us/images/village-closeup.png'
         },
         {
             siteName: "ActuallyArcher",
             siteURL: "https://www.actuallyarcher.com",
             siteDescription: "An eCommerce site",
-            siteImage: ''
+            siteImage: 'https://www.starworksmc.us/images/village-closeup.png'
         },
         {
             siteName: "El Maya",
             siteURL: "https://www.elmayamx.com",
             siteDescription: "A mexican restaurant menu",
-            siteImage: ''
+            siteImage: 'https://www.starworksmc.us/images/village-closeup.png'
         }
     ]
 
     const siteArr = (name, url, description, image) => {
         return (
-            <div className="m-5 w-100">
+            <div className="m-5 w-100 shadow">
                 <a href={url} target="_blank" rel="noreferrer">
                     <Card className="bg-dark text-white">
-                        <Card.Img src={image || ``} alt="" width="100%" height="200px" />
+                        <Card.Img src={image || ``} alt="" height="200px" />
                         <Card.ImgOverlay className="text-center">
                             <Card.Title className="mb-5">{name}</Card.Title>
                             <Card.Text>{description}</Card.Text>
@@ -52,7 +52,7 @@ const ProjectPage = () => {
         );
     }
 
-
+    document.title = `TateWBS | Projects`;
     return (
         <Container fluid={true}>
             <div className="d-flex flex-wrap flex-row">

@@ -51,7 +51,7 @@ function App() {
           <Route path="/services/web-development" element={<WebDevelopmentPage />} />
           <Route path="/services/local-content-hosting" element={<LocalContentHostingPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="*" element={<Error />} />
+          <Route path="/:error_404" element={<Error />} />
 
         </Switch>
         <div style={{ marginTop: `0em` }} />

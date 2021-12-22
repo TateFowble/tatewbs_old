@@ -6,15 +6,15 @@ import { Link } from 'react-router-dom';
 // import logo from '../../assets/images/logo21.png';
 
 // react-bootstrap imports
+import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Nav from 'react-bootstrap/Nav';
-import Container from 'react-bootstrap/Container';
 
 function Navigation() {
     return (
-        <Container fluid={true}>
-            <Navbar collapseOnSelect expand="md" fixed="top" variant="dark">
+        <Container fluid={false}>
+            <Navbar collapseOnSelect expand="md" fixed="top" variant="dark" style={{padding:'1.5em'}}>
                 <Navbar.Brand as={Link} to="/" className="p-2 text-white">TateWBS</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
