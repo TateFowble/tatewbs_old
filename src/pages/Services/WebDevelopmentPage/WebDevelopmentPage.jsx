@@ -76,7 +76,7 @@ const WebDevelopmentPage = () => {
                                 </Card.Text>
                                 <hr />
                                 <Card.Text className="fs-4">
-                                    $100 / mo
+                                    {/* $100 / mo */}
                                 </Card.Text>
                                 <Card.Text className="fs-5">
                                     <Button variant="success">Choose a pricing plan</Button>
@@ -104,7 +104,7 @@ const WebDevelopmentPage = () => {
                                 </Card.Text>
                                 <hr />
                                 <Card.Text className="fs-4">
-                                    $250 / mo
+                                    {/* $250 / mo */}
                                 </Card.Text>
                                 <Card.Text className="fs-5">
                                      <Button variant="success">Choose a pricing plan</Button>
@@ -130,7 +130,7 @@ const WebDevelopmentPage = () => {
                                 </Card.Text>
                                 <hr />
                                 <Card.Text className="fs-4">
-                                    $600 / mo
+                                    {/* $600 / mo */}
                                 </Card.Text>
                                 <Card.Text className="fs-5">
                                      <Button variant="success">Choose a pricing plan</Button>
