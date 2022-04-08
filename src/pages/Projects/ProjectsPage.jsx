@@ -33,6 +33,12 @@ const ProjectPage = () => {
             siteURL: "https://www.elmayamx.com",
             siteDescription: "A mexican restaurant menu",
             siteImage: 'https://www.starworksmc.us/images/village-closeup.png'
+        },
+        {
+            siteName: "FoamTech",
+            siteURL: "https://foamtech.tatewbs.com",
+            siteDescription: "FoamTechInc Web app",
+            siteImage: 'https://www.starworksmc.us/images/village-closeup.png'
         }
     ]
 
