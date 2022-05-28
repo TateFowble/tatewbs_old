@@ -23,11 +23,11 @@ function Navigation() {
                         <Nav.Link as={Link} to="/services" className="text-white">Services</Nav.Link>
                         <Nav.Link as={Link} to="/projects" className="text-white">Projects</Nav.Link>
                         <Nav.Link href="http://discord.tatewbs.com" target="_blank" rel="noreferrer" className="text-white">Discord</Nav.Link>
-                        <NavDropdown title="Extras" id="navbarScrollingDropdown">
+                        {/* <NavDropdown title="Extras" id="navbarScrollingDropdown">
                             <NavDropdown.Item href="http://youtube.tatewbs.com" target="_blank">YouTube</NavDropdown.Item>
                             <NavDropdown.Item href="http://instagram.tatewbs.com" target="_blank">Instagram</NavDropdown.Item>
                             <NavDropdown.Item href="http://twitch.tatewbs.com" target="_blank">Twitch</NavDropdown.Item>
-                        </NavDropdown>
+                        </NavDropdown> */}
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

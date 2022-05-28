@@ -23,18 +23,18 @@ function Footer() {
             image: discord,
             url: "http://discord.tatewbs.com"
         },
-        {
-            image: youtube,
-            url: "http://youtube.tatewbs.com"
-        },
-        {
-            image: twitch,
-            url: "http://twitch.tatewbs.com"
-        },
-        {
-            image: instagram,
-            url: "http://instagram.tatewbs.com"
-        },
+        // {
+        //     image: youtube,
+        //     url: "http://youtube.tatewbs.com"
+        // },
+        // {
+        //     image: twitch,
+        //     url: "http://twitch.tatewbs.com"
+        // },
+        // {
+        //     image: instagram,
+        //     url: "http://instagram.tatewbs.com"
+        // },
     ];
 
 
