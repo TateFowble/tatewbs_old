@@ -20,25 +20,25 @@ const ProjectPage = () => {
             siteName: "StarWorksMC",
             siteURL: "https://www.starworksmc.us",
             siteDescription: "A Minecraft Network Website that includes multiple servers and api's integrated into it",
-            siteImage: 'https://www.starworksmc.us/images/village-closeup.png'
+            siteImage: ''
         },
         {
             siteName: "ActuallyArcher",
             siteURL: "https://www.actuallyarcher.com",
             siteDescription: "An eCommerce site",
-            siteImage: 'https://www.starworksmc.us/images/village-closeup.png'
+            siteImage: ''
         },
         {
             siteName: "El Maya",
             siteURL: "https://www.elmayamx.com",
             siteDescription: "A mexican restaurant menu",
-            siteImage: 'https://www.starworksmc.us/images/village-closeup.png'
+            siteImage: ''
         },
         {
             siteName: "FoamTech",
             siteURL: "https://foamtech.tatewbs.com",
             siteDescription: "FoamTechInc Web app",
-            siteImage: 'https://www.starworksmc.us/images/village-closeup.png'
+            siteImage: ''
         }
     ]
 
