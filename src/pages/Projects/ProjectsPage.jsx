@@ -30,7 +30,7 @@ const ProjectPage = () => {
         },
         {
             siteName: "El Maya",
-            siteURL: "https://www.elmayamx.com",
+            siteURL: "https://menu.elmayamx.com",
             siteDescription: "A mexican restaurant menu",
             siteImage: ''
         },
