@@ -3,8 +3,6 @@ import { React, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 
-import './ServicesPage.scss';
-
 
 // libraries
 import { Parallax } from 'react-parallax';
@@ -18,8 +16,8 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import Button from 'react-bootstrap/Button';
 
 // images
-import menu from '../../assets/images/services/menu.jpg';
-import webdev from '../../assets/images/services/webdev.jpg';
+import menu from '../assets/images/services/menu.jpg';
+import webdev from '../assets/images/services/webdev.jpg';
 // import tv from '../../assets/images/services/tv.jpg';
 
 

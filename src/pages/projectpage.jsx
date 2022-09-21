@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
 
 // images
-import tatewbsImage from '../../assets/images/projects/tatewbs.png';
+import tatewbsImage from '../assets/images/projects/tatewbs.png';
 
 const ProjectPage = () => {
 

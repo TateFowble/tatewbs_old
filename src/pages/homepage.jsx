@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import './Homepage.scss';
 
 // Libraries
 // https://animejs.com/documentation/
@@ -18,14 +17,14 @@ import { Parallax } from 'react-parallax';
 // import mongodb from '../../assets/images/mongodb.png';
 // import python from '../../assets/images/python.png';
 
-import image1 from '../../assets/images/homepage/image1.jpg';
-import image2 from '../../assets/images/homepage/image2.jpg';
-import image3 from '../../assets/images/homepage/image3.jpg';
-import image4 from '../../assets/images/homepage/image4.jpg';
-import discord from '../../assets/images/homepage/discord.jpg';
+import image1 from '../assets/images/homepage/image1.jpg';
+import image2 from '../assets/images/homepage/image2.jpg';
+import image3 from '../assets/images/homepage/image3.jpg';
+import image4 from '../assets/images/homepage/image4.jpg';
+import discord from '../assets/images/homepage/discord.jpg';
 // components
 // import AnimeText from '../../components/AnimeText/AnimeText';
-import InfoBox from '../../components/InfoBox/InfoBox';
+import InfoBox from '../components/InfoBox/InfoBox';
 
 // bootstrap
 
