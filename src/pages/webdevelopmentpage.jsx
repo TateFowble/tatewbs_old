@@ -2,7 +2,7 @@ import { React, useEffect } from 'react';
 
 import anime from 'animejs';
 
-import ContactForm from '../components/ContactForm/ContactForm';
+import ContactForm from '../components/ContactForm';
 
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';

@@ -1,6 +1,6 @@
 import { React } from 'react';
 
-import ContactForm from '../components/ContactForm/ContactForm';
+import ContactForm from '../components/ContactForm';
 
 import menuimage from '../assets/images/services/menu.jpg';
 import menuimage1 from '../assets/images/services/menu-hosting/menuimage.png';

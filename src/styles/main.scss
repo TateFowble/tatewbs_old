@@ -51,3 +51,58 @@
         color: inherit;
     }
 }
+
+footer {
+    div {
+        padding: 1.2em 0;
+
+        div {
+            #copyright-symbol {
+                font-size: 26px;
+            }
+
+            #copyright-undertext {
+                font-size: 16px;
+            }
+
+            #footer-logo {
+                // width:100px;
+                height: 200px;
+            }
+        }
+
+        #footer-social-media {
+            img {
+                height: auto;
+                width: 60px;
+                padding: 0 10px 10px 10px;
+            }
+        }
+    }
+}
+nav {
+    background: #333;
+
+    #nav-dropdown {
+        background: #333
+    }
+}
+
+#navbarScrollingDropdown {
+    color: white;
+}
+
+#basic-navbar-nav {
+    color: white;
+}
+
+.InfoBox {
+    background: #222;
+    color: white;
+    font-size: larger;
+    overflow-wrap: break-word;
+
+    h2 {
+        padding: 0 0 0.6em 0;
+    }
+}

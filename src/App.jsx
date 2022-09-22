@@ -10,8 +10,8 @@ import {
 import './App.scss';
 
 // Import Components for App.js
-import Navigation from './components/Navigation/Navigation';
-import Footer from './components/Footer/Footer';
+import Navigation from './components/Navigation';
+import Footer from './components/Footer';
 
 // Webpage imports
 import Homepage from './pages/homepage';
