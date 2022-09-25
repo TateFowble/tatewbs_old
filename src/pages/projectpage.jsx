@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
 
 // images
-import tatewbsImage from '../assets/images/projects/tatewbs.png';
+import tatewbsImage from '../assets/images/tatewbs.png';
 
 const ProjectPage = () => {
 
@@ -63,11 +63,11 @@ const ProjectPage = () => {
         <Container fluid={true}>
             <div className='d-flex flex-wrap flex-row'>
                 {
-                    sites.map(i => {
-                        let siteName = i.siteName;
-                        let siteURL = i.siteURL;
-                        let siteDescription = i.siteDescription;
-                        let siteImage = i.siteImage;
+                    sites.map((obj, i) => {
+                        let siteName = obj.siteName;
+                        let siteURL = obj.siteURL;
+                        let siteDescription = obj.siteDescription;
+                        let siteImage = obj.siteImage;
                         return siteArr(siteName, siteURL, siteDescription, siteImage);
                     })
                 }

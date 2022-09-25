@@ -3,19 +3,22 @@ import '../styles/main.scss';
 
 import { Link } from 'react-router-dom';
 
-// import logo from '../../assets/images/logo21.png';
+import logo from '../assets/images/logo.png';
 
 // react-bootstrap imports
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Nav from 'react-bootstrap/Nav';
+import Image from 'react-bootstrap/Image';
 
-function Navigation() {
+const Navigation = () => {
     return (
-        <Container fluid={false}>
-            <Navbar collapseOnSelect expand='md' fixed='top' variant='dark' style={{padding:'1.5em'}}>
-                <Navbar.Brand as={Link} to='/' className='p-2 text-white'>TateWBS</Navbar.Brand>
+        <Navbar collapseOnSelect expand='md' sticky='top' variant='dark' style={{ padding: '1.5em' }}>
+            <Container fluid={false}>
+                <Navbar.Brand as={Link} to='/' className='p-2 text-white'>
+                    <Image src={logo} alt='logo' width='110vw' />
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls='responsive-navbar-nav' />
                 <Navbar.Collapse id='responsive-navbar-nav'>
                     <Nav className='me-auto'>
@@ -29,9 +32,12 @@ function Navigation() {
                             <NavDropdown.Item href='http://twitch.tatewbs.com' target='_blank'>Twitch</NavDropdown.Item>
                         </NavDropdown> */}
                     </Nav>
+                    {/* <Nav className='float-end'>
+                        <Nav.Link>Login</Nav.Link>
+                    </Nav> */}
                 </Navbar.Collapse>
-            </Navbar>
-        </Container>
+            </Container>
+        </Navbar>
     )
 }
 

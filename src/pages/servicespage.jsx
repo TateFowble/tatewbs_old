@@ -31,9 +31,11 @@ const webDev = {
     backgroundColor: '#c9c893'
 }
 
-
 const ServicesPage = () => {
-    document.title = `TateWBS | Services`;
+
+    useEffect(() => {
+        document.title = `TateWBS | Services`;
+    }, []);
     return (
         <div>
             <div>
@@ -53,10 +55,9 @@ const ServicesPage = () => {
                                     <Card.Body>
                                         {/* <Card.Title className='color-success text-center'>$80/month Hosting</Card.Title> */}
                                         <div className='d-flex justify-content-center'>
-                                            <Link to='/services/menu-hosting' className='text-decoration-none'><Button style={{ color: '#66ccff'}} className='btn mt-3 mb-3' size='lg' variant='outline-info'>More Info</Button></Link>
+                                            <Link to='/services/menu-hosting' className='text-decoration-none'><Button style={{ color: '#66ccff' }} className='btn mt-3 mb-3' size='lg' variant='outline-info'>More Info</Button></Link>
                                         </div>
                                         <ListGroup className='text-center'>
-                                            <ListGroup.Item style={menuHostingColorList}>Free TateWBS.com subdomain</ListGroup.Item>
                                             <ListGroup.Item style={menuHostingColorList}>United States Hosting</ListGroup.Item>
                                             <ListGroup.Item style={menuHostingColorList}>DDOS Protected</ListGroup.Item>
                                             <ListGroup.Item style={menuHostingColorList}>Ecrypted Data</ListGroup.Item>
@@ -93,14 +94,10 @@ const ServicesPage = () => {
                                             <Link to='/services/web-development' className='text-decoration-none'><Button style={{ color: '#66ccff' }} className='btn btn-lg btn-block mt-3 mb-3' variant='outline-info'>More Info</Button></Link>
                                         </div>
                                         <ListGroup className='text-center'>
-                                            <ListGroup.Item style={webDev}>Free TateWBS.com subdomain</ListGroup.Item>
                                             <ListGroup.Item style={webDev}>United States Hosting</ListGroup.Item>
                                             <ListGroup.Item style={webDev}>DDOS Protected</ListGroup.Item>
                                             <ListGroup.Item style={webDev}>Encrypted Data</ListGroup.Item>
-                                            <ListGroup.Item style={webDev}>Databases</ListGroup.Item>
-                                            <ListGroup.Item style={webDev}>1 Free TateWBS endorsement</ListGroup.Item>
                                             <ListGroup.Item style={webDev}>Will show up on the <Link style={{ color: '#66ccff' }} to='/projects'>projects page</Link></ListGroup.Item>
-                                            {/* <ListGroup.Item></ListGroup.Item> */}
                                         </ListGroup>
                                     </Card.Body>
                                 </Card>

@@ -10,14 +10,14 @@ import twitch from '../assets/icons/twitch.svg';
 import youtube from '../assets/icons/youtube.svg';
 // import logo1 from '../assets/images/logo.svg';
 // import logo from '../assets/images/tatewbs-logo.png';
-import logo from '../assets/images/footer/logo.png';
+import logo from '../assets/images/logo.png';
 
 function Footer() {
 
     let icons = [
         {
             image: github,
-            url: 'https://github.com/TateFowble'
+            url: 'https://github.com/TateWBS'
         },
         {
             image: discord,
