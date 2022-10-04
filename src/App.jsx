@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 
 import './App.scss';
+import './styles/main.scss';
 
 import PublicRoutes from './components/PublicRoutes';
 
@@ -36,7 +37,7 @@ const App = () => {
             <Route path='/services/menu-hosting' element={<MenuPage />} />
             <Route path='/services/web-development' element={<WebDevelopmentPage />} />
             <Route path='/services/local-content-hosting' element={<LocalContentHostingPage />} />
-            <Route path='/projects' element={<ProjectsPage />} />
+            <Route path='/customers' element={<ProjectsPage />} />
           </Route>
             <Route path='*' element={<Error />} />
         </Switch>
