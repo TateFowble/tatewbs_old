@@ -10,7 +10,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import Button from 'react-bootstrap/Button';
 
 
-const WebDevelopmentPage = () => {
+const WebDevelopment = () => {
 
 
 
@@ -86,4 +86,4 @@ const WebDevelopmentPage = () => {
     )
 }
 
-export default WebDevelopmentPage;
+export default WebDevelopment;

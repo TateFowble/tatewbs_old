@@ -28,7 +28,7 @@ import InfoBox from '../components/InfoBox';
 
 // bootstrap
 
-const Homepage = () => {
+const Home = () => {
     document.title = `TateWBS | Home`;
     useEffect(() => {
 
@@ -149,7 +149,7 @@ const Homepage = () => {
     )
 }
 
-export default Homepage;
+export default Home;
 
 
 /*

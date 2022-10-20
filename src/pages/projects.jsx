@@ -1,12 +1,8 @@
 import React, { useEffect } from 'react';
+import Card from '../components/Card';
+import clients from '../assets/images/clients.png';
 
-
-import Container from 'react-bootstrap/Container';
-import Card from 'react-bootstrap/Card';
-import Row from 'react-bootstrap/Row';
-
-
-const ProjectPage = () => {
+const Project = () => {
 
     let sites = [
         {
@@ -35,60 +31,60 @@ const ProjectPage = () => {
             description: 'A Mexican restraunt menu that introduces new foods and styles',
             image: ''
         },
+        {
+            name: 'Overlook',
+            url: 'https://overlook.tatewbs.com',
+            description: 'By the lake location with the best burgers and fries around',
+            image: ''
+        },
     ];
 
-
-    const colorPallete = () => {
-        // let result = Math.floor((Math.random() * 10) + 1);
-        let result = 1;
-        let colorAndBackground;
-        switch (result) {
-            case 1:
-                colorAndBackground = {
-                    color: 'green',
-                    background: 'purple'
-                }
-                console.log('dsadsa');
-                return colorAndBackground;
-        }
-
-    }
 
     useEffect(() => {
         document.title = `TateWBS | Projects`;
     }, []);
     return (
-        <Container id='project'>
-            <div className='d-flex flex-md-row flex-column flex-wrap'>
-                {
-                    sites.map((obj, i) => {
-                        // console.log(obj);
-                        let name = obj.name;
-                        let url = obj.url;
-                        let description = obj.description;
-                        let image = obj.image;
-                        return (
-                            <Card
-                                className='m-4 align-self-center'
-                                style={{ minHeight: '16em', maxHeight: '100%', minWidth: '100%', maxWidth: '18em' }}
-                                key={i}>
-                                <a href={url} rel='no-referrer' target='_blank'>
-                                    <Card.Img src={image || ''} alt='' style={{ width: '100%' }} />
-                                    <Card.ImgOverlay>
-                                        <Card.Title>{name}</Card.Title>
-                                        <Card.Body>{description}</Card.Body>
-                                    </Card.ImgOverlay>
-                                </a>
-                            </Card>
-                        )
-                    })
-                }
+        <div id='projects' className='d-flex flex-column' style={{ gap: '2em' }}>
+            <div className='m-5 d-flex justify-content-center'>
+                <h1>Clients</h1>
+                <img src={clients} alt="" />
             </div>
-        </Container>
+            {
+                sites.map((obj, i) => {
+                    return (
+                        <Card
+                            key={i}
+                            index={i}
+                            name={obj.name}
+                            url={obj.url}
+                            description={obj.description}
+                            image={obj.image}
+
+                        />
+                    )
+                })
+            }
+            {
+                menuSites.map((obj, i) => {
+                    console.log(obj);
+                    return (
+                        <Card
+                            key={i}
+                            index={i}
+                            name={obj.name}
+                            url={obj.url}
+                            description={obj.description}
+                            image={obj.image}
+
+                        />
+                    )
+                })
+            }
+        </div>
     )
 }
 
-export default ProjectPage;
+export default Project;
 
 
 

@@ -5,7 +5,7 @@ import { React } from 'react';
 
 
 
-const LocalContentHostingPage = () => {
+const LocalContentHosting = () => {
     document.title = `TateWBS | Local Content Hosting`;
     return (
         <div>
@@ -14,4 +14,4 @@ const LocalContentHostingPage = () => {
     )
 }
 
-export default LocalContentHostingPage;
+export default LocalContentHosting;

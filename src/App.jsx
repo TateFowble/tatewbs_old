@@ -12,16 +12,16 @@ import PublicRoutes from './components/PublicRoutes';
 
 
 // Webpage imports
-import Homepage from './pages/homepage';
+import Homepage from './pages/home';
 import Error from './pages/error';
 // import About from './pages/About/About';
-import ProjectsPage from './pages/projectpage';
+import ProjectsPage from './pages/projects';
 
 // Service page 
-import ServicesPage from './pages/servicespage';
-import MenuPage from './pages/menupage';
-import WebDevelopmentPage from './pages/webdevelopmentpage';
-import LocalContentHostingPage from './pages/localcontenthostingpage';
+import ServicesPage from './pages/services';
+import MenuPage from './pages/menu';
+import WebDevelopmentPage from './pages/webdevelopment';
+import LocalContentHostingPage from './pages/localcontenthosting';
 
 
 const App = () => {
@@ -37,7 +37,7 @@ const App = () => {
             <Route path='/services/menu-hosting' element={<MenuPage />} />
             <Route path='/services/web-development' element={<WebDevelopmentPage />} />
             <Route path='/services/local-content-hosting' element={<LocalContentHostingPage />} />
-            <Route path='/customers' element={<ProjectsPage />} />
+            <Route path='/clients' element={<ProjectsPage />} />
           </Route>
             <Route path='*' element={<Error />} />
         </Switch>

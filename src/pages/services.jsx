@@ -31,7 +31,7 @@ const webDev = {
     backgroundColor: '#c9c893'
 }
 
-const ServicesPage = () => {
+const Services = () => {
 
     useEffect(() => {
         document.title = `TateWBS | Services`;
@@ -147,4 +147,4 @@ const ServicesPage = () => {
     )
 }
 
-export default ServicesPage;
+export default Services;

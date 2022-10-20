@@ -14,7 +14,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 
 
 
-const MenuPage = () => {
+const Menu = () => {
     document.title = `TateWBS | Menu Hosting`;
     return (
         <div>
@@ -80,4 +80,4 @@ You can have seperate sections for different reasons, aka sorted allergies, food
 adds to your business's internet look
 Images for every menu item for Customers convience */
 
-export default MenuPage;
+export default Menu;
