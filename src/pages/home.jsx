@@ -24,7 +24,6 @@ const Home = () => {
             <div>
                 <Parallax
                     className='parallax-sizer d-flex align-items-center justify-content-center'
-                    style={{ minHeight: '100vh' }}
                     bgImage={image1}
                     bgImageAlt=''
                     strength={500}
@@ -45,9 +44,7 @@ const Home = () => {
             </div>
             <div>
                 <Parallax
-                    className='fluid-container d-flex align-items-center justify-content-center'
-                    style={{ minHeight: '100vh' }}
-                    // blur={1}
+                    className='parallax-sizer d-flex align-items-center justify-content-center'
                     bgImage={image2}
                     bgImageAlt='...'
                     strength={500}
@@ -66,9 +63,7 @@ const Home = () => {
             </div>
             <div>
                 <Parallax
-                    className='fluid-container d-flex align-items-center justify-content-center'
-                    style={{ minHeight: '100vh' }}
-                    // blur={1}
+                    className='parallax-sizer d-flex align-items-center justify-content-center'
                     bgImage={image3}
                     bgImageAlt='...'
                     strength={500}
@@ -87,9 +82,7 @@ const Home = () => {
                     }
                 />
                 <Parallax
-                    className='fluid-container d-flex align-items-center justify-content-center'
-                    style={{ minHeight: '100vh' }}
-                    // blur={1}
+                    className='parallax-sizer d-flex align-items-center justify-content-center'
                     bgImage={image4}
                     bgImageAlt='...'
                     strength={500}
@@ -108,8 +101,7 @@ const Home = () => {
                     }
                 />
                 <Parallax
-                    style={{ minHeight: '100vh' }}
-                    // blur={1}
+                    className='parallax-sizer'
                     bgImage={discord}
                     bgImageAlt='...'
                     strength={500}

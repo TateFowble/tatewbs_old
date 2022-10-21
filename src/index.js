@@ -12,10 +12,10 @@ import Popper from '@popperjs/core';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('tatewbs'));
 root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
 );
-reportWebVitals();
+// reportWebVitals();

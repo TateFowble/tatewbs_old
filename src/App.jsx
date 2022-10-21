@@ -19,15 +19,14 @@ import ProjectsPage from './pages/projects';
 
 // Service page 
 import ServicesPage from './pages/services';
-import MenuPage from './pages/menu';
-import WebDevelopmentPage from './pages/webdevelopment';
-import LocalContentHostingPage from './pages/localcontenthosting';
+import MenuPage from './pages/services/menu';
+import WebDevelopmentPage from './pages/services/webdevelopment';
+import LocalContentHostingPage from './pages/services/localcontenthosting';
 
 
 const App = () => {
 
   return (
-    <div id='tatewbs'>
       <Router>
         <Switch>
           <Route element={<PublicRoutes />}>
@@ -42,7 +41,6 @@ const App = () => {
             <Route path='*' element={<Error />} />
         </Switch>
       </Router>
-    </div>
   );
 }
 

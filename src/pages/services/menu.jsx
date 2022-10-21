@@ -1,24 +1,50 @@
-import { React } from 'react';
+import React, { useEffect } from 'react';
+import '../../styles/main.scss';
 
-import ContactForm from '../components/ContactForm';
+import restaurant from '../../assets/images/restaurant.png';
+import menuimage from '../../assets/images/onlinemenu.png';
 
-import menuimage from '../assets/images/services/menu.jpg';
-import menuimage1 from '../assets/images/services/menu-hosting/menuimage.png';
-import menuimage2 from '../assets/images/services/menu-hosting/menuimage2.png';
-
+import ContactForm from '../../components/ContactForm';
+import ReactRotatingText from 'react-rotating-text';
 
 import Container from 'react-bootstrap/Container';
 import ListGroup from 'react-bootstrap/ListGroup';
+import Card from 'react-bootstrap/Card';
+import Image from 'react-bootstrap/Image';
 
 
 
 const Menu = () => {
-    document.title = `TateWBS | Menu Hosting`;
+    useEffect(() => {
+        document.title = `TateWBS | Online Menu Hosting`;
+    }, [])
     return (
-        <div>
+        <div id='menu'>
+            <header>
+                {/* <Card.Img src={restaurant} /> */}
+                <div className='d-flex align-items-center justify-content-center'>
+                    <h1 className='text-center fs-1'></h1>
+                </div>
+            </header>
             <Container>
+            </Container>
+        </div>
+    )
+}
+/* input and image1
+
+also describe
+How its benefits your business, adding convience and allowing it to be put on the internet for more potential customers to see
+It draws more attention to your business
+You can have seperate sections for different reasons, aka sorted allergies, food types, sections...
+adds to your business's internet look
+Images for every menu item for Customers convience */
+
+
+/*
+ <Container>
                 <div className='text-center'>
-                    <h2>What is <u>Menu Hosting</u>?</h2>
+                    <h1>What is <u>Menu Hosting</u>?</h1>
                     <hr />
                     <div className='mb-5'>
                         <p>
@@ -29,7 +55,7 @@ const Menu = () => {
                     </div>
 
                     <p className='fs-3 font-weight-bold'>Turn this</p>
-                    <img src={menuimage} alt='Loading' className='img-fluid mb-5' />
+                    <img src={menuimage} alt='Loading' className='shadow img-fluid mb-5' />
 
                     <p className='fs-3 font-weight-bold'>Into this</p>
                     <img src={menuimage1} alt='Loading' className='img-fluid' />
@@ -62,19 +88,10 @@ const Menu = () => {
                         page='menu'
                         info='How do I get an online menu?!'
                     />
-                </div>
-            </Container>
-            <div className='vertical-spacing' />
-        </div>
-    )
-}
-/* input and image1
+                </div >
+            </Container >
+*/
 
-also describe
-How its benefits your business, adding convience and allowing it to be put on the internet for more potential customers to see
-It draws more attention to your business
-You can have seperate sections for different reasons, aka sorted allergies, food types, sections...
-adds to your business's internet look
-Images for every menu item for Customers convience */
+
 
 export default Menu;
