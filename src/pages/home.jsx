@@ -1,21 +1,9 @@
 import React, { useEffect } from 'react';
 
-// Libraries
-// https://animejs.com/documentation/
-
 import ReactRotatingText from 'react-rotating-text';
-// https://www.npmjs.com/package/react-rotating-text
 
 import { Parallax } from 'react-parallax';
-// https://www.npmjs.com/package/react-parallax
 
-// images
-// import reactjs from '../../assets/images/reactjs.png';
-// import angularjs from '../../assets/images/angularjs.png';
-// import nodejs from '../../assets/images/nodejs.png';
-// import mysql from '../../assets/images/mysql.png';
-// import mongodb from '../../assets/images/mongodb.png';
-// import python from '../../assets/images/python.png';
 
 import image1 from '../assets/images/image1.jpg';
 import image2 from '../assets/images/image2.jpg';
@@ -23,26 +11,22 @@ import image3 from '../assets/images/image3.jpg';
 import image4 from '../assets/images/image4.jpg';
 import discord from '../assets/images/discord.jpg';
 // components
-// import AnimeText from '../components//AnimeText';
 import InfoBox from '../components/InfoBox';
 
-// bootstrap
-
 const Home = () => {
-    document.title = `TateWBS | Home`;
-    useEffect(() => {
 
+    useEffect(() => {
+        document.title = `TateWBS | Home`;
     }, []);
 
     return (
         <div id='homepage'>
             <div>
                 <Parallax
-                    className='fluid-container d-flex align-items-center justify-content-center'
-                    style={{ minHeight: '69vh' }}
-                    // blur={1}
+                    className='parallax-sizer d-flex align-items-center justify-content-center'
+                    style={{ minHeight: '100vh' }}
                     bgImage={image1}
-                    bgImageAlt='...'
+                    bgImageAlt=''
                     strength={500}
                 >
                     <p className='text-white text-center fs-1'>Have <ReactRotatingText items={['an amazing site!', 'an app customers will love...', 'a site made for you :)']} /></p>
@@ -62,7 +46,7 @@ const Home = () => {
             <div>
                 <Parallax
                     className='fluid-container d-flex align-items-center justify-content-center'
-                    style={{ minHeight: '40em' }}
+                    style={{ minHeight: '100vh' }}
                     // blur={1}
                     bgImage={image2}
                     bgImageAlt='...'
@@ -83,7 +67,7 @@ const Home = () => {
             <div>
                 <Parallax
                     className='fluid-container d-flex align-items-center justify-content-center'
-                    style={{ minHeight: '40em' }}
+                    style={{ minHeight: '100vh' }}
                     // blur={1}
                     bgImage={image3}
                     bgImageAlt='...'
@@ -104,7 +88,7 @@ const Home = () => {
                 />
                 <Parallax
                     className='fluid-container d-flex align-items-center justify-content-center'
-                    style={{ minHeight: '40em' }}
+                    style={{ minHeight: '100vh' }}
                     // blur={1}
                     bgImage={image4}
                     bgImageAlt='...'
@@ -124,7 +108,7 @@ const Home = () => {
                     }
                 />
                 <Parallax
-                    style={{ minHeight: '40em' }}
+                    style={{ minHeight: '100vh' }}
                     // blur={1}
                     bgImage={discord}
                     bgImageAlt='...'

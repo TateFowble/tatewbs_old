@@ -25,22 +25,24 @@ const Navigation = () => {
                 />
             </div>
             <Navbar.Offcanvas
+                id='navcanvas'
                 show={show}
                 placement='end'
             >
                 <Offcanvas.Header>
                     <Offcanvas.Title>
-                        <Image src={logo} width='120px' />
+                        <Image src={logo} width='100%' />
                     </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                     <Nav
-                        className='d-flex flex-column align-items-start m-3'
+                        className='d-flex flex-column align-items-start p-3'
                         onClick={() => setShow(!show)}
                     >
                         <Nav.Link as={Link} to='/'>Back to home</Nav.Link>
-                        <Nav.Link as={Link} to='/clients'>Meet the Clients</Nav.Link>
-                        <Nav.Link as={Link} to='/services'>See the Services</Nav.Link>
+                        <Nav.Link as={Link} to='/clients'>Meet our Clients</Nav.Link>
+                        <Nav.Link as={Link} to='/services'>{!true ? 'Review the Services' : 'What we do'}</Nav.Link>
+                        {/* <Nav.Link as={Link} to='/'>{true ? 'How we do it' : 'What we do'}</Nav.Link> */}
                         <Nav.Link href='http://discord.tatewbs.com' target='_blank' rel='noreferrer'>Join the discord!</Nav.Link>
                     </Nav>
                 </Offcanvas.Body>

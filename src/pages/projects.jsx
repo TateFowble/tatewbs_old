@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react';
 import Card from '../components/Card';
-import clients from '../assets/images/clients.png';
 
 const Project = () => {
 
-    let sites = [
+    const sites = [
         {
             name: 'StarWorksMC',
             url: 'https://www.starworksmc.us',
@@ -22,9 +21,7 @@ const Project = () => {
             url: 'https://foamtech.tatewbs.com',
             description: 'A web app that allows Foam Tech Employees to calculate and print reports based on their product load',
             image: ''
-        }
-    ];
-    let menuSites = [
+        },
         {
             name: 'El Maya',
             url: 'https://menu.elmayamx.com',
@@ -41,32 +38,15 @@ const Project = () => {
 
 
     useEffect(() => {
-        document.title = `TateWBS | Projects`;
+        document.title = `TateWBS | Meet our Clients`;
     }, []);
     return (
         <div id='projects' className='d-flex flex-column' style={{ gap: '2em' }}>
             <div className='m-5 d-flex justify-content-center'>
-                <h1>Clients</h1>
-                <img src={clients} alt="" />
+                <h1>Meet our Clients</h1>
             </div>
             {
                 sites.map((obj, i) => {
-                    return (
-                        <Card
-                            key={i}
-                            index={i}
-                            name={obj.name}
-                            url={obj.url}
-                            description={obj.description}
-                            image={obj.image}
-
-                        />
-                    )
-                })
-            }
-            {
-                menuSites.map((obj, i) => {
-                    console.log(obj);
                     return (
                         <Card
                             key={i}

@@ -23,7 +23,7 @@ import webdev from '../assets/images/services/webdev.jpg';
 
 
 // Variables
-const parallaxHeight = '75vh';
+const parallaxHeight = '100vh';
 const menuHostingColorList = {
     backgroundColor: '#f6e4e4'
 }
@@ -45,8 +45,7 @@ const Services = () => {
                     blur={{ min: -10, max: 15 }}
                     bgImage={menu}
                     bgImageAlt='...'
-                    strength={350}
-                >
+                    strength={350}>
                     <Container>
                         <Row>
                             <Col>
@@ -59,9 +58,9 @@ const Services = () => {
                                         </div>
                                         <ListGroup className='text-center'>
                                             <ListGroup.Item style={menuHostingColorList}>United States Hosting</ListGroup.Item>
-                                            <ListGroup.Item style={menuHostingColorList}>DDOS Protected</ListGroup.Item>
-                                            <ListGroup.Item style={menuHostingColorList}>Ecrypted Data</ListGroup.Item>
-                                            <ListGroup.Item style={menuHostingColorList}>Will show up on the <Link to='/projects' style={{ color: '#66ccff' }}>projects page</Link></ListGroup.Item>
+                                            <ListGroup.Item style={menuHostingColorList}>All our services are DDOS Protected</ListGroup.Item>
+                                            <ListGroup.Item style={menuHostingColorList}>Ecrypted Traffic for your users</ListGroup.Item>
+                                            <ListGroup.Item style={menuHostingColorList}>Your project will show on our <Link to='/clients' style={{ color: '#66ccff' }}>clients page</Link></ListGroup.Item>
                                         </ListGroup>
                                     </Card.Body>
                                 </Card>
@@ -70,8 +69,6 @@ const Services = () => {
                     </Container>
                 </Parallax>
             </div>
-
-            <div className='vertical-spacing' />
 
             <div>
                 <Parallax
@@ -85,7 +82,7 @@ const Services = () => {
                     <Container>
                         <Row>
                             <Col>
-                                <Card style={{ backgroundColor: '#c2bd62', opacity: '0.8' }} className='m-5 p-2'>
+                                <Card style={{ backgroundColor: '#c2bd62', opacity: '0.8' }} className='p-2'>
                                     <Card.Header className='fs-3 text-center'>Web Development</Card.Header>
                                     <Card.Body>
                                         <Card.Title className='color-success text-center'>Looking for a price? Each job is different
@@ -95,9 +92,10 @@ const Services = () => {
                                         </div>
                                         <ListGroup className='text-center'>
                                             <ListGroup.Item style={webDev}>United States Hosting</ListGroup.Item>
-                                            <ListGroup.Item style={webDev}>DDOS Protected</ListGroup.Item>
-                                            <ListGroup.Item style={webDev}>Encrypted Data</ListGroup.Item>
-                                            <ListGroup.Item style={webDev}>Will show up on the <Link style={{ color: '#66ccff' }} to='/projects'>projects page</Link></ListGroup.Item>
+                                            <ListGroup.Item style={webDev}>All our services are DDOS Protected</ListGroup.Item>
+                                            <ListGroup.Item style={webDev}>Ecrypted Traffic for your users</ListGroup.Item>
+                                            <ListGroup.Item style={webDev}>Custom API &amp; dedicated database (If needed)</ListGroup.Item>
+                                            <ListGroup.Item style={webDev}>Your project will show on our  <Link style={{ color: '#66ccff' }} to='/clients'>clients page</Link></ListGroup.Item>
                                         </ListGroup>
                                     </Card.Body>
                                 </Card>
@@ -106,43 +104,6 @@ const Services = () => {
                     </Container>
                 </Parallax>
             </div>
-
-            <div className='vertical-spacing' />
-            {/*
-            <div>
-                <Parallax
-                    className='fluid-container d-flex align-items-center justify-content-end'
-                    style={{ minHeight: parallaxHeight }}
-                    blur={{ min: 15, max: -10 }}
-                    bgImage={tv}
-                    bgImageAlt='...'
-                    strength={350}
-                >
-                    <Container>
-                        <Row>
-                            <Col>
-                                <Card className='m-5 p-2'>
-                                    <Card.Header className='fs-3 text-center'>Local Content Hosting</Card.Header>
-                                    <Card.Body>
-                                        <div className='mt-2'>
-                                            <p>This allows your business to run local ads and/or local content</p>
-                                        </div>
-                                        <Card.Title className='color-success text-center'>$35/month</Card.Title>
-                                        <div className='d-flex justify-content-center'>
-                                            <Link to='/services/local-content-hosting' className='text-decoration-none'><Button className='btn btn-lg btn-block btn-outline-primary mt-3 mb-3' variant='button'>More Info</Button></Link>s
-                                        </div>
-                                        <ListGroup className='text-center'>
-                                            <ListGroup.Item>1 Computer for 1 TV/Monitor</ListGroup.Item>
-                                            <ListGroup.Item></ListGroup.Item>
-                                        </ListGroup>
-                                    </Card.Body>
-                                </Card>
-                            </Col>
-                        </Row>
-                    </Container>
-                </Parallax>
-            </div>
-*/}
         </div>
     )
 }

@@ -12,13 +12,10 @@ import ListGroup from 'react-bootstrap/ListGroup';
 
 
 
-
-
 const Menu = () => {
     document.title = `TateWBS | Menu Hosting`;
     return (
         <div>
-            <div className='vertical-spacing' />
             <Container>
                 <div className='text-center'>
                     <h2>What is <u>Menu Hosting</u>?</h2>
