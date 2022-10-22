@@ -16,8 +16,7 @@ const Navigation = () => {
     const [show, setShow] = useState(false);
     return (
         <Nav
-            id='nav'
-            expand={false}>
+            id='nav'>
             <div
                 onClick={() => setShow(!show)}>
                 <Image

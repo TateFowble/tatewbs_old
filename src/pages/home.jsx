@@ -28,7 +28,7 @@ const Home = () => {
                     bgImageAlt=''
                     strength={500}
                 >
-                    <p className='text-white text-center fs-1'>Have <ReactRotatingText items={['an amazing site!', 'an app customers will love...', 'a site made for you :)']} /></p>
+                    <p className='text-white fs-1'>Have <ReactRotatingText items={['an amazing site!', 'an app customers will love...', 'a site made for you :)']} /></p>
                 </Parallax>
                 <InfoBox
                     header={
