@@ -106,7 +106,7 @@ const Home = () => {
                     bgImageAlt='...'
                     strength={500}
                 >
-                    <div className='container mt-5'>
+                    <div className='mt-5'>
                         <div className='d-flex justify-content-around'>
                             <iframe
                                 src='https://discord.com/widget?id=839274694511427655&theme=dark'

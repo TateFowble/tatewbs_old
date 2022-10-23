@@ -15,19 +15,38 @@ import Image from 'react-bootstrap/Image';
 
 
 const Menu = () => {
+
+
+
+    const keyPoints = [
+        'Ease of access &amp; use for your customers',
+        'Potential growth for your restaurant',
+        'Better look for your online presence',
+        'It draws more attention to your business',
+        'You can have seperate sections for different reasons, aka sorted allergies, food types, categories...',
+        'mages for every menu item for customer convience',
+        'Updates frequently'
+    ]
+
     useEffect(() => {
         document.title = `TateWBS | Online Menu Hosting`;
     }, [])
     return (
         <div id='menu'>
             <header>
-                {/* <Card.Img src={restaurant} /> */}
-                <div className='d-flex align-items-center justify-content-center'>
-                    <h1 className='text-center fs-1'></h1>
-                </div>
+                <Container>
+                    <div className='d-flex justify-content-end align-items-center'>
+                        <h1>The Web Menu for businesses</h1>
+                    </div>
+                </Container>
             </header>
-            <Container>
-            </Container>
+            <main>
+                <Container>
+                    <ListGroup className='text-center'>
+                        {keyPoints.map((item) => <ListGroup.Item>{item}</ListGroup.Item>)}
+                    </ListGroup>
+                </Container>
+            </main>
         </div>
     )
 }

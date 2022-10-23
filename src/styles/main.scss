@@ -179,21 +179,24 @@ footer {
 }
 
 #menu {
-    background: green;
+    background: black;
 
     header {
-        h1 {
-
-            color: white;
-            text-shadow: 5px 5px 5px black;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        height: 50vh;
-        background-image: url('../assets/images/restaurant.png');
-        filter: grayscale(0.3);
+        background-image: url('https://www.highreshdwallpapers.com/wp-content/uploads/2012/05/Repeated-Pattern-Wallpaper.png');
         background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-repeat: repeat;
+        background-clip: border-box;
+        height: 100vh;
+        div {
+            h1 {
+                color: whitesmoke;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+        }
+    }
+
+    main {
+        color: purple;
+        height: 100vh;
     }
 }
