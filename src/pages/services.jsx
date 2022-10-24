@@ -64,7 +64,7 @@ const Services = () => {
 
             <Parallax
                 className='parallax-sizer d-flex align-items-center justify-content-center'
-                blur={{ min: -10, max: 15 }}
+                blur={{ min: -5, max: 15 }}
                 bgImage={webdev}
                 bgImageAlt=''
                 strength={350}

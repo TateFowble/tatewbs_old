@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import '../../styles/main.scss';
 
+import { Parallax } from 'react-parallax';
+
 import restaurant from '../../assets/images/restaurant.png';
 import menuimage from '../../assets/images/onlinemenu.png';
 
@@ -34,13 +36,26 @@ const Menu = () => {
     return (
         <div id='menu'>
             <header>
-                <Container>
-                    <div className='d-flex justify-content-end align-items-center'>
-                        <h1>The Web Menu for businesses</h1>
-                    </div>
-                </Container>
+                <Parallax
+                    className='parallax-sizer d-flex align-items-center justify-content-center'
+                    bgImage={restaurant}
+                    bgImageAlt=''
+                    strength={500}
+                >
+                    <Container>
+
+                        <div className='d-flex align-items-center justify-content-center'>
+                            <h1>
+                                The Online Menu for you!
+                            </h1>
+                        </div>
+                    </Container>
+                </Parallax>
             </header>
             <main>
+                            <p className='fs-3 text-white'>
+                                <ReactRotatingText items={['Turn your physical menu into a virtual one!', 'Show off your Restaurant!', 'Grab your customers attention!', 'Ease of use for your existing customers']} />
+                            </p>
                 <Container>
                     <ListGroup className='text-center'>
                         {keyPoints.map((item) => <ListGroup.Item>{item}</ListGroup.Item>)}

@@ -182,15 +182,19 @@ footer {
     background: black;
 
     header {
-        background-image: url('https://www.highreshdwallpapers.com/wp-content/uploads/2012/05/Repeated-Pattern-Wallpaper.png');
-        background-position: center;
-        background-repeat: repeat;
-        background-clip: border-box;
-        height: 100vh;
+        .parallax-sizer {
+            min-height: 100vh;
+        }
+
         div {
+            width: 100%;
+
             h1 {
                 color: whitesmoke;
+                font-size: 6rem;
                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                // width: 50%;
+                text-shadow: 10px 10px rgba(0, 0, 0, 0.9);
             }
         }
     }
