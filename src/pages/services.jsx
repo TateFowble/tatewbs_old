@@ -14,7 +14,7 @@ import Button from 'react-bootstrap/Button';
 
 import menu from '../assets/images/menu.jpg';
 import webdev from '../assets/images/webdev.jpg';
-// import tv from '../../assets/images/services/tv.jpg';
+// import tv from '../assets/images/tv.jpg';
 
 
 
@@ -30,6 +30,7 @@ const Services = () => {
 
     useEffect(() => {
         document.title = `TateWBS | Services`;
+        window.scrollTo(0, 0);
     }, []);
     return (
         <div id='services'>
@@ -43,9 +44,8 @@ const Services = () => {
                     <Row>
                         <Col>
                             <Card style={{ backgroundColor: '#f3d3d2', opacity: '0.8' }} className='m-5 p-2'>
-                                <Card.Header className='fs-3 text-center'>Online Restraunt Menu</Card.Header>
+                                <Card.Header className='fs-3 text-center'>Online Menu Hosting</Card.Header>
                                 <Card.Body>
-                                    {/* <Card.Title className='color-success text-center'>$80/month Hosting</Card.Title> */}
                                     <div className='d-flex justify-content-center'>
                                         <Link to='/services/menu-hosting' className='text-decoration-none'><Button style={{ color: '#66ccff' }} className='btn mt-3 mb-3' size='lg' variant='outline-info'>More Info</Button></Link>
                                     </div>

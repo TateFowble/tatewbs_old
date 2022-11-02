@@ -32,6 +32,7 @@ const Menu = () => {
 
     useEffect(() => {
         document.title = `TateWBS | Online Menu Hosting`;
+        window.scrollTo(0, 0);
     }, [])
     return (
         <div id='menu'>
@@ -58,7 +59,7 @@ const Menu = () => {
                             </p>
                 <Container>
                     <ListGroup className='text-center'>
-                        {keyPoints.map((item) => <ListGroup.Item>{item}</ListGroup.Item>)}
+                        {keyPoints.map((item, i) => <ListGroup.Item key={i}>{item}</ListGroup.Item>)}
                     </ListGroup>
                 </Container>
             </main>

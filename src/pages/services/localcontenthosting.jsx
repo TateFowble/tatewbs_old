@@ -1,4 +1,4 @@
-import { React } from 'react';
+import React, { useEffect } from 'react';
 
 
 
@@ -6,7 +6,10 @@ import { React } from 'react';
 
 
 const LocalContentHosting = () => {
-    document.title = `TateWBS | Local Content Hosting`;
+    useEffect(() => {
+        document.title = `TateWBS | Local Content Hosting`;
+        window.scrollTo(0, 0);
+    },[]);
     return (
         <div>
             Local Page

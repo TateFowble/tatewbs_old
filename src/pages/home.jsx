@@ -4,7 +4,6 @@ import ReactRotatingText from 'react-rotating-text';
 
 import { Parallax } from 'react-parallax';
 
-
 import image1 from '../assets/images/image1.jpg';
 import image2 from '../assets/images/image2.jpg';
 import image3 from '../assets/images/image3.jpg';
@@ -12,18 +11,20 @@ import image4 from '../assets/images/image4.jpg';
 import discord from '../assets/images/discord.jpg';
 // components
 import InfoBox from '../components/InfoBox';
+import Discord from '../components/Discord';
 
 const Home = () => {
 
     useEffect(() => {
         document.title = `TateWBS | Home`;
+        window.scrollTo(0, 0);
     }, []);
 
     return (
         <div id='homepage'>
             <div>
                 <Parallax
-                    className='parallax-sizer d-flex align-items-center justify-content-center'
+                    contentClassName='parallax-sizer d-flex align-items-center justify-content-center'
                     bgImage={image1}
                     bgImageAlt=''
                     strength={500}
@@ -44,7 +45,7 @@ const Home = () => {
             </div>
             <div>
                 <Parallax
-                    className='parallax-sizer d-flex align-items-center justify-content-center'
+                    contentClassName='parallax-sizer d-flex align-items-center justify-content-center'
                     bgImage={image2}
                     bgImageAlt='...'
                     strength={500}
@@ -63,7 +64,7 @@ const Home = () => {
             </div>
             <div>
                 <Parallax
-                    className='parallax-sizer d-flex align-items-center justify-content-center'
+                    contentClassName='parallax-sizer d-flex align-items-center justify-content-center'
                     bgImage={image3}
                     bgImageAlt='...'
                     strength={500}
@@ -82,7 +83,7 @@ const Home = () => {
                     }
                 />
                 <Parallax
-                    className='parallax-sizer d-flex align-items-center justify-content-center'
+                    contentClassName='parallax-sizer d-flex align-items-center justify-content-center'
                     bgImage={image4}
                     bgImageAlt='...'
                     strength={500}
@@ -101,24 +102,12 @@ const Home = () => {
                     }
                 />
                 <Parallax
-                    className='parallax-sizer'
+                    contentClassName='parallax-sizer'
                     bgImage={discord}
                     bgImageAlt='...'
                     strength={500}
                 >
-                    <div className='mt-5'>
-                        <div className='d-flex justify-content-around'>
-                            <iframe
-                                src='https://discord.com/widget?id=839274694511427655&theme=dark'
-                                width='350'
-                                height='500'
-                                allowtransparency='true'
-                                frameBorder='0'
-                                sandbox='allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts'
-                                title='discord'
-                            ></iframe>
-                        </div>
-                    </div>
+                    <Discord />
                 </Parallax>
             </div>
         </div>

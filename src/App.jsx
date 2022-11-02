@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import {
   BrowserRouter as Router,
   Routes as Switch,
@@ -16,6 +16,7 @@ import Homepage from './pages/home';
 import Error from './pages/error';
 // import About from './pages/About/About';
 import ProjectsPage from './pages/projects';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 // Service page 
 import ServicesPage from './pages/services';
@@ -27,6 +28,7 @@ import LocalContentHostingPage from './pages/services/localcontenthosting';
 const App = () => {
 
   return (
+    <ParallaxProvider>
       <Router>
         <Switch>
           <Route element={<PublicRoutes />}>
@@ -38,9 +40,10 @@ const App = () => {
             <Route path='/services/local-content-hosting' element={<LocalContentHostingPage />} />
             <Route path='/clients' element={<ProjectsPage />} />
           </Route>
-            <Route path='*' element={<Error />} />
+          <Route path='*' element={<Error />} />
         </Switch>
       </Router>
+    </ParallaxProvider>
   );
 }
 

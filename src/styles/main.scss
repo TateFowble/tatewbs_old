@@ -52,7 +52,7 @@
 
 #homepage {
     width: 100%;
-
+    background: black;
     .react-rotating-text-cursor {
         animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
     }
@@ -72,9 +72,7 @@
     }
 
     .parallax-sizer {
-        left: -1px;
-        min-height: 100vh;
-        object-fit: cover;
+        height: 100vh;
     }
 
 }
@@ -203,4 +201,9 @@ footer {
         color: purple;
         height: 100vh;
     }
+}
+
+#webdevelopment {
+    background: green;
+    height: 500vh;
 }
