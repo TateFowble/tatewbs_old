@@ -3,6 +3,8 @@ import React, { useEffect } from 'react';
 import ReactRotatingText from 'react-rotating-text';
 
 import { Parallax } from 'react-parallax';
+import Container from 'react-bootstrap/Container';
+
 
 import image1 from '../assets/images/image1.jpg';
 import image2 from '../assets/images/image2.jpg';
@@ -107,7 +109,9 @@ const Home = () => {
                     bgImageAlt='...'
                     strength={500}
                 >
-                    <Discord />
+                    <Container>
+                        <Discord />
+                    </Container>
                 </Parallax>
             </div>
         </div>

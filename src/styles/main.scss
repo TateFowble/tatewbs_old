@@ -53,6 +53,7 @@
 #homepage {
     width: 100%;
     background: black;
+
     .react-rotating-text-cursor {
         animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
     }
@@ -206,4 +207,25 @@ footer {
 #webdevelopment {
     background: green;
     height: 500vh;
+}
+
+#discord {
+    // background: white;
+    height: 100%;
+    width: 100%;
+
+    a {
+        padding: 2em;
+        color: #7e74a5;
+        font-size: 3em;
+        text-decoration: none;
+        transition: 500ms;
+
+        &:hover {
+            color: black;
+            transform: scale(1.2);
+            text-shadow: #7e74a5 5px 25px 5px;
+            text-decoration-line: overline;
+        }
+    }
 }

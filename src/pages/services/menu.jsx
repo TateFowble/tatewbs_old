@@ -47,7 +47,7 @@ const Menu = () => {
 
                         <div className='d-flex align-items-center justify-content-center'>
                             <h1>
-                                The Online Menu for you!
+                                We know owning a business is hard, Let us make it easier
                             </h1>
                         </div>
                     </Container>
