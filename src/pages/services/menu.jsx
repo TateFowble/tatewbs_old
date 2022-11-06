@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import '../../styles/main.scss';
 
-import { Parallax } from 'react-parallax';
+import { useParallax } from 'react-scroll-parallax';
 
 import restaurant from '../../assets/images/restaurant.png';
 import menuimage from '../../assets/images/onlinemenu.png';
@@ -29,7 +29,9 @@ const Menu = () => {
         'mages for every menu item for customer convience',
         'Updates frequently'
     ]
-
+    const parallax = useParallax({
+        scale: [-0.2, 1]
+    });
     useEffect(() => {
         document.title = `TateWBS | Online Menu Hosting`;
         window.scrollTo(0, 0);
@@ -37,26 +39,12 @@ const Menu = () => {
     return (
         <div id='menu'>
             <header>
-                <Parallax
-                    className='parallax-sizer d-flex align-items-center justify-content-center'
-                    bgImage={restaurant}
-                    bgImageAlt=''
-                    strength={500}
-                >
-                    <Container>
-
-                        <div className='d-flex align-items-center justify-content-center'>
-                            <h1>
-                                We know owning a business is hard, Let us make it easier
-                            </h1>
-                        </div>
-                    </Container>
-                </Parallax>
+                <div ref={parallax.ref}>
+                    <h1 className='text-center'>What is Menu Hosting?</h1>
+                </div>
             </header>
             <main>
-                            <p className='fs-3 text-white'>
-                                <ReactRotatingText items={['Turn your physical menu into a virtual one!', 'Show off your Restaurant!', 'Grab your customers attention!', 'Ease of use for your existing customers']} />
-                            </p>
+
                 <Container>
                     <ListGroup className='text-center'>
                         {keyPoints.map((item, i) => <ListGroup.Item key={i}>{item}</ListGroup.Item>)}
