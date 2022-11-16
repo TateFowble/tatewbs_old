@@ -12,7 +12,7 @@ import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Button from 'react-bootstrap/Button';
 
-import menu from '../assets/images/menu.jpg';
+import menu from '../assets/images/menubackgound.jpg';
 import webdev from '../assets/images/webdev.jpg';
 // import tv from '../assets/images/tv.jpg';
 

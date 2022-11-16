@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import '../../styles/main.scss';
 
 import { useParallax } from 'react-scroll-parallax';
+import menu from '../../assets/images/menu.png';
 
 import restaurant from '../../assets/images/restaurant.png';
 import menuimage from '../../assets/images/onlinemenu.png';
@@ -21,7 +22,7 @@ const Menu = () => {
 
 
     const keyPoints = [
-        'Ease of access &amp; use for your customers',
+        'Ease of access & use for your customers',
         'Potential growth for your restaurant',
         'Better look for your online presence',
         'It draws more attention to your business',
@@ -30,7 +31,14 @@ const Menu = () => {
         'Updates frequently'
     ]
     const parallax = useParallax({
-        scale: [-0.2, 1]
+        scale: [-0.2, 1],
+        speed: [15, 50],
+        opacity: [10, 0]
+    });
+    const test = useParallax({
+        // speed: 15,
+        // rotateZ: [-180, 180],
+        opacity: [4, -2]
     });
     useEffect(() => {
         document.title = `TateWBS | Online Menu Hosting`;
@@ -44,12 +52,19 @@ const Menu = () => {
                 </div>
             </header>
             <main>
-
-                <Container>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <div ref={test.ref}>
+                    <Image src={menu} alt='' width='20%' />
+                </div>
+                {/* <Container>
                     <ListGroup className='text-center'>
-                        {keyPoints.map((item, i) => <ListGroup.Item key={i}>{item}</ListGroup.Item>)}
+                    {keyPoints.map((item, i) => <ListGroup.Item key={i}>{item}</ListGroup.Item>)}
                     </ListGroup>
-                </Container>
+                </Container> */}
             </main>
         </div>
     )

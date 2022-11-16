@@ -181,7 +181,7 @@ footer {
     background: black;
 
     header {
-        
+
 
         div {
             width: 100%;
@@ -191,14 +191,21 @@ footer {
                 font-size: 6rem;
                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                 // width: 50%;
-                text-shadow: 10px 10px rgba(0, 0, 0, 0.9);
+                text-align: center;
+                background: linear-gradient(to right, rgb(67, 124, 205), rgb(127, 184, 179));
+                // text-shadow: 10px 10px rgba(0, 0, 0, 0.9);
+                background-position: top;
+                background-repeat: repeat-x;
+                background-size: contain;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
             }
         }
     }
 
     main {
         color: purple;
-        height: 100vh;
+        height: 1000vh;
     }
 }
 
