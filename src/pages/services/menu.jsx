@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../../styles/main.scss';
 
 import { useParallax } from 'react-scroll-parallax';
@@ -14,13 +14,12 @@ import Container from 'react-bootstrap/Container';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image';
-
-
+import Button from 'react-bootstrap/Button';
 
 const Menu = () => {
 
-
-
+    const [scrollingBehavior, setScrollingBehavior] = useState(0);
+    const [startScroll, setStartScroll] = useState(false);
     const keyPoints = [
         'Ease of access & use for your customers',
         'Potential growth for your restaurant',
@@ -30,35 +29,46 @@ const Menu = () => {
         'mages for every menu item for customer convience',
         'Updates frequently'
     ]
-    const parallax = useParallax({
+    const header = useParallax({
         scale: [-0.2, 1],
-        speed: [15, 50],
+        speed: -15,
         opacity: [10, 0]
     });
     const test = useParallax({
-        // speed: 15,
+        speed: -35,
+        easing: 'easeOutQuad',
+        // rotateY: [-160, 160]
         // rotateZ: [-180, 180],
-        opacity: [4, -2]
+        // scale: [0,2]
+        opacity: [-5, 1]
     });
+
     useEffect(() => {
         document.title = `TateWBS | Online Menu Hosting`;
-        window.scrollTo(0, 0);
-    }, [])
+        window.scrollTo(0, scrollingBehavior);
+        if (startScroll) {
+            setTimeout(() => {
+                if ((window.innerHeight + Math.ceil(window.pageYOffset)) >= document.body.offsetHeight) {
+                    setStartScroll(false);
+                    return setScrollingBehavior(0);
+                }
+                return setScrollingBehavior(scrollingBehavior + 1);
+            }, 1);
+        }
+        console.log(scrollingBehavior);
+        console.log(startScroll);
+    }, [scrollingBehavior, startScroll])
     return (
         <div id='menu'>
-            <header>
-                <div ref={parallax.ref}>
+                    <Button className='float-end' onClick={() => setStartScroll(true)}>Scroll</Button>
+            <header ref={header.ref}>
+                <div>
                     <h1 className='text-center'>What is Menu Hosting?</h1>
                 </div>
             </header>
             <main>
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
                 <div ref={test.ref}>
-                    <Image src={menu} alt='' width='20%' />
+                    <Image src={menu} alt='' width='40%' />
                 </div>
                 {/* <Container>
                     <ListGroup className='text-center'>
