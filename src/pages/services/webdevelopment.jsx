@@ -18,7 +18,6 @@ const WebDevelopment = () => {
 
     useEffect(() => {
         document.title = `TateWBS | Web Development`;
-        window.scrollTo(0, 0);
     }, []);
     return (
         <div id='webdevelopment'>

@@ -39,7 +39,6 @@ const Project = () => {
 
     useEffect(() => {
         document.title = `TateWBS | Meet our Clients`;
-        window.scrollTo(0, 0);
     }, []);
     return (
         <div id='projects' className='d-flex flex-column' style={{ gap: '2em' }}>

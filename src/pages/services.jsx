@@ -30,7 +30,6 @@ const Services = () => {
 
     useEffect(() => {
         document.title = `TateWBS | Services`;
-        window.scrollTo(0, 0);
     }, []);
     return (
         <div id='services'>
