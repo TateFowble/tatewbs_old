@@ -7,13 +7,13 @@ const Project = () => {
         {
             name: 'StarWorksMC',
             url: 'https://www.starworksmc.us',
-            description: 'A Minecraft network that connects Java based code into web based code to interact with the network',
+            description: 'A Minecraft network that connects Java based code into web based code to interact with the network. Allowing its users/players to play comfortably',
             image: 'https://www.starworksmc.us/static/media/village-closeup.e7be0e165efcab0e732d.png'
         },
         {
             name: 'ActuallyArcher',
             url: 'https://www.actuallyarcher.com',
-            description: 'An upscale boutique for women who desire classy office clothing and jewelery',
+            description: 'An upscale boutique for women who desire classy office clothing and jewelry',
             image: ''
         },
         {
@@ -32,6 +32,12 @@ const Project = () => {
             name: 'Overlook',
             url: 'https://overlook.tatewbs.com',
             description: 'By the lake location with the best burgers and fries around',
+            image: ''
+        },
+        {
+            name: 'Smokin Bros BBQ',
+            url: 'https://smokinbros.tatewbs.com',
+            description: 'BBQ located in Canton, with all types of BBQ & Steak',
             image: ''
         },
     ];
