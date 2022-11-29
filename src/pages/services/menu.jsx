@@ -60,7 +60,7 @@ const Menu = () => {
     }, [scrollingBehavior, startScroll])
     return (
         <div id='menu'>
-                    <Button className='float-end' onClick={() => setStartScroll(true)}>Scroll</Button>
+            <Button className='float-end' onClick={() => setStartScroll(true)}>Scroll</Button>
             <header ref={header.ref}>
                 <div>
                     <h1 className='text-center'>What is Menu Hosting?</h1>
