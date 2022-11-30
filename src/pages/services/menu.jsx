@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../../styles/main.scss';
 
+import anime from 'animejs';
 import { useParallax } from 'react-scroll-parallax';
 import menu from '../../assets/images/menu.png';
 
@@ -20,6 +21,7 @@ const Menu = () => {
 
     const [scrollingBehavior, setScrollingBehavior] = useState(0);
     const [startScroll, setStartScroll] = useState(false);
+    const [btt, setBtt] = useState(0);
     const keyPoints = [
         'Ease of access & use for your customers',
         'Potential growth for your restaurant',
@@ -31,17 +33,31 @@ const Menu = () => {
     ]
     const header = useParallax({
         scale: [-0.2, 1],
-        speed: -15,
+        // speed: -15,
         opacity: [10, 0]
     });
-    const test = useParallax({
-        speed: -35,
-        easing: 'easeOutQuad',
-        // rotateY: [-160, 160]
-        // rotateZ: [-180, 180],
-        // scale: [0,2]
-        opacity: [-5, 1]
+    // const test = useParallax({
+    //     speed: -25,
+    //     easing: 'easeOutQuad',
+    //     // rotateY: [-160, 160]
+    //     // rotateZ: [-180, 180],
+    //     // scale: [0,2]
+    //     opacity: [-3, 1]
+    // });
+
+    anime({
+        targets: '.test h1',
+        translateX: btt,
+        delay: anime.stagger(150) // increase delay by 100ms for each elements.
     });
+
+    let arr = [];
+    const forLoop = () => {
+        for (let i = 0; i <= 20; i++) {
+            console.log(i);
+            arr.push(`Text ${i}`)
+        }
+    }
 
     useEffect(() => {
         document.title = `TateWBS | Online Menu Hosting`;
@@ -55,21 +71,31 @@ const Menu = () => {
                 return setScrollingBehavior(scrollingBehavior + 1);
             }, 1);
         }
-        console.log(scrollingBehavior);
-        console.log(startScroll);
     }, [scrollingBehavior, startScroll])
     return (
         <div id='menu'>
-            <Button className='float-end' onClick={() => setStartScroll(true)}>Scroll</Button>
-            <header ref={header.ref}>
-                <div>
+            {/* <Button className='float-end' onClick={() => setStartScroll(true)}>Scroll</Button> */}
+            <Button className='float-end' onClick={() => setBtt(btt + 100)}>Scroll</Button>
+
+            <header>
+                <div ref={header.ref}>
                     <h1 className='text-center'>What is Menu Hosting?</h1>
                 </div>
             </header>
             <main>
-                <div ref={test.ref}>
+            <div className='test d-inline-block'>
+                {
+                    forLoop()
+                }
+                {
+                    arr.map((obj, i) => {
+                        return <h1>{i}</h1>
+                    })
+                }
+            </div>
+                {/* <div ref={test.ref}>
                     <Image src={menu} alt='' width='40%' />
-                </div>
+                </div> */}
                 {/* <Container>
                     <ListGroup className='text-center'>
                     {keyPoints.map((item, i) => <ListGroup.Item key={i}>{item}</ListGroup.Item>)}

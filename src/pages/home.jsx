@@ -96,7 +96,7 @@ const Home = () => {
                         'Need support or have something to offer? Join the growing community on discord'
                     }
                     text={
-                        'Click on the connect button below on the discord widget!'
+                        'Connect to the discord below!'
                     }
                     borderColor={
                         '#7fb3e4'
