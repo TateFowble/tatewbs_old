@@ -48,12 +48,12 @@ const Menu = () => {
     anime({
         targets: '.test h1',
         translateX: btt,
-        delay: anime.stagger(150) // increase delay by 100ms for each elements.
+        delay: anime.stagger(100) // increase delay by 100ms for each elements.
     });
 
     let arr = [];
     const forLoop = () => {
-        for (let i = 0; i <= 20; i++) {
+        for (let i = 0; i <= 100; i++) {
             console.log(i);
             arr.push(`Text ${i}`)
         }
@@ -70,29 +70,29 @@ const Menu = () => {
                 }
                 return setScrollingBehavior(scrollingBehavior + 1);
             }, 1);
-        }
+        } 
     }, [scrollingBehavior, startScroll])
     return (
         <div id='menu'>
-            {/* <Button className='float-end' onClick={() => setStartScroll(true)}>Scroll</Button> */}
-            <Button className='float-end' onClick={() => setBtt(btt + 100)}>Scroll</Button>
+            <Button className='float-end' onClick={() => setStartScroll(true)}>Down Scroll</Button>
+            <Button className='float-end' onClick={() => setBtt(btt + 100)}>Animation Scroll</Button>
 
             <header>
                 <div ref={header.ref}>
-                    <h1 className='text-center'>What is Menu Hosting?</h1>
+                    <h1 className='text-center'>Host your restaraunt menu online!</h1>
                 </div>
             </header>
             <main>
-            <div className='test d-inline-block'>
-                {
-                    forLoop()
-                }
-                {
-                    arr.map((obj, i) => {
-                        return <h1>{i}</h1>
-                    })
-                }
-            </div>
+                <div className='test d-inline-block'>
+                    {
+                        forLoop()
+                    }
+                    {
+                        arr.map((obj, i) => {
+                            return <h1>{obj}</h1>
+                        })
+                    }
+                </div>
                 {/* <div ref={test.ref}>
                     <Image src={menu} alt='' width='40%' />
                 </div> */}
@@ -166,6 +166,10 @@ Images for every menu item for Customers convience */
             </Container >
 */
 
+/* 
 
+Make showing off your restaraunt easier!
+
+*/
 
 export default Menu;

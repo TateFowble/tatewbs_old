@@ -180,11 +180,15 @@ footer {
 #menu {
     background: black;
 
-    
+    // background: linear-gradient(35deg, #29304E, #375172, #29304E); 
+    // background: linear-gradient(35deg, #465c7a, #685d79, #ac6d83, #d9727f,#fcbb6d);
+    // background: linear-gradient(35deg, #612318, #98463a, #b65f55, #253641, #162731);
+    background: linear-gradient(-45deg, #775d6a, #fdd0bb, #8eb9a6);
+    background-size: 100% 100%;
+    height: 100%;
+    // filter: blur(50px);
+
     header {
-        background: linear-gradient(35deg, #29304E, #375172, #29304E);
-        background-size: 100% 100%;
-        height: 30rem;
 
         div {
             width: 100%;
@@ -208,7 +212,19 @@ footer {
 
     main {
         color: white;
-        height: 500vh;
+
+        // height: 500vh;
+        div {
+
+            h1 {
+                transition: 250ms;
+                cursor: pointer;
+
+                &:hover {
+                    color: rgb(67, 124, 205);
+                }
+            }
+        }
     }
 }
 
