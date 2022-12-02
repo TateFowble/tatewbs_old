@@ -23,6 +23,12 @@ const Project = () => {
             image: ''
         },
         {
+            name: 'TateWBS Online Menu',
+            url: 'https://menu.tatewbs.com',
+            description: 'This menu is a test/example menu for all restaraunt owners wanting to see how the online menu looks',
+            image: ''
+        },
+        {
             name: 'El Maya',
             url: 'https://menu.elmayamx.com',
             description: 'A Mexican restraunt menu that introduces new foods and styles',
