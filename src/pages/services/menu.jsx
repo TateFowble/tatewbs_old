@@ -2,14 +2,13 @@ import React, { useState, useEffect } from 'react';
 import '../../styles/main.scss';
 
 import anime from 'animejs';
-import { useParallax } from 'react-scroll-parallax';
 import menu from '../../assets/images/menu.png';
 
 import restaurant from '../../assets/images/restaurant.png';
 import menuimage from '../../assets/images/onlinemenu.png';
 
 import ContactForm from '../../components/ContactForm';
-import ReactRotatingText from 'react-rotating-text';
+
 
 import Container from 'react-bootstrap/Container';
 import ListGroup from 'react-bootstrap/ListGroup';
@@ -30,25 +29,12 @@ const Menu = () => {
         'You can have seperate sections for different reasons, aka sorted allergies, food types, categories...',
         'mages for every menu item for customer convience',
         'Updates frequently'
-    ]
-    const header = useParallax({
-        scale: [-0.2, 1],
-        // speed: -15,
-        opacity: [10, 0]
-    });
-    // const test = useParallax({
-    //     speed: -25,
-    //     easing: 'easeOutQuad',
-    //     // rotateY: [-160, 160]
-    //     // rotateZ: [-180, 180],
-    //     // scale: [0,2]
-    //     opacity: [-3, 1]
-    // });
+    ];
 
     anime({
         targets: '.test h1',
         translateX: btt,
-        delay: anime.stagger(100) // increase delay by 100ms for each elements.
+        delay: anime.stagger(500) // increase delay by 100ms for each elements.
     });
 
     let arr = [];
@@ -61,24 +47,11 @@ const Menu = () => {
 
     useEffect(() => {
         document.title = `TateWBS | Online Menu Hosting`;
-        window.scrollTo(0, scrollingBehavior);
-        if (startScroll) {
-            setTimeout(() => {
-                if ((window.innerHeight + Math.ceil(window.pageYOffset)) >= document.body.offsetHeight) {
-                    setStartScroll(false);
-                    return setScrollingBehavior(0);
-                }
-                return setScrollingBehavior(scrollingBehavior + 1);
-            }, 1);
-        } 
-    }, [scrollingBehavior, startScroll])
+    }, [])
     return (
         <div id='menu'>
-            <Button className='float-end' onClick={() => setStartScroll(true)}>Down Scroll</Button>
-            <Button className='float-end' onClick={() => setBtt(btt + 100)}>Animation Scroll</Button>
-
             <header>
-                <div ref={header.ref}>
+                <div>
                     <h1 className='text-center'>Host your restaraunt menu online!</h1>
                 </div>
             </header>
