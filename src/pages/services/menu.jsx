@@ -1,49 +1,84 @@
 import React, { useState, useEffect } from 'react';
 import '../../styles/main.scss';
 
-import anime from 'animejs';
-import menu from '../../assets/images/menu.png';
-
-import restaurant from '../../assets/images/restaurant.png';
-import menuimage from '../../assets/images/onlinemenu.png';
-
 import ContactForm from '../../components/ContactForm';
-
+import MenuCard from '../../components/MenuCard';
+import InteractiveImages from '../../components/InteractiveImages';
 
 import Container from 'react-bootstrap/Container';
-import ListGroup from 'react-bootstrap/ListGroup';
-import Card from 'react-bootstrap/Card';
-import Image from 'react-bootstrap/Image';
-import Button from 'react-bootstrap/Button';
+
+
+// Images
+// First 3
+import dollar from '../../assets/icons/menu/dollar.svg';
+import chartUp from '../../assets/icons/menu/chart-line-up.svg';
+import user from '../../assets/icons/menu/user.png';
+// Second 3
+import scissors from '../../assets/icons/menu/scissors.svg';
+import customerlove from '../../assets/icons/menu/person-hearts.svg';
+import upload from '../../assets/icons/menu/upload.png';
+// Third 3
+import server from '../../assets/icons/menu/server.png';
+import nosmartphone from '../../assets/icons/menu/no-smartphones.png';
+import update from '../../assets/icons/menu/refresh.png';
 
 const Menu = () => {
 
-    const [scrollingBehavior, setScrollingBehavior] = useState(0);
-    const [startScroll, setStartScroll] = useState(false);
-    const [btt, setBtt] = useState(0);
     const keyPoints = [
-        'Ease of access & use for your customers',
-        'Potential growth for your restaurant',
-        'Better look for your online presence',
-        'It draws more attention to your business',
-        'You can have seperate sections for different reasons, aka sorted allergies, food types, categories...',
-        'mages for every menu item for customer convience',
-        'Updates frequently'
+        {
+            icon: user,
+            title: 'Get your customers excited',
+            paragraph: 'Allow your existing customers to enjoy the comfort of viewing your menu online without the stress of time packed, last minute calls.'
+        },
+        {
+            icon: dollar,
+            title: 'When you win, we win',
+            paragraph: 'By trying our services, You are given the tools you need to have more insight into what your customers love.'
+        },
+        {
+            icon: chartUp,
+            title: 'Better your online presence',
+            paragraph: 'Gain more credibility and a more professional experience with our custom layouts that are completely customized to your needs!'
+        }
     ];
 
-    anime({
-        targets: '.test h1',
-        translateX: btt,
-        delay: anime.stagger(500) // increase delay by 100ms for each elements.
-    });
-
-    let arr = [];
-    const forLoop = () => {
-        for (let i = 0; i <= 100; i++) {
-            console.log(i);
-            arr.push(`Text ${i}`)
+    const keyPoints2 = [
+        {
+            icon: scissors,
+            title: 'We don\'t cut corners',
+            paragraph: 'We team check our code leaving you with the best online menu and tools we can for you to succeed!'
+            // We give our clients the best experience and advice we can so that you can be successful at what you do
+        },
+        {
+            icon: customerlove,
+            title: 'More for your customers',
+            paragraph: 'Create filters sorting out categories and food allergies so your customers can find what they are looking for while descovering and browsing your menu!'
+        },
+        {
+            icon: upload,
+            title: 'We allow images',
+            paragraph: 'We created an image splicer that takes your raw image and converts it to a web safe format allowing speedy image load times.'
         }
-    }
+    ]
+
+    const keyPoints3 = [
+        {
+            icon: server,
+            title: 'Dedicated hosting',
+            paragraph: 'Don\'t have an extra server laying around? Don\'t worry! We host your online menu and all it\'s assets included with your bundle with 99% uptime!'
+        },
+        {
+            icon: nosmartphone,
+            title: 'Decrease miscommunication',
+            paragraph: 'With our plans on adding online ordering, there will be less miscommunication between your customers and kitchen, the customer will put their order in and your kitchen staff can read the order directly.'
+        },
+        {
+            icon: update,
+            title: 'Regular Updates',
+            paragraph: 'With our team always coming up with new features, you can request a feature to be implimented for you to use!'
+        }
+    ]
+
 
     useEffect(() => {
         document.title = `TateWBS | Online Menu Hosting`;
@@ -51,98 +86,46 @@ const Menu = () => {
     return (
         <div id='menu'>
             <header>
-                <div>
-                    <h1 className='text-center'>Host your restaraunt menu online!</h1>
-                </div>
+                {/* <InteractiveImages /> */}
+                {/* well you're here now what */}
+                <h1 className='text-center'>HOST YOUR RESTARAUNT MENU ONLINE</h1>
             </header>
             <main>
-                <div className='test d-inline-block'>
-                    {
-                        forLoop()
-                    }
-                    {
-                        arr.map((obj, i) => {
-                            return <h1>{obj}</h1>
-                        })
-                    }
-                </div>
-                {/* <div ref={test.ref}>
-                    <Image src={menu} alt='' width='40%' />
-                </div> */}
-                {/* <Container>
-                    <ListGroup className='text-center'>
-                    {keyPoints.map((item, i) => <ListGroup.Item key={i}>{item}</ListGroup.Item>)}
-                    </ListGroup>
-                </Container> */}
+                <Container>
+                    <div className='grid'>
+                        {
+                            keyPoints.map((obj, i) => {
+                                return <MenuCard icon={obj.icon} title={obj.title} text={obj.paragraph} />
+                            })
+                        }
+                    </div>
+                </Container>
+                <Container>
+                    <div className='grid'>
+                        {
+                            keyPoints2.map((obj, i) => {
+                                return <MenuCard icon={obj.icon} title={obj.title} text={obj.paragraph} />
+                            })
+                        }
+                    </div>
+                </Container>
+                <Container>
+                    <div className='grid'>
+                        {
+                            keyPoints3.map((obj, i) => {
+                                return <MenuCard icon={obj.icon} title={obj.title} text={obj.paragraph} />
+                            })
+                        }
+                    </div>
+                </Container>
             </main>
         </div>
     )
 }
-/* input and image1
 
-also describe
-How its benefits your business, adding convience and allowing it to be put on the internet for more potential customers to see
-It draws more attention to your business
-You can have seperate sections for different reasons, aka sorted allergies, food types, sections...
-adds to your business's internet look
-Images for every menu item for Customers convience */
-
-
-/*
- <Container>
-                <div className='text-center'>
-                    <h1>What is <u>Menu Hosting</u>?</h1>
-                    <hr />
-                    <div className='mb-5'>
-                        <p>
-                            <em>
-                                Menu Hosting allows you to turn your phyiscal menu into an virtual menu for customers to use
-                            </em>
-                        </p>
-                    </div>
-
-                    <p className='fs-3 font-weight-bold'>Turn this</p>
-                    <img src={menuimage} alt='Loading' className='shadow img-fluid mb-5' />
-
-                    <p className='fs-3 font-weight-bold'>Into this</p>
-                    <img src={menuimage1} alt='Loading' className='img-fluid' />
-                    <img src={menuimage2} alt='Loading' className='img-fluid mb-5' />
-
-                    <p className='fs-2'>You can check out a <a href='https://menu.tatewbs.com' target='_blank' rel='noreferrer'>Live Demo Here</a></p>
-
-                    <hr />
-                    <div className='mt-5 mb-5'>
-                        <p className='fs-2'><strong>How does putting your menu online benefit your business?</strong></p>
-                        <div>
-                            <p>Sometimes trying new things can be a struggle, thats why we will do it for you!</p>
-                            <p>By going with our online menu's not only do you get style, but also better functionality as a restaurant</p>
-
-                            <p className='mt-4'>Here are some key points:</p>
-                            <ListGroup className='text-center'>
-                                <ListGroup.Item>Ease of access &amp; use for your customers</ListGroup.Item>
-                                <ListGroup.Item>Potential growth for your restaurant</ListGroup.Item>
-                                <ListGroup.Item>Better look for your online presence</ListGroup.Item>
-                                <ListGroup.Item>It draws more attention to your business</ListGroup.Item>
-                                <ListGroup.Item>You can have seperate sections for different reasons, aka sorted allergies, food types, categories...</ListGroup.Item>
-                                <ListGroup.Item>Images for every menu item for customer convience</ListGroup.Item>
-                                <ListGroup.Item>Updates frequently</ListGroup.Item>
-                            </ListGroup>
-                            <h4 className='mt-4'>Everything is custom coded, if you need something different then we got you!</h4>
-                        </div>
-                    </div>
-                    <hr />
-                    <ContactForm
-                        page='menu'
-                        info='How do I get an online menu?!'
-                    />
-                </div >
-            </Container >
-*/
-
-/* 
-
-Make showing off your restaraunt easier!
-
-*/
+{/* <ContactForm
+    page='menu'
+    info='How do I get an online menu?!'
+/> */}
 
 export default Menu;
