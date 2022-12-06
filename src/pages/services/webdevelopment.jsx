@@ -9,7 +9,6 @@ import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Button from 'react-bootstrap/Button';
 
-import { Parallax, ParallaxBanner } from 'react-scroll-parallax';
 
 
 const WebDevelopment = () => {
@@ -21,20 +20,7 @@ const WebDevelopment = () => {
     }, []);
     return (
         <div id='webdevelopment'>
-            <div style={{ height: '65vh' }} />
-            ---
-            <Parallax speed={50} translateX={['0px', '150px']}>
-                <div>
-                    <h1>some content</h1>
-                </div>
-            </Parallax>
-            <ParallaxBanner
-                layers={[{
-                    image: 'https://react-scroll-parallax.damnthat.tv/img/banner.jpg',
-                    speed: -15
-                }]}
-                style={{ height: '100vh' }}
-            />
+
         </div>
     )
 }

@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import '../../styles/main.scss';
 
-import ContactForm from '../../components/ContactForm';
 import MenuCard from '../../components/MenuCard';
-import InteractiveImages from '../../components/InteractiveImages';
+import ContactForm from '../../components/ContactForm';
 
 import Container from 'react-bootstrap/Container';
+import Image from 'react-bootstrap/Image';
+import Card from 'react-bootstrap/Card';
 
 
 // Images
+import menuuu from '../../assets/icons/menu/menuuu.png';
 // First 3
 import dollar from '../../assets/icons/menu/dollar.svg';
 import chartUp from '../../assets/icons/menu/chart-line-up.svg';
@@ -46,8 +48,8 @@ const Menu = () => {
         {
             icon: scissors,
             title: 'We don\'t cut corners',
-            paragraph: 'We team check our code leaving you with the best online menu and tools we can for you to succeed!'
-            // We give our clients the best experience and advice we can so that you can be successful at what you do
+            paragraph: 'We double check our code leaving you with the best online menu and tools that we can for you to succeed!'
+            // We team check our code leaving you with the best online menu and tools we can for you to succeed!
         },
         {
             icon: customerlove,
@@ -65,17 +67,19 @@ const Menu = () => {
         {
             icon: server,
             title: 'Dedicated hosting',
-            paragraph: 'Don\'t have an extra server laying around? Don\'t worry! We host your online menu and all it\'s assets included with your bundle with 99% uptime!'
+            paragraph: 'Don\'t have a server? Don\'t worry! We host your online menu and all it\'s assets included with your bundle with 99% uptime!'
+            // Don\'t have an extra server laying around? Don\'t worry! We host your online menu and all it\'s assets included with your bundle with 99% uptime!
         },
         {
             icon: nosmartphone,
             title: 'Decrease miscommunication',
-            paragraph: 'With our plans on adding online ordering, there will be less miscommunication between your customers and kitchen, the customer will put their order in and your kitchen staff can read the order directly.'
+            paragraph: 'With our plans on adding online ordering, there will be better communication between your customers and kitchen, the customer will put their order in and your kitchen staff can read the order directly.'
         },
         {
             icon: update,
             title: 'Regular Updates',
-            paragraph: 'With our team always coming up with new features, you can request a feature to be implimented for you to use!'
+            paragraph: 'We are always coming up with new features, you can request a feature to be implimented for you to use!'
+            // With our team always coming up with new features, you can request a feature to be implimented for you to use!
         }
     ]
 
@@ -86,34 +90,48 @@ const Menu = () => {
     return (
         <div id='menu'>
             <header>
-                {/* <InteractiveImages /> */}
-                {/* well you're here now what */}
-                <h1 className='text-center'>HOST YOUR RESTARAUNT MENU ONLINE</h1>
+                <div className='d-flex justify-content-center align-items-center'>
+                    <Image src={menuuu} alt='' />
+                </div>
             </header>
             <main>
                 <Container>
+                    <h2 className='text-center'><a href='https://menu.tatewbs.com' target='_blank' rel='noreferrer'>Live Example</a></h2>
                     <div className='grid'>
                         {
                             keyPoints.map((obj, i) => {
-                                return <MenuCard icon={obj.icon} title={obj.title} text={obj.paragraph} />
+                                return <MenuCard key={i} icon={obj.icon} title={obj.title} text={obj.paragraph} />
                             })
                         }
                     </div>
-                </Container>
-                <Container>
+                    {/* Full support &amp; security + mobile compatibility */}
+                    <p>
+                        With our increasing number of business, we strive to
+                        create the <strong>Perfect Admin Panel</strong> making
+                        your menu as painless as possible to manage and
+                        with its simplistic design you can start using it
+                        in the matter of minutes.
+                        With <strong>Support</strong> being available
+                        for all our clients, you can be worry free of any technical issues.
+                    </p>
                     <div className='grid'>
                         {
                             keyPoints2.map((obj, i) => {
-                                return <MenuCard icon={obj.icon} title={obj.title} text={obj.paragraph} />
+                                return <MenuCard key={i} icon={obj.icon} title={obj.title} text={obj.paragraph} />
                             })
                         }
                     </div>
-                </Container>
-                <Container>
+                    <p>
+                        Our menu designs are <strong>mobile compatible</strong> meaning you can view them on phones,
+                        tablets, or a laptop!
+                        We also include a QR code that links to your menu so you can print on
+                        cards and can place on the table.
+                        All of this for $150/month or about $5 a day!
+                    </p>
                     <div className='grid'>
                         {
                             keyPoints3.map((obj, i) => {
-                                return <MenuCard icon={obj.icon} title={obj.title} text={obj.paragraph} />
+                                return <MenuCard key={i} icon={obj.icon} title={obj.title} text={obj.paragraph} />
                             })
                         }
                     </div>
