@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import Card from '../components/Card';
 
+import starworksmc from '../assets/images/starworksmc.png';
+
 const Project = () => {
 
     const sites = [
@@ -8,7 +10,7 @@ const Project = () => {
             name: 'StarWorksMC',
             url: 'https://www.starworksmc.us',
             description: 'A Minecraft network that connects Java based code into web based code to interact with the network. Allowing its users/players to play comfortably',
-            image: 'https://www.starworksmc.us/static/media/village-closeup.e7be0e165efcab0e732d.png'
+            image: starworksmc
         },
         {
             name: 'ActuallyArcher',
