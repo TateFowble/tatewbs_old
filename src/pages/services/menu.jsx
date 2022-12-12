@@ -104,10 +104,10 @@ const Menu = () => {
                         With our increasing number of business, we strive to
                         create the <strong>Perfect Admin Panel</strong> making
                         your menu as painless as possible to manage and
-                        with its simplistic design you can start using it
+                        with it's simplistic design you can start using it
                         in the matter of minutes.
                         With <strong>Support</strong> being available
-                        for all our clients, you can be worry free of any technical issues.
+                        for all of our clients, you can be worry free of any technical issues.
                     </p>
                     <div className='grid'>
                         {
@@ -119,8 +119,8 @@ const Menu = () => {
                     <p>
                         Our menu designs are <strong>mobile compatible</strong> meaning you can view them on phones,
                         tablets, or a laptop!
-                        We also include a QR code that links to your menu so you can print on
-                        cards and can place on the table.
+                        We also include a QR code that links to your menu so you can print out
+                        cards and place on the table.
                         All of this for $150/month or about $5 a day!
                     </p>
                     <div className='grid'>

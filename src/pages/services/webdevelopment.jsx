@@ -53,7 +53,7 @@ const WebDevelopment = () => {
         {
             icon: progression,
             title: 'Progression',
-            paragraph: 'Your idea\'s will never cease neither should your website... That\'s why we offer after production services.'
+            paragraph: 'Your idea\'s will never cease, neither should your website... That\'s why we offer after production services.'
         },
         {
             icon: ddos,
@@ -103,7 +103,7 @@ const WebDevelopment = () => {
                     <p>
                         We love making websites! So lets make yours together, you come up with ideas
                         and we'll bring those ideas to life!
-                        All the websites and webapps we make are our <Link to='/clients'>Client Page</Link>.
+                        All the websites and webapps we make are on our <Link to='/clients'>Client Page</Link>.
                     </p>
                     <div className='grid'>
                         {
