@@ -83,7 +83,7 @@ const Services = () => {
                                         <ListGroup.Item style={webDev}>United States Hosting</ListGroup.Item>
                                         <ListGroup.Item style={webDev}>All our services are DDOS Protected</ListGroup.Item>
                                         <ListGroup.Item style={webDev}>Ecrypted Traffic for your users</ListGroup.Item>
-                                        <ListGroup.Item style={webDev}>Custom API &amp; dedicated database (If needed)</ListGroup.Item>
+                                        <ListGroup.Item style={webDev}>Custom API &amp; dedicated database</ListGroup.Item>
                                         <ListGroup.Item style={webDev}>Your project will show on our  <Link style={{ color: '#66ccff' }} to='/clients'>clients page</Link></ListGroup.Item>
                                     </ListGroup>
                                 </Card.Body>

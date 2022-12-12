@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import '../../styles/main.scss';
 
 import MenuCard from '../../components/MenuCard';
@@ -6,7 +6,6 @@ import ContactForm from '../../components/ContactForm';
 
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
-import Card from 'react-bootstrap/Card';
 
 
 // Images
@@ -49,7 +48,6 @@ const Menu = () => {
             icon: scissors,
             title: 'We don\'t cut corners',
             paragraph: 'We double check our code leaving you with the best online menu and tools that we can for you to succeed!'
-            // We team check our code leaving you with the best online menu and tools we can for you to succeed!
         },
         {
             icon: customerlove,
@@ -68,7 +66,6 @@ const Menu = () => {
             icon: server,
             title: 'Dedicated hosting',
             paragraph: 'Don\'t have a server? Don\'t worry! We host your online menu and all it\'s assets included with your bundle with 99% uptime!'
-            // Don\'t have an extra server laying around? Don\'t worry! We host your online menu and all it\'s assets included with your bundle with 99% uptime!
         },
         {
             icon: nosmartphone,
@@ -79,7 +76,6 @@ const Menu = () => {
             icon: update,
             title: 'Regular Updates',
             paragraph: 'We are always coming up with new features, you can request a feature to be implimented for you to use!'
-            // With our team always coming up with new features, you can request a feature to be implimented for you to use!
         }
     ]
 
@@ -104,7 +100,6 @@ const Menu = () => {
                             })
                         }
                     </div>
-                    {/* Full support &amp; security + mobile compatibility */}
                     <p>
                         With our increasing number of business, we strive to
                         create the <strong>Perfect Admin Panel</strong> making

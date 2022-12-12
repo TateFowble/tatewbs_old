@@ -57,3 +57,14 @@ const App = () => {
 }
 
 export default App;
+
+
+/*
+
+
+payment api
+Stripe
+Venmo
+Paypal
+Apple Pay
+*/
