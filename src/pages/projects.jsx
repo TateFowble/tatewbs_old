@@ -41,13 +41,7 @@ const Project = () => {
             url: 'https://overlook.tatewbs.com',
             description: 'By the lake location with the best burgers and fries around',
             image: ''
-        },
-        {
-            name: 'Smokin Bros BBQ',
-            url: 'https://smokinbros.tatewbs.com',
-            description: 'BBQ located in Canton, with all types of BBQ & Steak',
-            image: ''
-        },
+        }
     ];
 
 
