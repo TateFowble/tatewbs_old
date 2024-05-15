@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import Card from '../components/Card';
 
 import starworksmc from '../assets/images/starworksmc.png';
+import foamtech from '../assets/images/foamtech.jpg';
+import elmaya from '../assets/images/elmaya.jpg';
 
 const Project = () => {
 
@@ -12,36 +14,24 @@ const Project = () => {
             description: 'A Minecraft network that connects Java based code into web based code to interact with the network. Allowing its users/players to play comfortably',
             image: starworksmc
         },
-        {
-            name: 'ActuallyArcher',
-            url: 'https://www.actuallyarcher.com',
-            description: 'An upscale boutique for women who desire classy office clothing and jewelry',
-            image: ''
-        },
+        // {
+        //     name: 'ActuallyArcher',
+        //     url: 'https://www.actuallyarcher.com',
+        //     description: 'An upscale boutique for women who desire classy office clothing and jewelry',
+        //     image: ''
+        // },
         {
             name: 'FoamTech',
             url: 'https://foamtech.tatewbs.com',
             description: 'A web app that allows Foam Tech Employees to calculate and print reports based on their product load',
-            image: ''
-        },
-        {
-            name: 'TateWBS Online Menu',
-            url: 'https://menu.tatewbs.com',
-            description: 'This menu is a test/example menu for all restaraunt owners wanting to see how the online menu looks',
-            image: ''
+            image: foamtech
         },
         {
             name: 'El Maya',
             url: 'https://menu.elmayamx.com',
             description: 'A Mexican restraunt menu that introduces new foods and styles',
-            image: ''
+            image: elmaya
         },
-        {
-            name: 'Overlook',
-            url: 'https://overlook.tatewbs.com',
-            description: 'By the lake location with the best burgers and fries around',
-            image: ''
-        }
     ];
 
 
